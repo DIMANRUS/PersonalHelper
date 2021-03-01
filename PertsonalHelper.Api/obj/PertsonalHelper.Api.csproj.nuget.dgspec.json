@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PertsonalHelper.Api/PertsonalHelper.Api.csproj": {}
+    "/Users/dimanrus/Projects/PersonalHelper/PertsonalHelper.Api/PertsonalHelper.Api.csproj": {}
   },
   "projects": {
-    "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PertsonalHelper.Api/PertsonalHelper.Api.csproj": {
+    "/Users/dimanrus/Projects/PersonalHelper/PertsonalHelper.Api/PertsonalHelper.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PertsonalHelper.Api/PertsonalHelper.Api.csproj",
+        "projectUniqueName": "/Users/dimanrus/Projects/PersonalHelper/PertsonalHelper.Api/PertsonalHelper.Api.csproj",
         "projectName": "PertsonalHelper.Api",
-        "projectPath": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PertsonalHelper.Api/PertsonalHelper.Api.csproj",
+        "projectPath": "/Users/dimanrus/Projects/PersonalHelper/PertsonalHelper.Api/PertsonalHelper.Api.csproj",
         "packagesPath": "/Users/dimanrus/.nuget/packages/",
-        "outputPath": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PertsonalHelper.Api/obj/",
+        "outputPath": "/Users/dimanrus/Projects/PersonalHelper/PertsonalHelper.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/dimanrus/.config/NuGet/NuGet.Config"

@@ -2351,11 +2351,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper.Android/PersonalHelper.Android.csproj",
+      "projectUniqueName": "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper.Android/PersonalHelper.Android.csproj",
       "projectName": "PersonalHelper.Android",
-      "projectPath": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper.Android/PersonalHelper.Android.csproj",
+      "projectPath": "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper.Android/PersonalHelper.Android.csproj",
       "packagesPath": "/Users/dimanrus/.nuget/packages/",
-      "outputPath": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper.Android/obj/",
+      "outputPath": "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -2370,8 +2370,8 @@
       "frameworks": {
         "monoandroid10.0": {
           "projectReferences": {
-            "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper/PersonalHelper.csproj": {
-              "projectPath": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper/PersonalHelper.csproj"
+            "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/PersonalHelper.csproj": {
+              "projectPath": "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/PersonalHelper.csproj"
             }
           }
         }

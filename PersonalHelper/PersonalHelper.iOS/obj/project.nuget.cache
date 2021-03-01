@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vv8QW82v3oUzpwWVyW7Tew6vK4jFiNUhHQp5bzMOmuVivS4runMhflqbhMi7avPoftDsDBC/fhCeyWnZDIWJ+A==",
+  "dgSpecHash": "m4N/u/tiw7Z6h7foR4L3Ei4qbDV3ujkGaZqEev2Y2cHlBO1CRAR0qrnoETLgh43E9pxbbmO6B0ssR4HgQqR5tw==",
   "success": true,
-  "projectFilePath": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper.iOS/PersonalHelper.iOS.csproj",
+  "projectFilePath": "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper.iOS/PersonalHelper.iOS.csproj",
   "expectedPackageFiles": [
     "/Users/dimanrus/.nuget/packages/microsoft.bcl.asyncinterfaces/5.0.0/microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "/Users/dimanrus/.nuget/packages/sqlite-net/1.6.292/sqlite-net.1.6.292.nupkg.sha512",

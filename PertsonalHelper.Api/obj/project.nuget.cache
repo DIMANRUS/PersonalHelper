@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H/D1u9lOnIHVgVqmE7TD0Dq3yHuTRJcorCnVqiaX6T1U39+bMd5s3LN+S2whnHNdMraW0chQLJXkE1mTEqDLyQ==",
+  "dgSpecHash": "k+4+/i+GbKgSqyBiXEhFFFfJV7rKqUxtSONlHJCcUqyRP1zzr8GhRUe/lBZM3UI2ovC11JqBc/HmTgmsd1YX9A==",
   "success": true,
-  "projectFilePath": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PertsonalHelper.Api/PertsonalHelper.Api.csproj",
+  "projectFilePath": "/Users/dimanrus/Projects/PersonalHelper/PertsonalHelper.Api/PertsonalHelper.Api.csproj",
   "expectedPackageFiles": [
     "/Users/dimanrus/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/Users/dimanrus/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",

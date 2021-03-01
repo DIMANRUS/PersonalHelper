@@ -661,11 +661,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper/PersonalHelper.csproj",
+      "projectUniqueName": "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/PersonalHelper.csproj",
       "projectName": "PersonalHelper",
-      "projectPath": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper/PersonalHelper.csproj",
+      "projectPath": "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/PersonalHelper.csproj",
       "packagesPath": "/Users/dimanrus/.nuget/packages/",
-      "outputPath": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper/obj/",
+      "outputPath": "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/dimanrus/.config/NuGet/NuGet.Config"

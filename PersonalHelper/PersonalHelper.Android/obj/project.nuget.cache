@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cANhS6rG2KRfIjw45ITUudKdFVXJ5hXUCpam/u1u8i7eNWmbwpvlXkMo79ZD2fR71ZjNMUdngh/cD6J+b1SBbQ==",
+  "dgSpecHash": "5fGFuXwfkWZ4fAgWkMUyx8+Nff/istG4CTo7zXQVn5xKa+3t5zvH0dqEJSX8LCXu45wyivIt+fc40M9jm9lUDA==",
   "success": true,
-  "projectFilePath": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper.Android/PersonalHelper.Android.csproj",
+  "projectFilePath": "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper.Android/PersonalHelper.Android.csproj",
   "expectedPackageFiles": [
     "/Users/dimanrus/.nuget/packages/microsoft.bcl.asyncinterfaces/5.0.0/microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "/Users/dimanrus/.nuget/packages/sqlite-net/1.6.292/sqlite-net.1.6.292.nupkg.sha512",
