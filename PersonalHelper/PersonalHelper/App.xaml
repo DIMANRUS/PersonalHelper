@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PersonalHelper.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Frame">
+                <Setter Property="CornerRadius" Value="15"/>
+                <Setter Property="HasShadow"
+                        Value="True" />
+                <Setter Property="Margin"
+                        Value="12,5,12,5" />
+                <Setter Property="BackgroundColor"
+                        Value="{AppThemeBinding Light=White, Dark=Black}" />
+                <Setter Property="BorderColor"
+                        Value="{AppThemeBinding Dark=White}" />
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="TextColor"
+                        Value="{AppThemeBinding Light=Black, Dark=White}" />
+                <Setter Property="FontAttributes"
+                        Value="Bold" />
+            </Style>
+            <Style TargetType="Entry">
+                <Setter Property="TextColor"
+                        Value="{AppThemeBinding Light=Black, Dark=White}" />
+                <Setter Property="PlaceholderColor"
+                        Value="{AppThemeBinding Light=Black, Dark=White}" />
+                <Setter Property="FontAttributes"
+                        Value="Bold" />
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                
+            </Style>
+            <Style TargetType="ImageButton">
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="FontAttributes"
+                        Value="Bold" />
+                <Setter Property="TextColor"
+                        Value="{AppThemeBinding Light=Black, Dark=White}" />
+            </Style>
+            <Style TargetType="RadioButton">
+                <Setter Property="TextColor"
+                        Value="{AppThemeBinding Light=Black, Dark=White}" />
+                <Setter Property="FontAttributes"
+                        Value="Bold" />
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

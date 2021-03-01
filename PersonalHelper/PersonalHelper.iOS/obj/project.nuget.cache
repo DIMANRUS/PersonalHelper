@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "Vv8QW82v3oUzpwWVyW7Tew6vK4jFiNUhHQp5bzMOmuVivS4runMhflqbhMi7avPoftDsDBC/fhCeyWnZDIWJ+A==",
+  "success": true,
+  "projectFilePath": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper.iOS/PersonalHelper.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/dimanrus/.nuget/packages/microsoft.bcl.asyncinterfaces/5.0.0/microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+    "/Users/dimanrus/.nuget/packages/sqlite-net/1.6.292/sqlite-net.1.6.292.nupkg.sha512",
+    "/Users/dimanrus/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
+    "/Users/dimanrus/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/dimanrus/.nuget/packages/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "/Users/dimanrus/.nuget/packages/system.text.encodings.web/5.0.0/system.text.encodings.web.5.0.0.nupkg.sha512",
+    "/Users/dimanrus/.nuget/packages/system.text.json/5.0.1/system.text.json.5.0.1.nupkg.sha512",
+    "/Users/dimanrus/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
+    "/Users/dimanrus/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PersonalHelper.Views.Auth"
+             x:Name="Page"
+             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout>
+                <Label Text="Добро пожаловать!"
+                       TextColor="{AppThemeBinding Light=Black, Dark=White}"
+                       FontAttributes="Bold"
+                       FontSize="40"
+                       HorizontalTextAlignment="Center"
+                       Margin="20,10,20,15" />
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Какой цвет предпочитаете?"
+                               FontSize="20" />
+                        <RadioButton Content="Системный"
+                                     GroupName="Theme"
+                                     IsChecked="True"
+                                     CheckedChanged="RadioButton_CheckedChanged" />
+                        <RadioButton Content="Светлый"
+                                     GroupName="Theme"
+                                     CheckedChanged="RadioButton_CheckedChanged" />
+                        <RadioButton Content="Тёмный"
+                                     GroupName="Theme"
+                                     CheckedChanged="RadioButton_CheckedChanged" />
+                    </StackLayout>
+                </Frame>
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Давайте знакомиться"
+                               FontSize="20" />
+                        <Entry x:Name="name"
+                            Placeholder="Введите ваше имя"
+                               MaxLength="15" />
+                    </StackLayout>
+                </Frame>
+                <Frame>
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Где находитесь?"
+                                   FontSize="20" />
+                            <ImageButton Source="info.png"
+                                         HeightRequest="25"
+                                         WidthRequest="25"
+                                         Margin="10,0,0,0"
+                                         Clicked="ShowLocationInformation_Clicked" />
+                        </StackLayout>
+                        <Entry x:Name="city"
+                               Placeholder="Введите город"
+                               MaxLength="20" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <ImageButton Source="next.png"
+                         HorizontalOptions="End"
+                         VerticalOptions="End"
+                         HeightRequest="60"
+                         WidthRequest="60"
+                         Margin="10"
+                         Clicked="NavigateToMainPage_Click" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
