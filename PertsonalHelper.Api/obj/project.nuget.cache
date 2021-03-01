@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "H/D1u9lOnIHVgVqmE7TD0Dq3yHuTRJcorCnVqiaX6T1U39+bMd5s3LN+S2whnHNdMraW0chQLJXkE1mTEqDLyQ==",
+  "dgSpecHash": "TMNUTba6P5jf1CwuN1FLY2wfrEVMQcadigUUAZR6HTsHV/jDskovyyp9lhKGueeMYb99FmyMyymKuibrnBozxw==",
   "success": true,
-  "projectFilePath": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PertsonalHelper.Api/PertsonalHelper.Api.csproj",
+  "projectFilePath": "C:\\Users\\leowa\\Desktop\\Project\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
   "expectedPackageFiles": [
-    "/Users/dimanrus/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "/Users/dimanrus/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
-    "/Users/dimanrus/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
-    "/Users/dimanrus/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
-    "/Users/dimanrus/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "/Users/dimanrus/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+    "C:\\Users\\leowa\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\leowa\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\leowa\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\leowa\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\leowa\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\leowa\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
   ],
   "logs": []
 }

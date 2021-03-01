@@ -2346,32 +2346,39 @@
     ]
   },
   "packageFolders": {
-    "/Users/dimanrus/.nuget/packages/": {}
+    "C:\\Users\\leowa\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper.Android/PersonalHelper.Android.csproj",
+      "projectUniqueName": "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj",
       "projectName": "PersonalHelper.Android",
-      "projectPath": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper.Android/PersonalHelper.Android.csproj",
-      "packagesPath": "/Users/dimanrus/.nuget/packages/",
-      "outputPath": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper.Android/obj/",
+      "projectPath": "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj",
+      "packagesPath": "C:\\Users\\leowa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/dimanrus/.config/NuGet/NuGet.Config"
+        "C:\\Users\\leowa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "monoandroid10.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "monoandroid10.0": {
           "projectReferences": {
-            "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper/PersonalHelper.csproj": {
-              "projectPath": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper/PersonalHelper.csproj"
+            "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
+              "projectPath": "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
             }
           }
         }

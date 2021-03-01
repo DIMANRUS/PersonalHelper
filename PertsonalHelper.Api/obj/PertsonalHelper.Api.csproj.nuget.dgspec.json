@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PertsonalHelper.Api/PertsonalHelper.Api.csproj": {}
+    "C:\\Users\\leowa\\Desktop\\Project\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj": {}
   },
   "projects": {
-    "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PertsonalHelper.Api/PertsonalHelper.Api.csproj": {
+    "C:\\Users\\leowa\\Desktop\\Project\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PertsonalHelper.Api/PertsonalHelper.Api.csproj",
+        "projectUniqueName": "C:\\Users\\leowa\\Desktop\\Project\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
         "projectName": "PertsonalHelper.Api",
-        "projectPath": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PertsonalHelper.Api/PertsonalHelper.Api.csproj",
-        "packagesPath": "/Users/dimanrus/.nuget/packages/",
-        "outputPath": "/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PertsonalHelper.Api/obj/",
+        "projectPath": "C:\\Users\\leowa\\Desktop\\Project\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
+        "packagesPath": "C:\\Users\\leowa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leowa\\Desktop\\Project\\PertsonalHelper.Api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/Users/dimanrus/.config/NuGet/NuGet.Config"
+          "C:\\Users\\leowa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
