@@ -3,6 +3,7 @@
   <PropertyGroup>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <SelectedDevice>pixel_3a_q_10_0_-_api_29</SelectedDevice>
 <<<<<<< HEAD
     <DefaultDevice>pixel_3a_q_10_0_-_api_29</DefaultDevice>
@@ -15,5 +16,9 @@
     <SelectedDevice>pixel_3a_q_10_0_-_api_29</SelectedDevice>
     <DefaultDevice>pixel_3a_q_10_0_-_api_29</DefaultDevice>
 >>>>>>> Fix api with weather
+=======
+    <SelectedDevice>pixel_3a_q_10_0_-_api_29</SelectedDevice>
+    <DefaultDevice>pixel_3a_q_10_0_-_api_29</DefaultDevice>
+>>>>>>> e08ed1bdff9ca747567139a721d55e52011a1c40
   </PropertyGroup>
 </Project>
