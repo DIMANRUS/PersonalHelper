@@ -4,21 +4,21 @@
 	--sgen-conc \
 	'/target-framework:Xamarin.iOS,Version=v1.0' \
 	--http-message-handler=NSUrlSessionHandler \
-	'\"--cache=/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone se-14.4/mtouch-cache\"' \
-	--root-assembly=/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper.iOS/bin/iPhoneSimulator/Debug/PersonalHelper.iOS.exe \
+	'\"--cache=/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone se-14.4/mtouch-cache\"' \
+	--root-assembly=/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper.iOS/bin/iPhoneSimulator/Debug/PersonalHelper.iOS.exe \
 	--sdkroot=/Applications/Xcode.app/Contents/Developer \
 	--targetver=10.0 \
-	'\"--sim=/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone se-14.4/PersonalHelper.iOS.app\"' \
+	'\"--sim=/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone se-14.4/PersonalHelper.iOS.app\"' \
 	--executable=PersonalHelper.iOS \
 	--nolink \
 	--sdk=14.4 \
 	--aot-options=-O=-float32 \
 	--abi=x86_64 \
-	'\"--symbollist=/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone se-14.4/mtouch-symbols.list\"' \
+	'\"--symbollist=/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone se-14.4/mtouch-symbols.list\"' \
 	--dsym=no \
 	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
 	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll \
-	--reference=/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper/bin/Debug/netstandard2.1/PersonalHelper.dll \
+	--reference=/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/bin/Debug/netstandard2.1/PersonalHelper.dll \
 	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
 	--reference=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Numerics.dll \
@@ -211,5 +211,5 @@
 	--reference=/Users/dimanrus/.nuget/packages/xamarin.forms/5.0.0.2012/lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll \
 	--reference=/Users/dimanrus/.nuget/packages/xamarin.forms/5.0.0.2012/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll \
 	--reference=/Users/dimanrus/.nuget/packages/xamarin.forms/5.0.0.2012/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll \
-	--reference=/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper/bin/Debug/netstandard2.1/PersonalHelper.dll \
-	'@/Users/dimanrus/Desktop/PersonalHelper-DIMANRUS/PersonalHelper/PersonalHelper.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone se-14.4/response-file.rsp' \
+	--reference=/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/bin/Debug/netstandard2.1/PersonalHelper.dll \
+	'@/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone se-14.4/response-file.rsp' \

@@ -656,12 +656,19 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\leowa\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+=======
+    "C:\\Users\\dmitr\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+>>>>>>> DIMANRUS
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
       "projectName": "PersonalHelper",
       "projectPath": "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
@@ -673,6 +680,20 @@
       ],
       "configFilePaths": [
         "C:\\Users\\leowa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
+      "projectName": "PersonalHelper",
+      "projectPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
+      "packagesPath": "C:\\Users\\dmitr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\dmitr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> DIMANRUS
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -681,6 +702,10 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+<<<<<<< HEAD
+=======
+        "C:\\Users\\dmitr\\AppData\\Roaming\\Cosmos User Kit\\packages\\": {},
+>>>>>>> DIMANRUS
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
