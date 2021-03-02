@@ -1,33 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper.Android/PersonalHelper.Android.csproj": {}
+    "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj": {}
   },
   "projects": {
-    "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper.Android/PersonalHelper.Android.csproj": {
+    "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper.Android/PersonalHelper.Android.csproj",
+        "projectUniqueName": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj",
         "projectName": "PersonalHelper.Android",
-        "projectPath": "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper.Android/PersonalHelper.Android.csproj",
-        "packagesPath": "/Users/dimanrus/.nuget/packages/",
-        "outputPath": "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper.Android/obj/",
+        "projectPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj",
+        "packagesPath": "C:\\Users\\dmitr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/Users/dimanrus/.config/NuGet/NuGet.Config"
+          "C:\\Users\\dmitr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "monoandroid10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\dmitr\\AppData\\Roaming\\Cosmos User Kit\\packages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "monoandroid10.0": {
             "projectReferences": {
-              "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/PersonalHelper.csproj": {
-                "projectPath": "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/PersonalHelper.csproj"
+              "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
+                "projectPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
               }
             }
           }
@@ -56,22 +63,30 @@
         }
       }
     },
-    "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/PersonalHelper.csproj": {
+    "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/PersonalHelper.csproj",
+        "projectUniqueName": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
         "projectName": "PersonalHelper",
-        "projectPath": "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/PersonalHelper.csproj",
-        "packagesPath": "/Users/dimanrus/.nuget/packages/",
-        "outputPath": "/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/obj/",
+        "projectPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
+        "packagesPath": "C:\\Users\\dmitr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/dimanrus/.config/NuGet/NuGet.Config"
+          "C:\\Users\\dmitr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\dmitr\\AppData\\Roaming\\Cosmos User Kit\\packages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -122,7 +137,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
