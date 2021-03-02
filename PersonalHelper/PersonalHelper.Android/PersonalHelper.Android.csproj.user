@@ -2,6 +2,9 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <SelectedDevice>pixel_3a_q_10_0_-_api_29</SelectedDevice>
+<<<<<<< HEAD
     <DefaultDevice>pixel_3a_q_10_0_-_api_29</DefaultDevice>
+=======
+>>>>>>> Fix
   </PropertyGroup>
 </Project>
