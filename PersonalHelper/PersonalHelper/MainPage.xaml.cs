@@ -9,10 +9,10 @@ using Xamarin.Forms;
 //giughoiuehrgeiorugtergtrt
 namespace PersonalHelper {
     public partial class MainPage : ContentPage {
-        MainPageModel mainPageModel;
+        MainPageVM mainPageModel;
         public MainPage() {
             InitializeComponent();
-            mainPageModel = new MainPageModel();        
+            mainPageModel = new MainPageVM();        
             this.BindingContext = mainPageModel;
         }
     }

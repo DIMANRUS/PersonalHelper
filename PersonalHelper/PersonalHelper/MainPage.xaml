@@ -7,7 +7,10 @@
              >
     <StackLayout>
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-            <Label Text="Доброе утро, Дмитрий!" HorizontalOptions="Center" Margin="10" FontSize="Large"/>
+            <Label Text="{Binding HelloUserName}"
+                   HorizontalOptions="Center"
+                   Margin="10"
+                   FontSize="Large" />
             <ImageButton Source="SettingsIcon.png" HeightRequest="30"/>
         </StackLayout>
         <Frame Padding="7">

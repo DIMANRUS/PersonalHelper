@@ -1,7 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"><!-- 
 =======
 <resources xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"><!-- 
+>>>>>>> DIMANRUS
+=======
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"><!-- 
 >>>>>>> DIMANRUS
     This defines the collectionViewStyle attribute so that we can use it 
     to add the scrollbars style to the CollectionView/CarouselView renderers.
