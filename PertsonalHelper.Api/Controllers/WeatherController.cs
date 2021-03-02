@@ -8,10 +8,10 @@ using Microsoft.Extensions.Logging;
 namespace PertsonalHelper.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    [Route("api/[controller]")]
+    public class WeatherController : ControllerBase
     {
-        [HttpGet("get")]
+        [HttpGet]
         public int GetWheather()
         {
             return 5;
