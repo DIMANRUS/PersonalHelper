@@ -25,10 +25,14 @@ os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
 <<<<<<< HEAD
+<<<<<<< HEAD
 _nugetassetstimestamp=637502672250829262
 =======
 _nugetassetstimestamp=637502667183862129
 >>>>>>> Fix
+=======
+_nugetassetstimestamp=637502638774157762
+>>>>>>> From Windows
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a
