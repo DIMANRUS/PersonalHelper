@@ -5,7 +5,8 @@
     <Application.Resources>
         <ResourceDictionary>
             <Style TargetType="Frame">
-                <Setter Property="CornerRadius" Value="15"/>
+                <Setter Property="CornerRadius"
+                        Value="15" />
                 <Setter Property="HasShadow"
                         Value="True" />
                 <Setter Property="Margin"
@@ -28,14 +29,17 @@
                         Value="{AppThemeBinding Light=Black, Dark=White}" />
                 <Setter Property="FontAttributes"
                         Value="Bold" />
-                <Setter Property="BackgroundColor" Value="Transparent"/>
-                
+                <Setter Property="BackgroundColor"
+                        Value="Transparent" />
+
             </Style>
             <Style TargetType="ImageButton">
-                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="BackgroundColor"
+                        Value="Transparent" />
             </Style>
             <Style TargetType="Button">
-                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="BackgroundColor"
+                        Value="Transparent" />
                 <Setter Property="FontAttributes"
                         Value="Bold" />
                 <Setter Property="TextColor"
@@ -46,7 +50,8 @@
                         Value="{AppThemeBinding Light=Black, Dark=White}" />
                 <Setter Property="FontAttributes"
                         Value="Bold" />
-                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="BackgroundColor"
+                        Value="{AppThemeBinding Light=Black, Dark=White}" />
             </Style>
         </ResourceDictionary>
     </Application.Resources>

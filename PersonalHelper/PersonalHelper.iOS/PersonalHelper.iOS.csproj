@@ -240,4 +240,9 @@
     <Folder Include="Assets.xcassets\WheatherBlockIcon.imageset\" />
     <Folder Include="Assets.xcassets\WheatherIconSun.imageset\" />
   </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties TriggeredFromHotReload="False" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
