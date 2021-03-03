@@ -1,10 +1,23 @@
 ﻿using PersonalHelper.Models;
 using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace PersonalHelper.ViewModels {
-    class SettingsVm {
+    class SettingsVm : ICommand {
+        public SettingsVm() {
+            Exit = new Command(execute: async () => {
+                await CurrentPage.DisplayAlert("Hello","fghfgh","OK");
+            });
+        }
+        private Page CurrentPage { get => Application.Current.MainPage; }
         public string UserName { get => User.GetUserName(); }
+        public ICommand Exit { private set; get; }
+
+        public event EventHandler CanExecuteChanged;
+        public bool CanExecute(object parameter) {
+            throw new NotImplementedException();
+        }
+        public void Execute(object parameter) { }
     }
 }

@@ -4,19 +4,26 @@
              x:Class="PersonalHelper.MainPage"
              BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
              xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels"
-             >
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.BindingContext>
+        <ViewModels:MainPageVM />
+    </ContentPage.BindingContext>
     <StackLayout>
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Center">
             <Label Text="{Binding HelloUserName}"
                    HorizontalOptions="Center"
                    Margin="10"
                    FontSize="Large" />
-            <ImageButton Source="SettingsIcon.png" HeightRequest="30"/>
+            <ImageButton Source="SettingsIcon.png"
+                         HeightRequest="30"
+                         Command="{Binding OpenSettings}" />
         </StackLayout>
         <Frame Padding="7">
             <StackLayout>
                 <StackLayout Orientation="Horizontal">
-                    <Image Source="WheatherBlockIcon.png" HeightRequest="20"/>
+                    <Image Source="WheatherBlockIcon.png"
+                           HeightRequest="20" />
                     <Label Text="Погода"
                            FontSize="15" />
                 </StackLayout>

@@ -51,7 +51,7 @@
                 <Setter Property="FontAttributes"
                         Value="Bold" />
                 <Setter Property="BackgroundColor"
-                        Value="{AppThemeBinding Light=Black, Dark=White}" />
+                        Value="Transparent" />
             </Style>
         </ResourceDictionary>
     </Application.Resources>
