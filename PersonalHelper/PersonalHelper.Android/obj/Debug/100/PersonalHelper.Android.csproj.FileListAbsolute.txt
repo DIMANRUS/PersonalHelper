@@ -10,7 +10,6 @@ C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper.Android\bin\Debug\P
 C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper.Android\obj\Debug\100\MonoAndroid,Version=v10.0.AssemblyAttributes.cs
 C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper.Android\obj\Debug\100\build.props
 C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper.Android\obj\Debug\100\adb.props
-C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper.Android\obj\Debug\100\PersonalHelper.Android.csprojAssemblyReference.cache
 C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper.Android\obj\Debug\100\stamp\_BuildLibraryImportsCache.stamp
 C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper.Android\obj\Debug\100\res.flag
 C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper.Android\obj\Debug\100\lp\44\jl\files.cache
