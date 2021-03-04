@@ -14,9 +14,9 @@
             <Label Text="{Binding HelloUserName}"
                    HorizontalOptions="Center"
                    Margin="10"
-                   FontSize="Large" />
+                   FontSize="30" />
             <ImageButton Source="SettingsIcon.png"
-                         HeightRequest="30"
+                         HeightRequest="35"
                          Command="{Binding OpenSettings}" />
         </StackLayout>
         <Frame Padding="7">

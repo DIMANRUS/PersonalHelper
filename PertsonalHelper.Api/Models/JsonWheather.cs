@@ -18,12 +18,12 @@ namespace PersonalHelper.Api.Models
 
     public class Main
     {
-        public int temp { get; set; } = 10;
+        public float temp { get; set; } = 10;
         public double feels_like { get; set; }
-        public int temp_min { get; set; }
-        public int temp_max { get; set; }
-        public int pressure { get; set; }
-        public int humidity { get; set; }
+        public float temp_min { get; set; }
+        public float temp_max { get; set; }
+        public float pressure { get; set; }
+        public float humidity { get; set; }
     }
 
     public class Wind
