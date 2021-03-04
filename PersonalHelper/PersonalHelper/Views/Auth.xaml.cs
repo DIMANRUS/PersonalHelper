@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 using System.Reflection;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -42,6 +41,7 @@ namespace PersonalHelper.Views
             }
         }
         private async void ShowLocationInformation_Clicked(object sender, System.EventArgs e) => await DisplayAlert("Зачем это нужно?", "На основе вашего введённого города будет показываться погода, новости и другая информация", "Ок");
+
         private async void NavigateToMainPage_Click(object sender, System.EventArgs e)
         {
             if (cities.Cities.FirstOrDefault(x => x.undefined == city.Text.Replace(" ", "")) != null)
@@ -54,6 +54,7 @@ namespace PersonalHelper.Views
                 {
                     Preferences.Set("UserName", name.Text);
                     Preferences.Set("UserCity", city.Text);
+
                     await Navigation.PushModalAsync(new MainPage(), true);
                 }
             }

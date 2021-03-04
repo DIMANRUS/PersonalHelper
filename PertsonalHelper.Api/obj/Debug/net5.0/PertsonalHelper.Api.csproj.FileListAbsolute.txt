@@ -66,3 +66,4 @@ C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\Xamarin.Form
 C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\Xamarin.Forms.Xaml.dll
 C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\PersonalHelper.dll
 C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\PersonalHelper.pdb
+C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\Newtonsoft.Json.dll
