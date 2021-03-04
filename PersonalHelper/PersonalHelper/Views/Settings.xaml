@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PersonalHelper.Views.Settings"
+             xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels">
+    <ContentPage.BindingContext>
+        <ViewModels:SettingsVm />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="Hello" Text="{Binding UserName}" Command="{Binding Exit}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

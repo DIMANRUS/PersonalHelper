@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "KaTTgU/o5tyfIsnt0U5qvnVws2CdbZ8uCyOduQJ3+KawJeIQhNtX3vtgtCA4L5xtqY9PyYyDC9bqzpfZEaWpHw==",
   "success": true,
   "projectFilePath": "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper.iOS\\PersonalHelper.iOS.csproj",
@@ -13,6 +14,21 @@
     "C:\\Users\\leowa\\.nuget\\packages\\system.text.json\\5.0.1\\system.text.json.5.0.1.nupkg.sha512",
     "C:\\Users\\leowa\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Users\\leowa\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+=======
+  "dgSpecHash": "vCoY78m+qtgT2ExnyxXgCLsefRafgJzM5dI/6r8sG9YiGn4hXwZzNMG75eJECrrf/SqQSbYyRsojC7mu+Ud7dQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.iOS\\PersonalHelper.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dmitr\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+    "C:\\Users\\dmitr\\.nuget\\packages\\sqlite-net\\1.6.292\\sqlite-net.1.6.292.nupkg.sha512",
+    "C:\\Users\\dmitr\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\dmitr\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\dmitr\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\dmitr\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512",
+    "C:\\Users\\dmitr\\.nuget\\packages\\system.text.json\\5.0.1\\system.text.json.5.0.1.nupkg.sha512",
+    "C:\\Users\\dmitr\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\dmitr\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+>>>>>>> 27e00df0f1dec1bb7402159cf8c40f599ccf0f9c
   ],
   "logs": []
 }
