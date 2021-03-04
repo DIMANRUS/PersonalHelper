@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper.Android\bin\Debug\PersonalHelper.Android.dll
 C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper.Android\bin\Debug\PersonalHelper.Android.pdb
 C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper.Android\bin\Debug\com.companyname.personalhelper.apk
@@ -581,4 +579,3 @@ C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper.Android\obj\Debug\1
 C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper.Android\obj\Debug\100\stamp\_GenerateJavaStubs.stamp
 C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper.Android\obj\Debug\100\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper.Android\obj\Debug\100\stamp\_ResolveLibraryProjectImports.stamp
->>>>>>> LeoWarp
