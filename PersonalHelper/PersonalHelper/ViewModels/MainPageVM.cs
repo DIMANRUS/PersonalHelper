@@ -15,7 +15,7 @@ namespace PersonalHelper.ViewModels {
                 await CurrentPage.DisplayAlert("Привет", result, "OK");
             });
         }
-        private Page CurrentPage { get => Application.Current.MainPage; }
+        private Page CurrentPage{ get => Application.Current.MainPage; }
         public ICommand OpenSettings { private set; get; }
         public event EventHandler CanExecuteChanged;
         public bool CanExecute(object parameter) {

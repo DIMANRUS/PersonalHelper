@@ -578,3 +578,4 @@ C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelpe
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper.Android\obj\Debug\100\stamp\_GenerateJavaStubs.stamp
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper.Android\obj\Debug\100\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper.Android\obj\Debug\100\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper.Android\obj\Debug\100\PersonalHelper.Android.csprojAssemblyReference.cache
