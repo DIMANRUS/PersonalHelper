@@ -19,7 +19,8 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
     <WarningLevel>4</WarningLevel>
     <Externalconsole>false</Externalconsole>
     <CodesignKey>iPhone Developer</CodesignKey>
@@ -128,32 +129,84 @@
     <ImageAsset Include="Assets.xcassets\Image.imageset\icon-2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\info.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\info.imageset\info.png" />
-    <ImageAsset Include="Assets.xcassets\info.imageset\info-1.png" />
-    <ImageAsset Include="Assets.xcassets\info.imageset\info-2.png" />
-    <ImageAsset Include="Assets.xcassets\next.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\next.imageset\next.png" />
-    <ImageAsset Include="Assets.xcassets\next.imageset\next-1.png" />
-    <ImageAsset Include="Assets.xcassets\next.imageset\next-2.png" />
-    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\SettingsIcon.png" />
-    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\SettingsIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\SettingsIcon-2.png" />
-    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\WheatherBlockIcon.png" />
-    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\WheatherBlockIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\WheatherBlockIcon-2.png" />
-    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun.png" />
-    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun-1.png" />
-    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun-2.png" />
-    <ImageAsset Include="Assets.xcassets\next.imageset\next-3.png" />
-    <ImageAsset Include="Assets.xcassets\next.imageset\next-4.png" />
-    <ImageAsset Include="Assets.xcassets\next.imageset\next-5.png" />
-    <ImageAsset Include="Assets.xcassets\next.imageset\next-6.png" />
-    <ImageAsset Include="Assets.xcassets\next.imageset\next-7.png" />
-    <ImageAsset Include="Assets.xcassets\next.imageset\next-8.png" />
+    <ImageAsset Include="Assets.xcassets\info.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\info.imageset\info.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\info.imageset\info-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\info.imageset\info-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.imageset\next.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.imageset\next-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.imageset\next-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\SettingsIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\SettingsIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\SettingsIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\WheatherBlockIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\WheatherBlockIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\WheatherBlockIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.imageset\next-3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.imageset\next-4.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.imageset\next-5.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.imageset\next-6.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.imageset\next-7.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.imageset\next-8.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
