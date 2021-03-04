@@ -1,6 +1,5 @@
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
 C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\appsettings.json
 C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\PertsonalHelper.Api.exe
@@ -30,7 +29,6 @@ C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHel
 C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\ref\PertsonalHelper.Api.dll
 C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.pdb
 C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.genruntimeconfig.cache
-=======
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\appsettings.json
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\PertsonalHelper.Api.exe
@@ -70,3 +68,11 @@ C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\PersonalHelp
 C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\PersonalHelper.pdb
 C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\Newtonsoft.Json.dll
 >>>>>>> LeoWarp
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\System.Text.Json.dll
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\Xamarin.Essentials.dll
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\Xamarin.Forms.Core.dll
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\Xamarin.Forms.Platform.dll
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\Xamarin.Forms.Xaml.dll
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\PersonalHelper.dll
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\PersonalHelper.pdb

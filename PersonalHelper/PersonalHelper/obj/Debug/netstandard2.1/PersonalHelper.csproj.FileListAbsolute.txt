@@ -44,7 +44,6 @@ C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelpe
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\PersonalHelper.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\ref\PersonalHelper.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\PersonalHelper.pdb
-<<<<<<< HEAD
 C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\bin\Debug\netstandard2.1\PersonalHelper.deps.json
 C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\bin\Debug\netstandard2.1\PersonalHelper.dll
 C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\bin\Debug\netstandard2.1\ref\PersonalHelper.dll
@@ -61,5 +60,5 @@ C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Debug\netstanda
 C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\ref\PersonalHelper.dll
 C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\PersonalHelper.pdb
 >>>>>>> LeoWarp
-=======
->>>>>>> LeoWarp
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\PersonalHelper.csprojAssemblyReference.cache
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\Views\Settings.xaml.g.cs
