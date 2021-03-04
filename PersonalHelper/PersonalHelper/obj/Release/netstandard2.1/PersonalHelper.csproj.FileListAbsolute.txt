@@ -1,0 +1,7 @@
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Release\netstandard2.1\PersonalHelper.csprojAssemblyReference.cache
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Release\netstandard2.1\App.xaml.g.cs
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Release\netstandard2.1\MainPage.xaml.g.cs
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Release\netstandard2.1\Views\Auth.xaml.g.cs
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Release\netstandard2.1\PersonalHelper.AssemblyInfoInputs.cache
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Release\netstandard2.1\PersonalHelper.AssemblyInfo.cs
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Release\netstandard2.1\PersonalHelper.csproj.CoreCompileInputs.cache

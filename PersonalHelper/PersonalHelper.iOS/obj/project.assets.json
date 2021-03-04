@@ -1364,15 +1364,20 @@
   },
   "packageFolders": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\leowa\\.nuget\\packages\\": {},
 =======
     "C:\\Users\\dmitr\\.nuget\\packages\\": {},
 >>>>>>> 27e00df0f1dec1bb7402159cf8c40f599ccf0f9c
+=======
+    "C:\\Users\\leowa\\.nuget\\packages\\": {},
+>>>>>>> LeoWarp
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
 <<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper.iOS\\PersonalHelper.iOS.csproj",
       "projectName": "PersonalHelper.iOS",
@@ -1386,6 +1391,13 @@
       "packagesPath": "C:\\Users\\dmitr\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.iOS\\obj\\",
 >>>>>>> 27e00df0f1dec1bb7402159cf8c40f599ccf0f9c
+=======
+      "projectUniqueName": "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper.iOS\\PersonalHelper.iOS.csproj",
+      "projectName": "PersonalHelper.iOS",
+      "projectPath": "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper.iOS\\PersonalHelper.iOS.csproj",
+      "packagesPath": "C:\\Users\\leowa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper.iOS\\obj\\",
+>>>>>>> LeoWarp
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1393,10 +1405,14 @@
       ],
       "configFilePaths": [
 <<<<<<< HEAD
+<<<<<<< HEAD
         "C:\\Users\\leowa\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
         "C:\\Users\\dmitr\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> 27e00df0f1dec1bb7402159cf8c40f599ccf0f9c
+=======
+        "C:\\Users\\leowa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> LeoWarp
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1406,14 +1422,18 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         "C:\\Users\\dmitr\\AppData\\Roaming\\Cosmos User Kit\\packages\\": {},
 >>>>>>> 27e00df0f1dec1bb7402159cf8c40f599ccf0f9c
+=======
+>>>>>>> LeoWarp
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
+<<<<<<< HEAD
 <<<<<<< HEAD
             "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
               "projectPath": "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
@@ -1421,6 +1441,10 @@
             "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
               "projectPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
 >>>>>>> 27e00df0f1dec1bb7402159cf8c40f599ccf0f9c
+=======
+            "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
+              "projectPath": "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
+>>>>>>> LeoWarp
             }
           }
         }

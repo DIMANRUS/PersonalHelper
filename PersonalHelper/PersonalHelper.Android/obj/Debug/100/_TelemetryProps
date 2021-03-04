@@ -23,6 +23,10 @@ AndroidDexTool=d8
 AndroidLinkTool=
 AndroidEnableProfiledAot=false
 AndroidInstallAfterBuild=True
+<<<<<<< HEAD
 AndroidSessionId=8ba2eb02-cc36-4664-be51-bd200f5884a6
+=======
+AndroidSessionId=28cab172-533a-4c77-b3fa-3288b9e89926
+>>>>>>> LeoWarp
 BuildConfiguration=Debug
 TemplateName={c9e5eea5-ca05-42a1-839b-61506e0a37df}
