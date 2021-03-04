@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using PersonalHelper.Api.Models;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -29,11 +30,9 @@ namespace PertsonalHelper.Api.Controllers
                 response = await sr.ReadToEndAsync();
             }
 
-            var values = JsonConvert.DeserializeObject<Dictionary<string, dynamic>>(response);
+            RootJsonWheather result = JsonConvert.DeserializeObject<RootJsonWheather>(response);
 
-            var main = values.FirstOrDefault(x => x.Key == "main").Value.temp;
-
-            return Ok(response);
+            return Ok(result.weather.First().description + @"/" + result.main.temp);
         }
     }
 }
