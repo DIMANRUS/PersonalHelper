@@ -28,3 +28,38 @@
 /Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/obj/Debug/netstandard2.1/PersonalHelper.dll
 /Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/obj/Debug/netstandard2.1/ref/PersonalHelper.dll
 /Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/obj/Debug/netstandard2.1/PersonalHelper.pdb
+<<<<<<< HEAD
+=======
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\bin\Debug\netstandard2.1\PersonalHelper.deps.json
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\bin\Debug\netstandard2.1\PersonalHelper.dll
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\bin\Debug\netstandard2.1\ref\PersonalHelper.dll
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\bin\Debug\netstandard2.1\PersonalHelper.pdb
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\App.xaml.g.cs
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\MainPage.xaml.g.cs
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\Views\Auth.xaml.g.cs
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\PersonalHelper.AssemblyInfoInputs.cache
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\PersonalHelper.AssemblyInfo.cs
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\PersonalHelper.csproj.CoreCompileInputs.cache
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\XamlC.stamp
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\PersonalHelper.dll
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\ref\PersonalHelper.dll
+C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\PersonalHelper.pdb
+<<<<<<< HEAD
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\bin\Debug\netstandard2.1\PersonalHelper.deps.json
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\bin\Debug\netstandard2.1\PersonalHelper.dll
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\bin\Debug\netstandard2.1\ref\PersonalHelper.dll
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\bin\Debug\netstandard2.1\PersonalHelper.pdb
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\PersonalHelper.csprojAssemblyReference.cache
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\App.xaml.g.cs
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\MainPage.xaml.g.cs
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\Views\Auth.xaml.g.cs
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\PersonalHelper.AssemblyInfoInputs.cache
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\PersonalHelper.AssemblyInfo.cs
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\PersonalHelper.csproj.CoreCompileInputs.cache
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\XamlC.stamp
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\PersonalHelper.dll
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\ref\PersonalHelper.dll
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\PersonalHelper.pdb
+>>>>>>> LeoWarp
+=======
+>>>>>>> LeoWarp

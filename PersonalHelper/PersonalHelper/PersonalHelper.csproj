@@ -11,6 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Responses\**" />
+    <EmbeddedResource Remove="Responses\**" />
+    <None Remove="Responses\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Files\cities.json" />
   </ItemGroup>
 

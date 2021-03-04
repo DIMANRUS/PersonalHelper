@@ -1,0 +1,6 @@
+C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Release\net5.0\PertsonalHelper.Api.csprojAssemblyReference.cache
+C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Release\net5.0\PertsonalHelper.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Release\net5.0\PertsonalHelper.Api.AssemblyInfoInputs.cache
+C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Release\net5.0\PertsonalHelper.Api.AssemblyInfo.cs
+C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Release\net5.0\PertsonalHelper.Api.csproj.CoreCompileInputs.cache
+C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Release\net5.0\PertsonalHelper.Api.MvcApplicationPartsAssemblyInfo.cache

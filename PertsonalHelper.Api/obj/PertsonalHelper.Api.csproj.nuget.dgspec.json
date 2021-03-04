@@ -1,24 +1,99 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj": {}
+    "C:\\Users\\leowa\\Desktop\\Project\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj": {
+    "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
-        "projectName": "PertsonalHelper.Api",
-        "projectPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
-        "packagesPath": "C:\\Users\\dmitr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\obj\\",
+        "projectUniqueName": "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
+        "projectName": "PersonalHelper",
+        "projectPath": "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
+        "packagesPath": "C:\\Users\\leowa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\dmitr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\leowa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2012, )"
+            },
+            "sqlite-net": {
+              "target": "Package",
+              "version": "[1.6.292, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\leowa\\Desktop\\Project\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\leowa\\Desktop\\Project\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
+        "projectName": "PertsonalHelper.Api",
+        "projectPath": "C:\\Users\\leowa\\Desktop\\Project\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
+        "packagesPath": "C:\\Users\\leowa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leowa\\Desktop\\Project\\PertsonalHelper.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\leowa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -27,13 +102,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Users\\dmitr\\AppData\\Roaming\\Cosmos User Kit\\packages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
+                "projectPath": "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -46,9 +124,17 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.1, )"
             }
           },
           "imports": [
