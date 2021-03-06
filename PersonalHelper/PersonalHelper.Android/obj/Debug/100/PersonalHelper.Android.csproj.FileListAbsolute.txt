@@ -1065,3 +1065,4 @@ C:\Users\dmitr\source\repos\PersonalHelper\PersonalHelper\PersonalHelper.Android
 C:\Users\dmitr\source\repos\PersonalHelper\PersonalHelper\PersonalHelper.Android\obj\Debug\100\stamp\_GenerateJavaStubs.stamp
 C:\Users\dmitr\source\repos\PersonalHelper\PersonalHelper\PersonalHelper.Android\obj\Debug\100\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\dmitr\source\repos\PersonalHelper\PersonalHelper\PersonalHelper.Android\obj\Debug\100\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\dmitr\source\repos\PersonalHelper\PersonalHelper\PersonalHelper.Android\obj\Debug\100\PersonalHelper.Android.csprojAssemblyReference.cache

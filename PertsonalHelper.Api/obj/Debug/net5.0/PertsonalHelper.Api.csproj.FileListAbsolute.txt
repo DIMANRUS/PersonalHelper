@@ -1,34 +1,3 @@
-<<<<<<< HEAD
-=======
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\appsettings.json
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\PertsonalHelper.Api.exe
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\PertsonalHelper.Api.deps.json
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\PertsonalHelper.Api.runtimeconfig.json
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\PertsonalHelper.Api.runtimeconfig.dev.json
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\PertsonalHelper.Api.dll
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\ref\PertsonalHelper.Api.dll
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\PertsonalHelper.Api.pdb
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\Microsoft.OpenApi.dll
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.csprojAssemblyReference.cache
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.AssemblyInfoInputs.cache
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.AssemblyInfo.cs
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.csproj.CoreCompileInputs.cache
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\staticwebassets\PertsonalHelper.Api.StaticWebAssets.Manifest.cache
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\staticwebassets\PertsonalHelper.Api.StaticWebAssets.xml
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\scopedcss\bundle\PertsonalHelper.Api.styles.css
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.RazorTargetAssemblyInfo.cache
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.csproj.CopyComplete
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.dll
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\ref\PertsonalHelper.Api.dll
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.pdb
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.genruntimeconfig.cache
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\appsettings.json
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\PertsonalHelper.Api.exe
@@ -58,16 +27,6 @@ C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Debu
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\ref\PertsonalHelper.Api.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.pdb
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.genruntimeconfig.cache
->>>>>>> cf8054010a39bb711c7e1d90c08e556b79fab303
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\System.Text.Json.dll
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\Xamarin.Essentials.dll
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\Xamarin.Forms.Core.dll
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\Xamarin.Forms.Platform.dll
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\Xamarin.Forms.Xaml.dll
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\PersonalHelper.dll
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\PersonalHelper.pdb
-C:\Users\leowa\Desktop\Project\PertsonalHelper.Api\bin\Debug\net5.0\Newtonsoft.Json.dll
->>>>>>> LeoWarp
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\System.Text.Json.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\Xamarin.Essentials.dll
@@ -81,7 +40,6 @@ C:\Users\dmitr\source\repos\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\
 C:\Users\dmitr\source\repos\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.AssemblyInfoInputs.cache
 C:\Users\dmitr\source\repos\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.AssemblyInfo.cs
 C:\Users\dmitr\source\repos\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.csproj.CoreCompileInputs.cache
-C:\Users\dmitr\source\repos\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\dmitr\source\repos\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\dmitr\source\repos\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.dll
 C:\Users\dmitr\source\repos\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\ref\PertsonalHelper.Api.dll
