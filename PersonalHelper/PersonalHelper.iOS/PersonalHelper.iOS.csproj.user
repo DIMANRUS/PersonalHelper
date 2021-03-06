@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <SelectedDevice>iPhone SE iOS 14.4</SelectedDevice>
+    <SelectedDevice>Локальное устройство</SelectedDevice>
     <DefaultDevice>iPhone SE iOS 14.4</DefaultDevice>
+    <ActiveDebugProfile>Локальное устройство</ActiveDebugProfile>
   </PropertyGroup>
 </Project>
