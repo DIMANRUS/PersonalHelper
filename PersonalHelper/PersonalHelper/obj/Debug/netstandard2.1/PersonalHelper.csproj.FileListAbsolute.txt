@@ -62,3 +62,4 @@ C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Debug\netstanda
 >>>>>>> LeoWarp
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\PersonalHelper.csprojAssemblyReference.cache
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\Views\Settings.xaml.g.cs
+C:\Users\leowa\Desktop\Project\PersonalHelper\PersonalHelper\obj\Debug\netstandard2.1\Views\Settings.xaml.g.cs
