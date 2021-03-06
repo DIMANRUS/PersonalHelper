@@ -2353,11 +2353,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj",
+      "projectUniqueName": "C:\\Users\\dmitr\\source\\repos\\PersonalHelper\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj",
       "projectName": "PersonalHelper.Android",
-      "projectPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj",
+      "projectPath": "C:\\Users\\dmitr\\source\\repos\\PersonalHelper\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj",
       "packagesPath": "C:\\Users\\dmitr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.Android\\obj\\",
+      "outputPath": "C:\\Users\\dmitr\\source\\repos\\PersonalHelper\\PersonalHelper\\PersonalHelper.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2381,8 +2381,8 @@
       "frameworks": {
         "monoandroid10.0": {
           "projectReferences": {
-            "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
-              "projectPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
+            "C:\\Users\\dmitr\\source\\repos\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
+              "projectPath": "C:\\Users\\dmitr\\source\\repos\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
             }
           }
         }
