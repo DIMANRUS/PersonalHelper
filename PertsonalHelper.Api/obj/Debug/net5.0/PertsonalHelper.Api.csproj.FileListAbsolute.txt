@@ -76,3 +76,13 @@ C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debu
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\Xamarin.Forms.Xaml.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\PersonalHelper.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\PersonalHelper.pdb
+C:\Users\dmitr\source\repos\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.csprojAssemblyReference.cache
+C:\Users\dmitr\source\repos\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dmitr\source\repos\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.AssemblyInfoInputs.cache
+C:\Users\dmitr\source\repos\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.AssemblyInfo.cs
+C:\Users\dmitr\source\repos\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.csproj.CoreCompileInputs.cache
+C:\Users\dmitr\source\repos\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\dmitr\source\repos\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\dmitr\source\repos\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.dll
+C:\Users\dmitr\source\repos\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\ref\PertsonalHelper.Api.dll
+C:\Users\dmitr\source\repos\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.pdb
