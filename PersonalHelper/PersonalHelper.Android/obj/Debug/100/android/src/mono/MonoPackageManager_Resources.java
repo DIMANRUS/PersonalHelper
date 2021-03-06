@@ -29,7 +29,6 @@ public class MonoPackageManager_Resources {
 		"Xamarin.AndroidX.Interpolator.dll",
 		"Xamarin.AndroidX.Legacy.Support.Core.UI.dll",
 		"Xamarin.AndroidX.Legacy.Support.Core.Utils.dll",
-		"Xamarin.AndroidX.Legacy.Support.V4.dll",
 		"Xamarin.AndroidX.Lifecycle.Common.dll",
 		"Xamarin.AndroidX.Lifecycle.LiveData.Core.dll",
 		"Xamarin.AndroidX.Lifecycle.LiveData.dll",
@@ -39,7 +38,6 @@ public class MonoPackageManager_Resources {
 		"Xamarin.AndroidX.Loader.dll",
 		"Xamarin.AndroidX.LocalBroadcastManager.dll",
 		"Xamarin.AndroidX.Media.dll",
-		"Xamarin.AndroidX.MultiDex.dll",
 		"Xamarin.AndroidX.Print.dll",
 		"Xamarin.AndroidX.RecyclerView.dll",
 		"Xamarin.AndroidX.SavedState.dll",
@@ -61,5 +59,4 @@ public class MonoPackageManager_Resources {
 	};
 	public static String[] Dependencies = new String[]{
 	};
-	public static String ApiPackageName = "Mono.Android.Platform.ApiLevel_29";
 }

@@ -656,27 +656,21 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\dmitr\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
-=======
-    "C:\\Users\\leowa\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
->>>>>>> 87165f8d0d0078ef39ff3a307cfb18bb3ce86323
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leowa\\Desktop\\Project\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
+      "projectUniqueName": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
       "projectName": "PertsonalHelper.Api",
-      "projectPath": "C:\\Users\\leowa\\Desktop\\Project\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
-      "packagesPath": "C:\\Users\\leowa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leowa\\Desktop\\Project\\PertsonalHelper.Api\\obj\\",
+      "projectPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
+      "packagesPath": "C:\\Users\\dmitr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-<<<<<<< HEAD
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -684,12 +678,6 @@
       "configFilePaths": [
         "C:\\Users\\dmitr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-=======
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
-      "configFilePaths": [
-        "C:\\Users\\leowa\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 87165f8d0d0078ef39ff3a307cfb18bb3ce86323
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -698,14 +686,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\dmitr\\AppData\\Roaming\\Cosmos User Kit\\packages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
-              "projectPath": "C:\\Users\\leowa\\Desktop\\Project\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
+            "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
+              "projectPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
             }
           }
         }
