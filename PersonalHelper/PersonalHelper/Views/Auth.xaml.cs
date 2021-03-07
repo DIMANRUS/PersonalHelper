@@ -54,7 +54,6 @@ namespace PersonalHelper.Views
                 {
                     Preferences.Set("UserName", name.Text);
                     Preferences.Set("UserCity", city.Text);
-
                     await Navigation.PushModalAsync(new MainPage(), true);
                 }
             }
