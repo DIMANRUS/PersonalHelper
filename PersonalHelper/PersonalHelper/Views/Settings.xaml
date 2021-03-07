@@ -18,6 +18,7 @@
                 <Label Text="Настройки"
                        FontSize="40" />
             </StackLayout>
+            <Entry Text="{Binding UserName, Mode=TwoWay}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
