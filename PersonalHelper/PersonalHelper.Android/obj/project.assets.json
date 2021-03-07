@@ -2346,27 +2346,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dmitr\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\leowa\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "P:\\PersonalHelper\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj",
+      "projectUniqueName": "C:\\Users\\leowa\\Source\\Repos\\PersonalHelper\\Test\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj",
       "projectName": "PersonalHelper.Android",
-      "projectPath": "P:\\PersonalHelper\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj",
-      "packagesPath": "C:\\Users\\dmitr\\.nuget\\packages\\",
-      "outputPath": "P:\\PersonalHelper\\PersonalHelper\\PersonalHelper.Android\\obj\\",
+      "projectPath": "C:\\Users\\leowa\\Source\\Repos\\PersonalHelper\\Test\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj",
+      "packagesPath": "C:\\Users\\leowa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leowa\\Source\\Repos\\PersonalHelper\\Test\\PersonalHelper\\PersonalHelper.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\dmitr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\leowa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2375,14 +2372,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\dmitr\\AppData\\Roaming\\Cosmos User Kit\\packages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "monoandroid10.0": {
           "projectReferences": {
-            "P:\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
-              "projectPath": "P:\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
+            "C:\\Users\\leowa\\Source\\Repos\\PersonalHelper\\Test\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
+              "projectPath": "C:\\Users\\leowa\\Source\\Repos\\PersonalHelper\\Test\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
             }
           }
         }
