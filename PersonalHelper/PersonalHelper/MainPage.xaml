@@ -34,10 +34,52 @@
                            Margin="0,5,7,0" />
                     <Image Source="WheatherIconSun.png"
                            HeightRequest="40" />
-                    <Label Text="{Binding Wheather.main.temp, Mode=TwoWay}"
+                    <!--<Label Text="{Binding Wheather.temp, Mode=TwoWay}"
                            FontSize="20"
-                           Margin="0,5,0,0" />
+                           Margin="0,5,0,0" />-->
                 </StackLayout>
+            </StackLayout>
+        </Frame>
+        <Frame Padding="7">
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="NewsBlockIcon.png"
+                           HeightRequest="20" />
+                    <Label Text="Новости"
+                           FontSize="15" />
+                </StackLayout>
+                <CollectionView ItemsSource="{Binding NewsCollection}"
+                                ItemsLayout="HorizontalList"
+                                Margin="10"
+                                HeightRequest="300">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Frame CornerRadius="0" Padding="1">
+                                    <StackLayout>
+                                        <Image Source="{Binding urlToImage}"
+                                               HeightRequest="170" />
+                                        <Label Text="{Binding title}" FontSize="20" MaxLines="2" WidthRequest="170" Margin="15,0,0,0"/>
+                                        <Button Command="{Binding OpenNews}"
+                                                CommandParameter="{Binding url}"
+                                                Text="Читать" 
+                                                BackgroundColor="DarkOrange"
+                                                CornerRadius="10"
+                                                Margin="30,3,30,0"
+                                                FontSize="16"/>
+                                    </StackLayout>
+                                </Frame>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                <Button Command="{Binding OpenNews}"
+                        CommandParameter="https://dimanrus.ru"
+                        Text="Читать"
+                        BackgroundColor="DarkOrange"
+                        CornerRadius="10"
+                        Margin="30,3,30,0"
+                        FontSize="16" />
             </StackLayout>
         </Frame>
     </StackLayout>
