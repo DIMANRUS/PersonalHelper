@@ -1,14 +1,10 @@
-﻿using System.IO;
-using System.Reflection;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using System.Text.Json;
-using System.Linq;
 using Xamarin.Essentials;
 using PersonalHelper.Models;
+using PersonalHelper.Helpers;
 
-namespace PersonalHelper.Views
-{
+namespace PersonalHelper.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Auth : ContentPage
     {
@@ -16,12 +12,7 @@ namespace PersonalHelper.Views
         public Auth()
         {
             InitializeComponent();
-            cities = new RootJsonCities();
-            Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("PersonalHelper.Files.cities.json");
-            using (var reader = new StreamReader(stream))
-            {
-                cities = JsonSerializer.Deserialize<RootJsonCities>(reader.ReadToEnd());
-            }
+            cities = FilesHelper.GetRootJsonCities();
         }
         private void RadioButton_CheckedChanged(object sender, CheckedChangedEventArgs e)
         {
@@ -44,16 +35,14 @@ namespace PersonalHelper.Views
 
         private async void NavigateToMainPage_Click(object sender, System.EventArgs e)
         {
-            if (cities.Cities.FirstOrDefault(x => x.undefined == city.Text.Replace(" ", "")) != null)
+            if (User.VerifyCity(city.Text))
             {
                 if (name.Text.Length == 0)
-                {
                     await DisplayAlert("Ошибка", "Введите имя", "Ок");
-                }
                 else
                 {
-                    Preferences.Set("UserName", name.Text);
-                    Preferences.Set("UserCity", city.Text);
+                    User.SetUserName(name.Text);
+                    User.SetUserCity(city.Text);
                     await Navigation.PushModalAsync(new MainPage(), true);
                 }
             }

@@ -7,7 +7,7 @@ namespace PersonalHelper.ViewModels {
     partial class MainPageVM : ICommand {
         public MainPageVM() {
             OpenSettings = new Command(execute: async () => {
-                await CurrentPage.Navigation.PushAsync(new Settings());
+                await CurrentPage.Navigation.PushModalAsync(new Settings(), true);
             });
         }
         private Page CurrentPage{ get => Application.Current.MainPage; }

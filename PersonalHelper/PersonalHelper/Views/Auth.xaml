@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PersonalHelper.Views.Auth"
              x:Name="Page"
-             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
+             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <Grid>
             <StackLayout>

@@ -31,7 +31,6 @@
                         Value="Bold" />
                 <Setter Property="BackgroundColor"
                         Value="Transparent" />
-
             </Style>
             <Style TargetType="ImageButton">
                 <Setter Property="BackgroundColor"
@@ -44,6 +43,8 @@
                         Value="Bold" />
                 <Setter Property="TextColor"
                         Value="{AppThemeBinding Light=Black, Dark=White}" />
+                <Setter Property="CornerRadius"
+                        Value="16" />
             </Style>
             <Style TargetType="RadioButton">
                 <Setter Property="TextColor"
