@@ -2,9 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PersonalHelper.Views.Auth"
-             x:Name="Page"
              BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
-             NavigationPage.HasNavigationBar="False">
+             xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels">
+    <ContentPage.BindingContext>
+        <ViewModels:AuthVM />
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <Grid>
             <StackLayout>
@@ -34,9 +36,9 @@
                     <StackLayout>
                         <Label Text="Давайте знакомиться"
                                FontSize="20" />
-                        <Entry x:Name="name"
-                            Placeholder="Введите ваше имя"
-                               MaxLength="15" />
+                        <Entry Placeholder="Введите ваше имя"
+                               MaxLength="15"
+                               Text="{Binding UserName, Mode=OneWayToSource}" />
                     </StackLayout>
                 </Frame>
                 <Frame>
@@ -48,11 +50,12 @@
                                          HeightRequest="25"
                                          WidthRequest="25"
                                          Margin="10,0,0,0"
-                                         Clicked="ShowLocationInformation_Clicked" />
+                                         Command="{Binding ShowLocationInformation}" />
                         </StackLayout>
-                        <Entry x:Name="city"
+                        <Entry Text="{Binding UserCity, Mode=TwoWay}"
                                Placeholder="Введите город"
-                               MaxLength="20" />
+                               MaxLength="20"
+                               TextColor="{Binding UserCityStatusChangingTextColor,  Mode=OneWay}" />
                     </StackLayout>
                 </Frame>
             </StackLayout>
@@ -62,7 +65,7 @@
                          HeightRequest="60"
                          WidthRequest="60"
                          Margin="10"
-                         Clicked="NavigateToMainPage_Click" />
+                         Command="{Binding NextPage}" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>
