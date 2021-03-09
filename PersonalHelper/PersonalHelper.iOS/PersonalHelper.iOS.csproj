@@ -217,9 +217,6 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="sqlite-net">
-      <Version>1.6.292</Version>
-    </PackageReference>
     <PackageReference Include="System.Text.Json">
       <Version>5.0.1</Version>
     </PackageReference>

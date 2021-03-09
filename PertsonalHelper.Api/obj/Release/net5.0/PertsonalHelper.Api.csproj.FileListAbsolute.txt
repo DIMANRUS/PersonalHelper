@@ -19,11 +19,6 @@ C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Rele
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\PertsonalHelper.Api.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\ref\PertsonalHelper.Api.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\PertsonalHelper.Api.pdb
-C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\Microsoft.OpenApi.dll
-C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\Newtonsoft.Json.dll
-C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\System.Text.Json.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\Xamarin.Essentials.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\Xamarin.Forms.Core.dll
@@ -31,7 +26,6 @@ C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Rele
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\Xamarin.Forms.Xaml.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\PersonalHelper.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\PersonalHelper.pdb
-C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Release\net5.0\PertsonalHelper.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Release\net5.0\staticwebassets\PertsonalHelper.Api.StaticWebAssets.Manifest.cache
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Release\net5.0\staticwebassets\PertsonalHelper.Api.StaticWebAssets.xml
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Release\net5.0\scopedcss\bundle\PertsonalHelper.Api.styles.css
@@ -41,4 +35,3 @@ C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Rele
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Release\net5.0\ref\PertsonalHelper.Api.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Release\net5.0\PertsonalHelper.Api.pdb
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Release\net5.0\PertsonalHelper.Api.genruntimeconfig.cache
-C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\web.config

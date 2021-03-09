@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PersonalHelper.MainPage"
              BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
-             xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels"
-             NavigationPage.HasNavigationBar="False">
+             xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels">
     <ContentPage.BindingContext>
         <ViewModels:MainPageVM />
     </ContentPage.BindingContext>
@@ -19,13 +18,14 @@
                          HeightRequest="35"
                          Command="{Binding OpenSettings}" />
         </StackLayout>
-        <Frame Padding="7">
+        <Frame Padding="3">
             <StackLayout>
-                <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal"
+                             Margin="9,5,0,0">
                     <Image Source="WheatherBlockIcon.png"
                            HeightRequest="20" />
                     <Label Text="Погода"
-                           FontSize="15" />
+                           FontSize="18" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal"
                              HorizontalOptions="Center">
@@ -34,10 +34,70 @@
                            Margin="0,5,7,0" />
                     <Image Source="WheatherIconSun.png"
                            HeightRequest="40" />
-                    <Label Text="{Binding Wheather.main.temp, Mode=TwoWay}"
+                    <!--<Label Text="{Binding Wheather.temp, Mode=TwoWay}"
                            FontSize="20"
-                           Margin="0,5,0,0" />
+                           Margin="0,5,0,0" />-->
                 </StackLayout>
+            </StackLayout>
+        </Frame>
+        <Frame Padding="3">
+            <StackLayout>
+                <Grid Margin="9,5,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20" />
+                        <ColumnDefinition Width="70" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="NewsBlockIcon.png"
+                           HeightRequest="20" />
+                    <Label Text="Новости"
+                           FontSize="18"
+                           Grid.Column="1" />
+                    <Label Text="Ещё новости >"
+                           FontSize="18"
+                           Grid.Column="2"
+                           HorizontalOptions="End"
+                           Margin="0,0,20,0">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding OpenAllNews}"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Grid>
+                <CollectionView ItemsSource="{Binding NewsCollection}"
+                                ItemsLayout="HorizontalList"
+                                HeightRequest="330"
+                                x:Name="newsView">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Frame CornerRadius="0"
+                                       Padding="1">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding Path=BindingContext.OpenNews, Source={x:Reference Name=newsView}}"
+                                                              CommandParameter="{Binding url}" />
+                                    </Frame.GestureRecognizers>
+                                    <StackLayout>
+                                        <Image Source="{Binding urlToImage}"
+                                               HeightRequest="170" />
+                                        <Label Text="{Binding title}"
+                                               FontSize="20"
+                                               MaxLines="2"
+                                               WidthRequest="170"
+                                               Margin="15,0,0,0" />
+                                        <Rectangle HeightRequest="2"
+                                                   BackgroundColor="DarkOrange"
+                                                   Margin="10,0,10,2" />
+                                        <Label Text="{Binding description}"
+                                               FontSize="16"
+                                               MaxLines="5"
+                                               WidthRequest="170"
+                                               Margin="15,0,0,0" />
+                                    </StackLayout>
+                                </Frame>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
             </StackLayout>
         </Frame>
     </StackLayout>

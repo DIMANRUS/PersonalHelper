@@ -1,8 +1,8 @@
-﻿using Newtonsoft.Json;
-using PersonalHelper.Helpers;
+﻿using PersonalHelper.Helpers;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using System.Text.Json;
 
 namespace PersonalHelper.Models {
     public class Wheather 
@@ -24,7 +24,7 @@ namespace PersonalHelper.Models {
 
             var request = await httpHelper.HttpRequest($"https://api.weatherapi.com/v1/current.json?key=3593f8735e6a4955bc6123619210703&q={city}&aqi=no");
 
-            Current current = JsonConvert.DeserializeObject<Current>(request);
+            Current current = JsonSerializer.Deserialize<Current>(request);
 
             return current;
         }
@@ -39,7 +39,7 @@ namespace PersonalHelper.Models {
 
             var request = await httpHelper.HttpRequest($"https://api.weatherapi.com/v1/forecast.json?key=3593f8735e6a4955bc6123619210703&q={city}&days=10&aqi=no&alerts=no");
 
-            Root root = JsonConvert.DeserializeObject<Root>(request);
+            Root root = JsonSerializer.Deserialize<Root>(request);
 
             return root;
         }
