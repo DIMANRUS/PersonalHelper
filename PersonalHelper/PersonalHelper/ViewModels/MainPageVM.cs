@@ -20,6 +20,9 @@ namespace PersonalHelper.ViewModels {
             OpenNews = new Command<string>(execute: async (string url) => {
                 await Browser.OpenAsync(url, BrowserLaunchMode.SystemPreferred);
             });
+            OpenAllNews = new Command(execute: async () => {
+                await CurrentPage.Navigation.PushModalAsync(new NewsPage());
+            });
         }
         private Page CurrentPage { get => Application.Current.MainPage; }
         public ICommand OpenSettings { private set; get; }

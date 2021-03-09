@@ -19,7 +19,6 @@ C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Rele
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\PertsonalHelper.Api.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\ref\PertsonalHelper.Api.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\PertsonalHelper.Api.pdb
-C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\Newtonsoft.Json.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\System.Text.Json.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\Xamarin.Essentials.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Release\net5.0\Xamarin.Forms.Core.dll

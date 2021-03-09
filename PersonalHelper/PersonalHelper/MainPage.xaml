@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PersonalHelper.MainPage"
              BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
-             xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels"
-             NavigationPage.HasNavigationBar="False">
+             xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels">
     <ContentPage.BindingContext>
         <ViewModels:MainPageVM />
     </ContentPage.BindingContext>
@@ -58,7 +57,11 @@
                            FontSize="18"
                            Grid.Column="2"
                            HorizontalOptions="End"
-                           Margin="0,0,20,0"/>
+                           Margin="0,0,20,0">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding OpenAllNews}"/>
+                        </Label.GestureRecognizers>
+                    </Label>
                 </Grid>
                 <CollectionView ItemsSource="{Binding NewsCollection}"
                                 ItemsLayout="HorizontalList"

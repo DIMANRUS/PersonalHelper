@@ -11,7 +11,7 @@ namespace PersonalHelper.ViewModels {
     class SettingsVm : ICommand, INotifyPropertyChanged {
         #region Commands realization
         public SettingsVm() {
-            BackToMainPage = new Command(execute: async () => { await CurrentPage.Navigation.PopAsync(); });
+            BackToMainPage = new Command(execute: async () => { await CurrentPage.Navigation.PopModalAsync(); });
             Exit = new Command(execute: async()=> {
                 User.ClearUserData();
                 await CurrentPage.Navigation.PushModalAsync(new Auth(), true);
