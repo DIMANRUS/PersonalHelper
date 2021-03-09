@@ -13,5 +13,7 @@ namespace PersonalHelper.Models {
         public static void SetUserTheme(string NewUserTheme) => Preferences.Set("UserTheme", NewUserTheme);
         public static bool VerifyCity(string NameCity) => (FilesHelper.GetRootJsonCities().Cities.FirstOrDefault(x => x.undefined == NameCity.ToLower()) != null) ? true : false;
         public static void ClearUserData() => Preferences.Clear();
+        public static void AddUserNewsKeyword(string keyword) => Preferences.Set("UserNewsKeyword", Preferences.Get("UserNewsKeyword", "") + "/" + keyword);
+        public static string[] GetUserNewsKeyword() => Preferences.Get("UserNewsKeyword", "").Split('/');
     }
 }

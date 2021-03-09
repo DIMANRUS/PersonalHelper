@@ -8,53 +8,132 @@
         <ViewModels:NewsPageVM />
     </ContentPage.BindingContext>
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout Orientation="Horizontal"
-                         Margin="7,5,0,0">
-                <ImageButton Source="next.png"
-                             Rotation="180"
-                             HeightRequest="45"
-                             Command="{Binding BackToMainPage}" />
-                <Label Text="Новости"
-                       FontSize="40" />
-            </StackLayout>
-            <Label Text="Новости в городе" FontSize="30" Margin="15,0,0,0"/>
-            <CollectionView ItemsSource="{Binding NewsCityCollection}"
-                            ItemsLayout="HorizontalList"
-                            HeightRequest="330"
-                            x:Name="newsView"
-                            Margin="10,0,0,0">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Grid>
-                            <Frame CornerRadius="0"
-                                   Padding="1">
-                                <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding Path=BindingContext.OpenNews, Source={x:Reference Name=newsView}}"
-                                                          CommandParameter="{Binding url}" />
-                                </Frame.GestureRecognizers>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal"
+                             Margin="7,5,0,0">
+                    <ImageButton Source="next.png"
+                                 Rotation="180"
+                                 HeightRequest="45"
+                                 Command="{Binding BackToMainPage}" />
+                    <Label Text="Новости"
+                           FontSize="40" />
+                </StackLayout>
+                <Label Text="Новости в городе"
+                       FontSize="30"
+                       Margin="15,0,0,0" />
+                <CollectionView ItemsSource="{Binding NewsCityCollection}"
+                                ItemsLayout="HorizontalList"
+                                HeightRequest="330"
+                                x:Name="newsView"
+                                Margin="10,0,0,0">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Frame CornerRadius="0"
+                                       Padding="1">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding Path=BindingContext.OpenNews, Source={x:Reference Name=newsView}}"
+                                                              CommandParameter="{Binding url}" />
+                                    </Frame.GestureRecognizers>
+                                    <StackLayout>
+                                        <Image Source="{Binding urlToImage}"
+                                               HeightRequest="170" />
+                                        <Label Text="{Binding title}"
+                                               FontSize="20"
+                                               MaxLines="2"
+                                               WidthRequest="170"
+                                               Margin="15,0,0,0" />
+                                        <Rectangle HeightRequest="2"
+                                                   BackgroundColor="DarkOrange"
+                                                   Margin="10,0,10,2" />
+                                        <Label Text="{Binding description}"
+                                               FontSize="16"
+                                               MaxLines="5"
+                                               WidthRequest="170"
+                                               Margin="15,0,0,0" />
+                                    </StackLayout>
+                                </Frame>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                <CollectionView ItemsSource="{Binding NewsCategoriesCollection}"
+                                x:Name="newsCategoryView"
+                                Margin="15,0,0,0">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <SwipeView>
+                                <SwipeView.LeftItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="Удалить"
+                                                   IconImageSource="info.png"
+                                                   BackgroundColor="DarkRed" />
+                                    </SwipeItems>
+                                </SwipeView.LeftItems>
                                 <StackLayout>
-                                    <Image Source="{Binding urlToImage}"
-                                           HeightRequest="170" />
-                                    <Label Text="{Binding title}"
-                                           FontSize="20"
-                                           MaxLines="2"
-                                           WidthRequest="170"
-                                           Margin="15,0,0,0" />
-                                    <Rectangle HeightRequest="2"
-                                               BackgroundColor="DarkOrange"
-                                               Margin="10,0,10,2" />
-                                    <Label Text="{Binding description}"
-                                           FontSize="16"
-                                           MaxLines="5"
-                                           WidthRequest="170"
-                                           Margin="15,0,0,0" />
+                                    <Label Text="{Binding Keyword}"
+                                           FontSize="30" />
+                                    <CollectionView ItemsSource="{Binding ArticlesCollection}"
+                                                    x:Name="newsCollection"
+                                                    ItemsLayout="HorizontalList"
+                                                    Margin="10,0,0,0"
+                                                    HeightRequest="330">
+                                        <CollectionView.ItemTemplate>
+                                            <DataTemplate>
+                                                <Grid>
+                                                    <Frame CornerRadius="0"
+                                                           Padding="1">
+                                                        <Frame.GestureRecognizers>
+                                                            <TapGestureRecognizer Command="{Binding Path=BindingContext.OpenNews, Source={x:Reference Name=newsCategoryView}}"
+                                                                                  CommandParameter="{Binding url}" />
+                                                        </Frame.GestureRecognizers>
+                                                        <StackLayout>
+                                                            <Image Source="{Binding urlToImage}"
+                                                                   HeightRequest="170" />
+                                                            <Label Text="{Binding title}"
+                                                                   FontSize="20"
+                                                                   MaxLines="2"
+                                                                   WidthRequest="170"
+                                                                   Margin="15,0,0,0" />
+                                                            <Rectangle HeightRequest="2"
+                                                                       BackgroundColor="DarkOrange"
+                                                                       Margin="10,0,10,2" />
+                                                            <Label Text="{Binding description}"
+                                                                   FontSize="16"
+                                                                   MaxLines="5"
+                                                                   WidthRequest="170"
+                                                                   Margin="15,0,0,0" />
+                                                        </StackLayout>
+                                                    </Frame>
+                                                </Grid>
+                                            </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
                                 </StackLayout>
-                            </Frame>
-                        </Grid>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </StackLayout>
+                            </SwipeView>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Закрепите ваши любимые новости"
+                               HorizontalTextAlignment="Center"
+                               FontSize="27" />
+                        <Entry Placeholder="Введите ключевое слово для поиска"
+                               FontSize="22"
+                               Margin="15,2,15,0"
+                               HorizontalOptions="Center"
+                               MaxLength="20"
+                               Text="{Binding Keyword, Mode=TwoWay}"
+                               HorizontalTextAlignment="Center"/>
+                        <Button Text="Добавить"
+                                FontSize="16"
+                                TextColor="DarkOrange"
+                                Command="{Binding AddKeyword}" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
