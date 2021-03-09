@@ -19,13 +19,14 @@
                          HeightRequest="35"
                          Command="{Binding OpenSettings}" />
         </StackLayout>
-        <Frame Padding="7">
+        <Frame Padding="3">
             <StackLayout>
-                <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal"
+                             Margin="9,5,0,0">
                     <Image Source="WheatherBlockIcon.png"
                            HeightRequest="20" />
                     <Label Text="Погода"
-                           FontSize="15" />
+                           FontSize="18" />
                 </StackLayout>
                 <StackLayout Orientation="Horizontal"
                              HorizontalOptions="Center">
@@ -40,46 +41,60 @@
                 </StackLayout>
             </StackLayout>
         </Frame>
-        <Frame Padding="7">
+        <Frame Padding="3">
             <StackLayout>
-                <StackLayout Orientation="Horizontal">
+                <Grid Margin="9,5,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20" />
+                        <ColumnDefinition Width="70" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
                     <Image Source="NewsBlockIcon.png"
                            HeightRequest="20" />
                     <Label Text="Новости"
-                           FontSize="15" />
-                </StackLayout>
+                           FontSize="18"
+                           Grid.Column="1" />
+                    <Label Text="Ещё новости >"
+                           FontSize="18"
+                           Grid.Column="2"
+                           HorizontalOptions="End"
+                           Margin="0,0,20,0"/>
+                </Grid>
                 <CollectionView ItemsSource="{Binding NewsCollection}"
                                 ItemsLayout="HorizontalList"
-                                Margin="10"
-                                HeightRequest="300">
+                                HeightRequest="330"
+                                x:Name="newsView">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <Grid>
-                                <Frame CornerRadius="0" Padding="1">
+                                <Frame CornerRadius="0"
+                                       Padding="1">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding Path=BindingContext.OpenNews, Source={x:Reference Name=newsView}}"
+                                                              CommandParameter="{Binding url}" />
+                                    </Frame.GestureRecognizers>
                                     <StackLayout>
                                         <Image Source="{Binding urlToImage}"
                                                HeightRequest="170" />
-                                        <Label Text="{Binding title}" FontSize="20" MaxLines="2" WidthRequest="170" Margin="15,0,0,0"/>
-                                        <Button Command="{Binding OpenNews}"
-                                                CommandParameter="{Binding url}"
-                                                Text="Читать" 
-                                                BackgroundColor="DarkOrange"
-                                                CornerRadius="10"
-                                                Margin="30,3,30,0"
-                                                FontSize="16"/>
+                                        <Label Text="{Binding title}"
+                                               FontSize="20"
+                                               MaxLines="2"
+                                               WidthRequest="170"
+                                               Margin="15,0,0,0" />
+                                        <Rectangle HeightRequest="2"
+                                                   BackgroundColor="DarkOrange"
+                                                   Margin="10,0,10,2" />
+                                        <Label Text="{Binding description}"
+                                               FontSize="16"
+                                               MaxLines="5"
+                                               WidthRequest="170"
+                                               Margin="15,0,0,0" />
                                     </StackLayout>
                                 </Frame>
                             </Grid>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
-                <Button Command="{Binding OpenNews}"
-                        CommandParameter="https://dimanrus.ru"
-                        Text="Читать"
-                        BackgroundColor="DarkOrange"
-                        CornerRadius="10"
-                        Margin="30,3,30,0"
-                        FontSize="16" />
             </StackLayout>
         </Frame>
     </StackLayout>

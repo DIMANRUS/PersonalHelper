@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 using PersonalHelper.Api.Models;
 using System.IO;
 using System.Linq;
@@ -16,21 +15,21 @@ namespace PertsonalHelper.Api.Controllers
         public async Task<IActionResult> Get(string city)
         {
             // сервер получение погоды 
-            string url = $"http://api.openweathermap.org/data/2.5/weather?q={city}&appid=7cfd697d8dcb30e786d31dd24802a29d&units=metric";
+            //string url = $"http://api.openweathermap.org/data/2.5/weather?q={city}&appid=7cfd697d8dcb30e786d31dd24802a29d&units=metric";
 
-            HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(url);
+            //HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(url);
 
-            HttpWebResponse httpWebResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            //HttpWebResponse httpWebResponse = (HttpWebResponse)httpWebRequest.GetResponse();
 
-            string response = "";
+            //string response = "";
 
-            using (StreamReader sr = new StreamReader(httpWebResponse.GetResponseStream())) {
-                response = await sr.ReadToEndAsync();
-            }
+            //using (StreamReader sr = new StreamReader(httpWebResponse.GetResponseStream())) {
+            //    response = await sr.ReadToEndAsync();
+            //}
 
-            RootJsonWheather result = JsonConvert.DeserializeObject<RootJsonWheather>(response);
+            //RootJsonWheather result = JsonConvert.DeserializeObject<RootJsonWheather>(response);
 
-            return Ok(result.weather.First().description + @"/" + result.main.temp);
+            //return Ok(result.weather.First().description + @"/" + result.main.temp);
 
 
             //HttpClient http = new HttpClient();

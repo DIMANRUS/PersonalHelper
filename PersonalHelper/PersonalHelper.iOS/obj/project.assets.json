@@ -11,9 +11,6 @@
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
-      "sqlite-net/1.6.292": {
-        "type": "package"
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -211,8 +208,7 @@
         "dependencies": {
           "System.Text.Json": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012",
-          "sqlite-net": "1.6.292"
+          "Xamarin.Forms": "5.0.0.2012"
         },
         "compile": {
           "bin/placeholder/PersonalHelper.dll": {}
@@ -232,9 +228,6 @@
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
-      "sqlite-net/1.6.292": {
-        "type": "package"
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -432,8 +425,7 @@
         "dependencies": {
           "System.Text.Json": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012",
-          "sqlite-net": "1.6.292"
+          "Xamarin.Forms": "5.0.0.2012"
         },
         "compile": {
           "bin/placeholder/PersonalHelper.dll": {}
@@ -453,9 +445,6 @@
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
-      "sqlite-net/1.6.292": {
-        "type": "package"
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -653,8 +642,7 @@
         "dependencies": {
           "System.Text.Json": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012",
-          "sqlite-net": "1.6.292"
+          "Xamarin.Forms": "5.0.0.2012"
         },
         "compile": {
           "bin/placeholder/PersonalHelper.dll": {}
@@ -674,9 +662,6 @@
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
-      "sqlite-net/1.6.292": {
-        "type": "package"
-      },
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
@@ -874,8 +859,7 @@
         "dependencies": {
           "System.Text.Json": "5.0.1",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012",
-          "sqlite-net": "1.6.292"
+          "Xamarin.Forms": "5.0.0.2012"
         },
         "compile": {
           "bin/placeholder/PersonalHelper.dll": {}
@@ -907,19 +891,6 @@
         "microsoft.bcl.asyncinterfaces.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "sqlite-net/1.6.292": {
-      "sha512": "/yXsrFYeUUYZiNELpicVG5fu0xJ0UdVgyZooqYws68NB9jLI5Ciievd96YOhtPdWY0O4F9l9XeE+446J/vnxiA==",
-      "type": "package",
-      "path": "sqlite-net/1.6.292",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "content/SQLite.cs",
-        "content/SQLiteAsync.cs",
-        "sqlite-net.1.6.292.nupkg.sha512",
-        "sqlite-net.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -1358,8 +1329,7 @@
       "PersonalHelper >= 1.0.0",
       "System.Text.Json >= 5.0.1",
       "Xamarin.Essentials >= 1.6.1",
-      "Xamarin.Forms >= 5.0.0.2012",
-      "sqlite-net >= 1.6.292"
+      "Xamarin.Forms >= 5.0.0.2012"
     ]
   },
   "packageFolders": {
@@ -1370,11 +1340,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.iOS\\PersonalHelper.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.iOS\\PersonalHelper.iOS.csproj",
       "projectName": "PersonalHelper.iOS",
-      "projectPath": "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.iOS\\PersonalHelper.iOS.csproj",
+      "projectPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.iOS\\PersonalHelper.iOS.csproj",
       "packagesPath": "C:\\Users\\dmitr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.iOS\\obj\\",
+      "outputPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1398,8 +1368,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
-              "projectPath": "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
+            "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
+              "projectPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
             }
           }
         }
@@ -1419,10 +1389,6 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[5.0.0.2012, )"
-          },
-          "sqlite-net": {
-            "target": "Package",
-            "version": "[1.6.292, )"
           }
         }
       }
