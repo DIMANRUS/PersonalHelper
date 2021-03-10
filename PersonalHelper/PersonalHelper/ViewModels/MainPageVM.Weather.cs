@@ -1,9 +1,16 @@
 ﻿using PersonalHelper.Models;
+using System.ComponentModel;
+using System.Threading.Tasks;
+using System.Windows.Input;
 
-namespace PersonalHelper.ViewModels 
+namespace PersonalHelper.ViewModels
 {
-    partial class MainPageVM 
+    partial class MainPageVM : ICommand, INotifyPropertyChanged
     {
-        public Wheather Wheather { get; set; }
+        private Wheather wheather { get; set; }
+
+        public ICommand OpenWeatherForOneDay { get; set; }
+
+        public ICommand OpenWeatherForWeek { get; private set; }
     }
 }
