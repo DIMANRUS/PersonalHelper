@@ -7,16 +7,11 @@ C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debu
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\PertsonalHelper.Api.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\ref\PertsonalHelper.Api.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\PertsonalHelper.Api.pdb
-C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\Microsoft.OpenApi.dll
-C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.csprojAssemblyReference.cache
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.AssemblyInfoInputs.cache
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.AssemblyInfo.cs
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.csproj.CoreCompileInputs.cache
-C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\PertsonalHelper.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\staticwebassets\PertsonalHelper.Api.StaticWebAssets.Manifest.cache
 C:\Users\dmitr\Source\Repos\DIMANRUS\PersonalHelper\PertsonalHelper.Api\obj\Debug\net5.0\staticwebassets\PertsonalHelper.Api.StaticWebAssets.xml
