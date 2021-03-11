@@ -1,10 +1,10 @@
-﻿using PersonalHelper.ViewModels;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 namespace PersonalHelper
 {
     public partial class MainPage : ContentPage
     {
-        public MainPage() {
+        public MainPage() 
+        {
             InitializeComponent();
         }
     }

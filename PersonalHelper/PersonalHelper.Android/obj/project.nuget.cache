@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "ruo2nJ3czngkBncZRuj9Ai9JbYblJwygr49yMn63FEQqxLOYOqjwHljOwA/KB+UvRl+w/NHRtcsrD5OcqwN8/Q==",
+=======
+  "dgSpecHash": "aicmE2iCg6IhHrS5tutlDputsftLW3HRlQqC17liuLLaoDKvEXK+dtFwgeK5Z2Fsh3DM90cr8618durl6lj06g==",
+>>>>>>> 3483ab5c48714e0fdbeb77cc99a6fa2a69a152cd
   "success": true,
   "projectFilePath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj",
   "expectedPackageFiles": [

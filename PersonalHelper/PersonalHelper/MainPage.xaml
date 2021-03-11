@@ -33,7 +33,21 @@
                            FontSize="20"
                            Margin="0,5,7,0" />
                     <Image Source="WheatherIconSun.png"
-                           HeightRequest="40" />
+                           HeightRequest="40"
+                           Margin="20, 20, 20, 20">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding OpenWeatherForOneDay}" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <!--<Label Text="Погода на день"
+                           FontSize="15"
+                           Grid.Column="2"
+                           HorizontalOptions="End"
+                           Margin="0,0,10,0">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding OpenWeatherForOneDay}"/>
+                        </Label.GestureRecognizers>
+                    </Label>-->
                     <!--<Label Text="{Binding Wheather.temp, Mode=TwoWay}"
                            FontSize="20"
                            Margin="0,5,0,0" />-->
@@ -51,10 +65,10 @@
                     <Image Source="NewsBlockIcon.png"
                            HeightRequest="20" />
                     <Label Text="Новости"
-                           FontSize="18"
+                           FontSize="16"
                            Grid.Column="1" />
                     <Label Text="Ещё новости >"
-                           FontSize="18"
+                           FontSize="16"
                            Grid.Column="2"
                            HorizontalOptions="End"
                            Margin="0,0,20,0">

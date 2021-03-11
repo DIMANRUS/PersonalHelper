@@ -1,7 +1,6 @@
 ﻿using PersonalHelper.Helpers;
 using System.Threading.Tasks;
 using Xamarin.Essentials;
-using Xamarin.Forms;
 using System.Text.Json;
 
 namespace PersonalHelper.Models {
