@@ -9,7 +9,7 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace PersonalHelper.ViewModels {
-    class NewsPageVM : ICommand, INotifyPropertyChanged {
+    class NewsPageVM : INotifyPropertyChanged {
         private readonly News newsModel = new News();
         public NewsPageVM() {
             BackToMainPage = new Command(execute: async () => { await CurrentPage.Navigation.PopModalAsync(); });
@@ -19,42 +19,48 @@ namespace PersonalHelper.ViewModels {
             });
             Task.Run(async () => {
                 NewsCategoriesCollection = await newsModel.GetNewsCategories();
+                _HeightCategoryCollection = 370 * NewsCategoriesCollection.Count;
+                NotifyPropertyChanged("HeightCategoryCollection");
                 NotifyPropertyChanged("NewsCategoriesCollection");
-            });
-            OpenNews = new Command<string>(execute: async (string url) => {
-                await Browser.OpenAsync(url, BrowserLaunchMode.SystemPreferred);
             });
             AddKeyword = new Command(execute: async () => {
                 if (Keyword.Length != 0) {
                     User.AddUserNewsKeyword(Keyword);
                     NewsCategoriesCollection = await newsModel.GetNewsCategories();
+                    _HeightCategoryCollection = 370 * NewsCategoriesCollection.Count;
+                    NotifyPropertyChanged("HeightCategoryCollection");
                     NotifyPropertyChanged("NewsCategoriesCollection");
                 }
+            });
+            DeleteCategory = new Command<string>(async(string keyword) => {
+                User.DeleteNewsKeyWord(keyword);
+                NewsCategoriesCollection = await newsModel.GetNewsCategories();
+                _HeightCategoryCollection = 370 * NewsCategoriesCollection.Count;
+                NotifyPropertyChanged("HeightCategoryCollection");
+                NotifyPropertyChanged("NewsCategoriesCollection");
             });
         }
         #region Private fields, property
         private Page CurrentPage { get => Application.Current.MainPage; }
+        private int _HeightCategoryCollection = 0;
         #endregion
         #region Public properties
         public ObservableCollection<Article> NewsCityCollection { get; private set; }
         public ObservableCollection<NewsCategory> NewsCategoriesCollection { get; private set; }
         public string Keyword { get; set; }
+        public int HeightCategoryCollection { get => _HeightCategoryCollection; }
+        public NewsVM NewsVM { get; } = new NewsVM();
         #endregion
         #region Commands
         public ICommand BackToMainPage { private set; get; }
-        public ICommand OpenNews { get; private set; }
         public ICommand AddKeyword { get; private set; }
+        public ICommand DeleteCategory { get; private set; }
         #endregion
         #region Interface realization
-        public event EventHandler CanExecuteChanged;
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged([CallerMemberName] string propertyName = "") {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-        public bool CanExecute(object parameter) {
-            throw new NotImplementedException();
-        }
-        public void Execute(object parameter) { }
         #endregion
     }
 }

@@ -5,7 +5,7 @@ using System.Windows.Input;
 
 namespace PersonalHelper.ViewModels
 {
-    partial class MainPageVM : ICommand, INotifyPropertyChanged
+    partial class MainPageVM : INotifyPropertyChanged
     {
         private Wheather wheather { get; set; }
 

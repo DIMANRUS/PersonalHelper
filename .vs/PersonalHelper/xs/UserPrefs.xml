@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{B5F86AA7-EB57-411D-92B0-97CA4B25E337}|Default">
+  <MonoDevelop.Ide.ItemProperties.PersonalHelper.Android PreferredExecutionTarget="Android.android_tv_1080p_q_10_0_-_api_29" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PersonalHelper/PersonalHelper/Models/News.cs">
+    <Files>
+      <File FileName="PersonalHelper/PersonalHelper/Models/User.cs" Line="18" Column="1" />
+      <File FileName="PersonalHelper/PersonalHelper/Models/News.cs" Line="21" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PersonalHelper" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.PersonalHelper.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.77D5B001-1767-4F7E-8118-AB8C7A3EE2B0" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/Models/User.cs" relfile="PersonalHelper/PersonalHelper/Models/User.cs" line="18" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

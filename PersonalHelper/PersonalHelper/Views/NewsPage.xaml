@@ -33,7 +33,7 @@
                                 <Frame CornerRadius="0"
                                        Padding="1">
                                     <Frame.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding Path=BindingContext.OpenNews, Source={x:Reference Name=newsView}}"
+                                        <TapGestureRecognizer Command="{Binding Path=BindingContext.NewsVM.OpenNews, Source={x:Reference Name=newsView}}"
                                                               CommandParameter="{Binding url}" />
                                     </Frame.GestureRecognizers>
                                     <StackLayout>
@@ -60,12 +60,20 @@
                 </CollectionView>
                 <CollectionView ItemsSource="{Binding NewsCategoriesCollection}"
                                 x:Name="newsCategoryView"
-                                Margin="15,0,0,0">
+                                Margin="15,0,0,0"
+                                HeightRequest="{Binding HeightCategoryCollection}">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout>
-                                <Label Text="{Binding Keyword}"
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Label Text="{Binding Keyword}"
                                        FontSize="30" />
+                                    <ImageButton
+                                        HeightRequest="27"
+                                        Source="RemoveIcon.png"
+                                        Command="{Binding Path=BindingContext.DeleteCategory, Source={x:Reference Name=newsCategoryView}}"
+                                                                              CommandParameter="{Binding Keyword}"/>
+                                </StackLayout>
                                 <CollectionView ItemsSource="{Binding ArticlesCollection}"
                                                 x:Name="newsCollection"
                                                 ItemsLayout="HorizontalList"
@@ -77,7 +85,7 @@
                                                 <Frame CornerRadius="0"
                                                        Padding="1">
                                                     <Frame.GestureRecognizers>
-                                                        <TapGestureRecognizer Command="{Binding Path=BindingContext.OpenNews, Source={x:Reference Name=newsCategoryView}}"
+                                                        <TapGestureRecognizer Command="{Binding Path=BindingContext.NewsVM.OpenNews, Source={x:Reference Name=newsCategoryView}}"
                                                                               CommandParameter="{Binding url}" />
                                                     </Frame.GestureRecognizers>
                                                     <StackLayout>

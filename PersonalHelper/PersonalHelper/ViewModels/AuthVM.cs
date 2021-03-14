@@ -6,7 +6,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace PersonalHelper.ViewModels {
-    class AuthVM : ICommand, INotifyPropertyChanged {
+    class AuthVM : INotifyPropertyChanged {
         public AuthVM() {
             NextPage = new Command(execute: async () => {
                 if (UserName.Length != 0 && userCityStatusChangingTextColor == Color.Green) {
@@ -44,14 +44,7 @@ namespace PersonalHelper.ViewModels {
         public Command ShowLocationInformation { get; private set; }
         #endregion
         #region Interface realization
-        public event EventHandler CanExecuteChanged;
         public event PropertyChangedEventHandler PropertyChanged;
-        public bool CanExecute(object parameter) {
-            throw new NotImplementedException();
-        }
-        public void Execute(object parameter) {
-            throw new NotImplementedException();
-        }
         private void NotifyPropertyChanged([CallerMemberName] string propertyName = "") {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }

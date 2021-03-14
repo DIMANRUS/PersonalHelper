@@ -15,5 +15,6 @@ namespace PersonalHelper.Models {
         public static void ClearUserData() => Preferences.Clear();
         public static void AddUserNewsKeyword(string keyword) => Preferences.Set("UserNewsKeyword", Preferences.Get("UserNewsKeyword", "") + "/" + keyword);
         public static string[] GetUserNewsKeyword() => Preferences.Get("UserNewsKeyword", "").Split('/');
+        public static void DeleteNewsKeyWord(string keyword) => Preferences.Set("UserNewsKeyword", Preferences.Get("UserNewsKeyword", "").Replace($"{keyword}",""));
     }
 }

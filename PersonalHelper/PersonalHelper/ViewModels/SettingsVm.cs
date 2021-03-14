@@ -8,7 +8,7 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace PersonalHelper.ViewModels {
-    class SettingsVm : ICommand, INotifyPropertyChanged {
+    class SettingsVm : INotifyPropertyChanged {
         #region Commands realization
         public SettingsVm() {
             BackToMainPage = new Command(execute: async () => { await CurrentPage.Navigation.PopModalAsync(); });
@@ -44,12 +44,7 @@ namespace PersonalHelper.ViewModels {
         public ICommand Exit { private set; get; }
         #endregion
         #region ICommand realization
-        public event EventHandler CanExecuteChanged;
         public event PropertyChangedEventHandler PropertyChanged;
-        public bool CanExecute(object parameter) {
-            throw new NotImplementedException();
-        }
-        public void Execute(object parameter) { }
         private void NotifyPropertyChanged([CallerMemberName] string propertyName = "") {
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
