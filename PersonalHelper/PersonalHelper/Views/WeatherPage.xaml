@@ -3,22 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PersonalHelper.Views.WeatherPage"
              BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
-             xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels">
+             xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels"
+             Title="Погода">
     <ContentPage.BindingContext>
         <ViewModels:MainPageVM />
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <StackLayout Orientation="Horizontal"
-                             Margin="7,5,0,0">
-                    <ImageButton Source="next.png"
-                                 Rotation="180"
-                                 HeightRequest="45"
-                                 Command="{Binding BackToMainPage}" />
-                    <Label Text="Погода"
-                           FontSize="40" />
-                </StackLayout>
                 <Label Text="Погода на текущий день"
                        HorizontalOptions="Center"
                        FontSize="20"

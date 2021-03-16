@@ -12,7 +12,6 @@ namespace PersonalHelper.ViewModels {
     class NewsPageVM : INotifyPropertyChanged {
         private readonly News newsModel = new News();
         public NewsPageVM() {
-            BackToMainPage = new Command(execute: async () => { await CurrentPage.Navigation.PopModalAsync(); });
             Task.Run(async () => {
                 NewsCityCollection = await newsModel.GetAllNewsForKeyword(User.GetUserCity());
                 NotifyPropertyChanged("NewsCityCollection");
@@ -52,7 +51,6 @@ namespace PersonalHelper.ViewModels {
         public NewsVM NewsVM { get; } = new NewsVM();
         #endregion
         #region Commands
-        public ICommand BackToMainPage { private set; get; }
         public ICommand AddKeyword { get; private set; }
         public ICommand DeleteCategory { get; private set; }
         #endregion

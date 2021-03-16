@@ -12,7 +12,7 @@ namespace PersonalHelper.ViewModels {
                 if (UserName.Length != 0 && userCityStatusChangingTextColor == Color.Green) {
                     User.SetUserCity(userCity);
                     User.SetUserName(UserName);
-                    await CurrentApplication.MainPage.Navigation.PushModalAsync(new MainPage());
+                    await CurrentApplication.MainPage.Navigation.PushAsync(new MainPage());
                 } else
                     await CurrentApplication.MainPage.DisplayAlert("Ошибка", "Проверьте правильность данных", "Закрыть");
             });

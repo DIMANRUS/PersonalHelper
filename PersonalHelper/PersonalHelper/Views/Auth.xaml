@@ -3,31 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PersonalHelper.Views.Auth"
              BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
-             xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels">
+             xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels"
+             Title="Добро пожаловать">
     <ContentPage.BindingContext>
         <ViewModels:AuthVM />
     </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Далее"
+                     Priority="0"
+                     Order="Primary"
+                     Command="{Binding NextPage}"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <Grid>
             <StackLayout>
-                <Label Text="Добро пожаловать!"
-                       TextColor="{AppThemeBinding Light=Black, Dark=White}"
-                       FontAttributes="Bold"
-                       FontSize="40"
-                       HorizontalTextAlignment="Center"
-                       Margin="20,10,20,15" />
                 <Frame>
                     <StackLayout>
                         <Label Text="Какой цвет предпочитаете?"
                                FontSize="20" />
-                        <RadioButton Content="Системный"
-                                     GroupName="Theme"
-                                     IsChecked="True"
-                                     CheckedChanged="RadioButton_CheckedChanged" />
-                        <RadioButton Content="Светлый"
-                                     GroupName="Theme"
-                                     CheckedChanged="RadioButton_CheckedChanged" />
                         <RadioButton Content="Тёмный"
+                                     GroupName="Theme"
+                                     CheckedChanged="RadioButton_CheckedChanged"
+                                     IsChecked="True"/>
+                        <RadioButton Content="Светлый"
                                      GroupName="Theme"
                                      CheckedChanged="RadioButton_CheckedChanged" />
                     </StackLayout>
@@ -59,13 +57,6 @@
                     </StackLayout>
                 </Frame>
             </StackLayout>
-            <ImageButton Source="next.png"
-                         HorizontalOptions="End"
-                         VerticalOptions="End"
-                         HeightRequest="60"
-                         WidthRequest="60"
-                         Margin="10"
-                         Command="{Binding NextPage}" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

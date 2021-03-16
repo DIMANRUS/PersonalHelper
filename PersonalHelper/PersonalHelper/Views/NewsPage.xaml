@@ -3,22 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PersonalHelper.Views.NewsPage"
              BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
-             xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels">
+             xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels"
+             Title="Новости">
     <ContentPage.BindingContext>
         <ViewModels:NewsPageVM />
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <StackLayout Orientation="Horizontal"
-                             Margin="7,5,0,0">
-                    <ImageButton Source="next.png"
-                                 Rotation="180"
-                                 HeightRequest="45"
-                                 Command="{Binding BackToMainPage}" />
-                    <Label Text="Новости"
-                           FontSize="40" />
-                </StackLayout>
                 <Label Text="Новости в городе"
                        FontSize="30"
                        Margin="15,0,0,0" />
@@ -49,7 +41,7 @@
                                                    Margin="10,0,10,2" />
                                         <Label Text="{Binding description}"
                                                FontSize="16"
-                                               MaxLines="5"
+                                               MaxLines="4"
                                                WidthRequest="170"
                                                Margin="15,0,0,0" />
                                     </StackLayout>
@@ -61,7 +53,8 @@
                 <CollectionView ItemsSource="{Binding NewsCategoriesCollection}"
                                 x:Name="newsCategoryView"
                                 Margin="15,0,0,0"
-                                HeightRequest="{Binding HeightCategoryCollection}">
+                                HeightRequest="{Binding HeightCategoryCollection}"
+                                VerticalScrollBarVisibility="Never">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout>
@@ -101,7 +94,7 @@
                                                                    Margin="10,0,10,2" />
                                                         <Label Text="{Binding description}"
                                                                FontSize="16"
-                                                               MaxLines="5"
+                                                               MaxLines="4"
                                                                WidthRequest="170"
                                                                Margin="15,0,0,0" />
                                                     </StackLayout>
