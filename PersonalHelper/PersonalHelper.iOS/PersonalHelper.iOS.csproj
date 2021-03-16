@@ -207,14 +207,30 @@
     <ImageAsset Include="Assets.xcassets\next.imageset\next-8.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon.png" />
-    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon-2.png" />
-    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon.png" />
-    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon-2.png" />
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
