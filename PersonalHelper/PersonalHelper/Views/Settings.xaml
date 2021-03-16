@@ -4,40 +4,31 @@
              x:Class="PersonalHelper.Views.Settings"
              xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels"
              BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
-             NavigationPage.HasNavigationBar="False">
-    <ContentPage.BindingContext>
-        <ViewModels:SettingsVm />
-    </ContentPage.BindingContext>
-    <ContentPage.Content>
-        <Grid>
-            <StackLayout VerticalOptions="Start">
-                <StackLayout Orientation="Horizontal"
-                             Margin="7,5,0,0">
-                    <ImageButton Source="next.png"
-                                 Rotation="180"
-                                 HeightRequest="45"
-                                 Command="{Binding BackToMainPage}" />
-                    <Label Text="Настройки"
-                           FontSize="40" />
-                </StackLayout>
-                <Label Text="Данные изменяются сразу. Изменения вступят в силу при след. запуске"
+             Title="Настройки">
+<ContentPage.BindingContext>
+    <ViewModels:SettingsVm />
+</ContentPage.BindingContext>
+<ContentPage.Content>
+    <Grid>
+        <StackLayout VerticalOptions="Start">
+            <Label Text="Данные изменяются сразу. Изменения вступят в силу при след. запуске"
                        Margin="5"
                        HorizontalTextAlignment="Center" 
                        FontSize="18"/>
-                <Entry Text="{Binding UserName, Mode=TwoWay}"
+            <Entry Text="{Binding UserName, Mode=TwoWay}"
                        Margin="15,7,15,0"
                        FontSize="25" />
-                <Entry Text="{Binding UserCity, Mode=TwoWay}"
+            <Entry Text="{Binding UserCity, Mode=TwoWay}"
                        Margin="15,7,15,0"
                        FontSize="25"
                        TextColor="{Binding UserCityStatusChangingTextColor,  Mode=OneWay}" />
-            </StackLayout>
-            <Button VerticalOptions="End"
+        </StackLayout>
+        <Button VerticalOptions="End"
                     Text="Выйти"
                     TextColor="White"
                     BackgroundColor="Red"
                     Margin="10,0,7,10"
                     Command="{Binding Exit}"/>
-        </Grid>
-    </ContentPage.Content>
+    </Grid>
+</ContentPage.Content>
 </ContentPage>

@@ -3,21 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PersonalHelper.MainPage"
              BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
-             xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels">
+             xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels"
+             Title="{Binding HelloUserName}"
+             NavigationPage.HasBackButton="False">
     <ContentPage.BindingContext>
         <ViewModels:MainPageVM />
     </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Настройки"
+                 Order="Primary"
+                 Priority="0"
+                     Command="{Binding OpenSettings}"/>
+    </ContentPage.ToolbarItems>
     <StackLayout>
-        <StackLayout Orientation="Horizontal"
-                     HorizontalOptions="Center">
-            <Label Text="{Binding HelloUserName}"
-                   HorizontalOptions="Center"
-                   Margin="10"
-                   FontSize="30" />
-            <ImageButton Source="SettingsIcon.png"
-                         HeightRequest="35"
-                         Command="{Binding OpenSettings}" />
-        </StackLayout>
         <Frame Padding="3">
             <StackLayout>
                 <StackLayout Orientation="Horizontal"
@@ -103,7 +101,7 @@
                                                    Margin="10,0,10,2" />
                                         <Label Text="{Binding description}"
                                                FontSize="16"
-                                               MaxLines="5"
+                                               MaxLines="4"
                                                WidthRequest="170"
                                                Margin="15,0,0,0" />
                                     </StackLayout>

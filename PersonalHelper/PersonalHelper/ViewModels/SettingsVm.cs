@@ -11,7 +11,6 @@ namespace PersonalHelper.ViewModels {
     class SettingsVm : INotifyPropertyChanged {
         #region Commands realization
         public SettingsVm() {
-            BackToMainPage = new Command(execute: async () => { await CurrentPage.Navigation.PopModalAsync(); });
             Exit = new Command(execute: async()=> {
                 User.ClearUserData();
                 await CurrentPage.Navigation.PushModalAsync(new Auth(), true);
@@ -40,7 +39,6 @@ namespace PersonalHelper.ViewModels {
         public Color UserCityStatusChangingTextColor { get => userCityStatusChangingTextColor; }
         #endregion
         #region Commands
-        public ICommand BackToMainPage { private set; get; }
         public ICommand Exit { private set; get; }
         #endregion
         #region ICommand realization

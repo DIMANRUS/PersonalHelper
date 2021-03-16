@@ -14,9 +14,6 @@ namespace PersonalHelper.Views {
         {
             switch (((RadioButton)sender).Content)
             {
-                case "Системный":
-                    Application.Current.UserAppTheme = OSAppTheme.Unspecified;
-                    break;
                 case "Тёмный":
                     Preferences.Set("UserTheme", "Dark");
                     Application.Current.UserAppTheme = OSAppTheme.Dark;

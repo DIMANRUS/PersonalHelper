@@ -207,6 +207,14 @@
     <ImageAsset Include="Assets.xcassets\next.imageset\next-8.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon.png" />
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon-1.png" />
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon-2.png" />
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon.png" />
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon-1.png" />
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon-2.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -236,6 +244,8 @@
     <Folder Include="Assets.xcassets\SettingsIcon.imageset\" />
     <Folder Include="Assets.xcassets\WheatherBlockIcon.imageset\" />
     <Folder Include="Assets.xcassets\WheatherIconSun.imageset\" />
+    <Folder Include="Assets.xcassets\NewsBlockIcon.imageset\" />
+    <Folder Include="Assets.xcassets\RemoveIcon.imageset\" />
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>

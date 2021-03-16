@@ -14,18 +14,18 @@ namespace PersonalHelper.ViewModels {
         public MainPageVM() 
         {
             OpenSettings = new Command(execute: async () => {
-                await CurrentPage.Navigation.PushModalAsync(new Settings(), true);
+                await CurrentPage.Navigation.PushAsync(new Settings(), true);
             });
             Task.Run(async () => { 
                 NewsCollection = await newsModel.GetTopNews();
                 NotifyPropertyChanged("NewsCollection");
             });
             OpenAllNews = new Command(execute: async () => {
-                await CurrentPage.Navigation.PushModalAsync(new NewsPage());
+                await CurrentPage.Navigation.PushAsync(new NewsPage());
             }); 
             OpenWeatherForOneDay = new Command(execute: async () =>
             {
-                await CurrentPage.Navigation.PushModalAsync(new WeatherPage());
+                await CurrentPage.Navigation.PushAsync(new WeatherPage());
             });
         }
         private Page CurrentPage { get => Application.Current.MainPage; }
