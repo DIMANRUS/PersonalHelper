@@ -1,20 +1,27 @@
-﻿<Properties StartupConfiguration="{B5F86AA7-EB57-411D-92B0-97CA4B25E337}|Default">
-  <MonoDevelop.Ide.ItemProperties.PersonalHelper.Android PreferredExecutionTarget="Android.android_tv_1080p_q_10_0_-_api_29" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PersonalHelper/PersonalHelper/Models/News.cs">
-    <Files>
-      <File FileName="PersonalHelper/PersonalHelper/Models/User.cs" Line="18" Column="1" />
-      <File FileName="PersonalHelper/PersonalHelper/Models/News.cs" Line="21" Column="1" />
-    </Files>
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{9073C8FB-EE88-4752-B681-FBB650290AB8}|Default">
+  <MonoDevelop.Ide.ItemProperties.PersonalHelper.Android PreferredExecutionTarget="Android.pixel_3a_r_11_0_-_api_30" />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="PersonalHelper" expanded="True" />
+          <Node name="PersonalHelper" expanded="True">
+            <Node name="PersonalHelper" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="ViewModels" expanded="True">
+                <Node name="AuthVM.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Auth.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <MonoDevelop.Ide.ItemProperties.PersonalHelper.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.77D5B001-1767-4F7E-8118-AB8C7A3EE2B0" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
