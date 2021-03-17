@@ -231,6 +231,10 @@
     <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon-2.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon.png" />
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon-1.png" />
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon-2.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -262,6 +266,8 @@
     <Folder Include="Assets.xcassets\WheatherIconSun.imageset\" />
     <Folder Include="Assets.xcassets\NewsBlockIcon.imageset\" />
     <Folder Include="Assets.xcassets\RemoveIcon.imageset\" />
+    <Folder Include="Assets.xcassets\NoNewsIco.imageset\" />
+    <Folder Include="Assets.xcassets\NoNewsIcon.imageset\" />
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>

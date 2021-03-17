@@ -14,15 +14,18 @@
                 <Label Text="Новости в городе"
                        FontSize="30"
                        Margin="15,0,0,0" />
-                <Image HeightRequest="100"
+                <Image WidthRequest="90"
+                       HeightRequest="90"
                        HorizontalOptions="Center"
-                       />
-                                <Label Text="Нету новостей"
+                       Source="NoNewsIcon.png"
+                       Aspect="AspectFill"
+                       IsVisible="{Binding IsVisibleNoNewsItem}"/>
+                <Label Text="Нету новостей"
                        HorizontalOptions="Center"
-                       />
+                       IsVisible="{Binding IsVisibleNoNewsItem}"/>
                 <CollectionView ItemsSource="{Binding NewsCityCollection}"
                                 ItemsLayout="HorizontalList"
-                                HeightRequest="330"
+                                HeightRequest="{Binding HeightNewsCityCollection}"
                                 x:Name="newsView"
                                 Margin="10,0,0,0">
                     <CollectionView.ItemTemplate>

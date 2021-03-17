@@ -14,6 +14,13 @@ namespace PersonalHelper.ViewModels {
         public NewsPageVM() {
             Task.Run(async () => {
                 NewsCityCollection = await newsModel.GetAllNewsForKeyword(User.GetUserCity());
+                if (NewsCityCollection.Count != 0)
+                {
+                    _IsVisibleNoNewsIcon = "false";
+                    _HeightNewsCityCollection = 330;
+                    NotifyPropertyChanged("IsVisibleNoNewsItem");
+                    NotifyPropertyChanged("HeightNewsCityCollection");
+                }
                 NotifyPropertyChanged("NewsCityCollection");
             });
             Task.Run(async () => {
@@ -42,6 +49,8 @@ namespace PersonalHelper.ViewModels {
         #region Private fields, property
         private Page CurrentPage { get => Application.Current.MainPage; }
         private int _HeightCategoryCollection = 0;
+        private int _HeightNewsCityCollection = 0;
+        private string _IsVisibleNoNewsIcon = "true";
         #endregion
         #region Public properties
         public ObservableCollection<Article> NewsCityCollection { get; private set; }
@@ -49,6 +58,8 @@ namespace PersonalHelper.ViewModels {
         public string Keyword { get; set; }
         public int HeightCategoryCollection { get => _HeightCategoryCollection; }
         public NewsVM NewsVM { get; } = new NewsVM();
+        public string IsVisibleNoNewsItem { get => _IsVisibleNoNewsIcon; }
+        public int HeightNewsCityCollection { get => _HeightNewsCityCollection; }
         #endregion
         #region Commands
         public ICommand AddKeyword { get; private set; }
