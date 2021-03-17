@@ -9,7 +9,7 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace PersonalHelper.ViewModels {
-    class NewsPageVM : INotifyPropertyChanged {
+    class NewsPageVM : NewsVM, INotifyPropertyChanged {
         private readonly News newsModel = new News();
         public NewsPageVM() {
             Task.Run(async () => {
@@ -57,7 +57,6 @@ namespace PersonalHelper.ViewModels {
         public ObservableCollection<NewsCategory> NewsCategoriesCollection { get; private set; }
         public string Keyword { get; set; }
         public int HeightCategoryCollection { get => _HeightCategoryCollection; }
-        public NewsVM NewsVM { get; } = new NewsVM();
         public string IsVisibleNoNewsItem { get => _IsVisibleNoNewsIcon; }
         public int HeightNewsCityCollection { get => _HeightNewsCityCollection; }
         #endregion
