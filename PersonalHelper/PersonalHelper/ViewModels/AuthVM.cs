@@ -9,9 +9,9 @@ namespace PersonalHelper.ViewModels {
     class AuthVM : INotifyPropertyChanged {
         public AuthVM() {
             NextPage = new Command(execute: async () => {
-                if (UserName.Length != 0 && userCityStatusChangingTextColor == Color.Green) {
+                if (userName != "" && userCityStatusChangingTextColor == Color.Green) {
                     User.SetUserCity(userCity);
-                    User.SetUserName(UserName);
+                    User.SetUserName(userName);
                     await CurrentApplication.MainPage.Navigation.PushAsync(new MainPage());
                 } else
                     await CurrentApplication.MainPage.DisplayAlert("Ошибка", "Проверьте правильность данных", "Закрыть");
@@ -21,10 +21,11 @@ namespace PersonalHelper.ViewModels {
         #region Private fiels
         private Application CurrentApplication { get => Application.Current; }
         private string userCity = "";
-        private Color userCityStatusChangingTextColor = Color.Green;
+        private Color userCityStatusChangingTextColor = Color.Red;
+        private string userName = "";
         #endregion
         #region Properties
-        public string UserName { get; set; }
+        public string UserName { get => userName; set => userName = value; }
         public string UserCity {
             get => userCity; set {
                 userCity = value;

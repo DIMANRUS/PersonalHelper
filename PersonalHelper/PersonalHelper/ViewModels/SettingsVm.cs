@@ -13,7 +13,7 @@ namespace PersonalHelper.ViewModels {
         public SettingsVm() {
             Exit = new Command(execute: async()=> {
                 User.ClearUserData();
-                await CurrentPage.Navigation.PushModalAsync(new Auth(), true);
+                await CurrentPage.Navigation.PushAsync(new Auth(), true);
             });
         }
         #endregion
