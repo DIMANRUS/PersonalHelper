@@ -15,7 +15,7 @@
                  Priority="0"
                      Command="{Binding OpenSettings}"/>
     </ContentPage.ToolbarItems>
-    <StackLayout>
+    <StackLayout Padding="0,10,0,0" >
         <Frame Padding="3">
             <StackLayout>
                 <StackLayout Orientation="Horizontal"
