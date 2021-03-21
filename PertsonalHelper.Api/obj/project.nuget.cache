@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "xBhhFtTJ5jHolHu7MzuaDCO9/Qyl4rd7SvUzsku6JArGKQftQtxu3CP/1zngKX2eZa20ZtnxC+8t5pI8u8OBxQ==",
+  "dgSpecHash": "rY1jmf5m/z38vz3wCQh4dxpM6JWsIjiJOx8r+MAI228JhL1TDU3tSTEcCs/V1io9lsz2H0cKvT0uyKXTLUMynw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
+  "projectFilePath": "C:\\Users\\leowa\\Desktop\\PersonHelp\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\dmitr\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\dmitr\\.nuget\\packages\\sqlite-net\\1.6.292\\sqlite-net.1.6.292.nupkg.sha512",
-    "C:\\Users\\dmitr\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\dmitr\\.nuget\\packages\\system.text.json\\5.0.1\\system.text.json.5.0.1.nupkg.sha512",
-    "C:\\Users\\dmitr\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
-    "C:\\Users\\dmitr\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Users\\leowa\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\leowa\\.nuget\\packages\\sqlite-net\\1.6.292\\sqlite-net.1.6.292.nupkg.sha512",
+    "C:\\Users\\leowa\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\leowa\\.nuget\\packages\\system.text.json\\5.0.1\\system.text.json.5.0.1.nupkg.sha512",
+    "C:\\Users\\leowa\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\leowa\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],
   "logs": []
 }
