@@ -112,5 +112,21 @@
                 </CollectionView>
             </StackLayout>
         </Frame>
+        <Frame Padding="3">
+            <StackLayout>
+                <Grid Margin="9,5,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20" />
+                        <ColumnDefinition Width="70" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="TaskBlockIcon.png"
+                           HeightRequest="20" />
+                    <Label Text="Задачи"
+                           FontSize="16"
+                           Grid.Column="1" />
+                </Grid>
+            </StackLayout>
+        </Frame>
     </StackLayout>
 </ContentPage>

@@ -231,10 +231,18 @@
     <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon-2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon.png" />
-    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon-2.png" />
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -245,6 +253,9 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.7.335</Version>
+    </PackageReference>
     <PackageReference Include="System.Text.Json">
       <Version>5.0.1</Version>
     </PackageReference>
@@ -260,14 +271,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets.xcassets\info.imageset\" />
+    <Folder Include="Assets.xcassets\NewsBlockIcon.imageset\" />
     <Folder Include="Assets.xcassets\next.imageset\" />
+    <Folder Include="Assets.xcassets\NoNewsIco.imageset\" />
+    <Folder Include="Assets.xcassets\RemoveIcon.imageset\" />
     <Folder Include="Assets.xcassets\SettingsIcon.imageset\" />
     <Folder Include="Assets.xcassets\WheatherBlockIcon.imageset\" />
     <Folder Include="Assets.xcassets\WheatherIconSun.imageset\" />
-    <Folder Include="Assets.xcassets\NewsBlockIcon.imageset\" />
-    <Folder Include="Assets.xcassets\RemoveIcon.imageset\" />
-    <Folder Include="Assets.xcassets\NoNewsIco.imageset\" />
-    <Folder Include="Assets.xcassets\NoNewsIcon.imageset\" />
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>

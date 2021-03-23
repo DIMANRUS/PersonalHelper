@@ -36,14 +36,15 @@
     <AndroidEnableProfiledAot>true</AndroidEnableProfiledAot>
     <BundleAssemblies>false</BundleAssemblies>
     <LangVersion>latest</LangVersion>
-<AndroidEnableMultiDex>true</AndroidEnableMultiDex>
-<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
-<EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
-<AndroidKeyStore>True</AndroidKeyStore>
-<AndroidSigningKeyStore>/Users/dimanrus/Library/Developer/Xamarin/Keystore/DIMANRUS - 2/DIMANRUS.keystore</AndroidSigningKeyStore>
-<AndroidSigningStorePass>DimanrusDeveloper2021!@</AndroidSigningStorePass>
-<AndroidSigningKeyAlias>DIMANRUS</AndroidSigningKeyAlias>
-<AndroidSigningKeyPass>DimanrusDeveloper2021!@</AndroidSigningKeyPass>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <EmbedAssembliesIntoApk>false</EmbedAssembliesIntoApk>
+    <AndroidKeyStore>false</AndroidKeyStore>
+    <AndroidSigningKeyStore>/Users/dimanrus/Library/Developer/Xamarin/Keystore/DIMANRUS - 2/DIMANRUS.keystore</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>DimanrusDeveloper2021!@</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>DIMANRUS</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>DimanrusDeveloper2021!@</AndroidSigningKeyPass>
+    <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -66,6 +67,9 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.7.335</Version>
+    </PackageReference>
     <PackageReference Include="System.Text.Json">
       <Version>5.0.1</Version>
     </PackageReference>
@@ -96,12 +100,16 @@
       </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\RemoveIcon.png">
-      <SubType></SubType>
-      <Generator></Generator>
+      <SubType>
+      </SubType>
+      <Generator>
+      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\NoNewsIcon.png">
-      <SubType></SubType>
-      <Generator></Generator>
+      <SubType>
+      </SubType>
+      <Generator>
+      </Generator>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
@@ -128,10 +136,13 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\NewsBlockIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\TaskBlockIcon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties TriggeredFromHotReload="False" XamarinHotReloadDebuggerTimeoutExceptionPersonalHelperAndroidHideInfoBar="True" />
+      <UserProperties XamarinHotReloadDebuggerTimeoutExceptionPersonalHelperAndroidHideInfoBar="True" TriggeredFromHotReload="False" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

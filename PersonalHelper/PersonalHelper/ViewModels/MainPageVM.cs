@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using PersonalHelper.Models;
+using System.Collections.Generic;
 
 namespace PersonalHelper.ViewModels {
     partial class MainPageVM : INotifyPropertyChanged 
@@ -15,6 +16,10 @@ namespace PersonalHelper.ViewModels {
         {
             OpenSettings = new Command(execute: async () => {
                 await CurrentPage.Navigation.PushAsync(new Settings(), true);
+                //var todoItem = new TodoItem() {ItemName="GoodBye", DateRemember = DateTime.Now };
+                //TodoItemDatabase database = await TodoItemDatabase.Instance;
+                //await database.SaveItemAsync(todoItem);
+                //List<TodoItem> items = await database.GetItemsAsync();
             });
             Task.Run(async () => { 
                 NewsCollection = await newsModel.GetTopNews();
