@@ -1678,11 +1678,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.iOS\\PersonalHelper.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.iOS\\PersonalHelper.iOS.csproj",
       "projectName": "PersonalHelper.iOS",
-      "projectPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.iOS\\PersonalHelper.iOS.csproj",
+      "projectPath": "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.iOS\\PersonalHelper.iOS.csproj",
       "packagesPath": "C:\\Users\\dmitr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.iOS\\obj\\",
+      "outputPath": "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1706,8 +1706,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
-              "projectPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
+            "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
+              "projectPath": "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj": {}
+    "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
+    "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
+        "projectUniqueName": "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
         "projectName": "PersonalHelper",
-        "projectPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
+        "projectPath": "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
         "packagesPath": "C:\\Users\\dmitr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\obj\\",
+        "outputPath": "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj": {
+    "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
+        "projectUniqueName": "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
         "projectName": "PertsonalHelper.Api",
-        "projectPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
+        "projectPath": "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
         "packagesPath": "C:\\Users\\dmitr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\obj\\",
+        "outputPath": "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PertsonalHelper.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -114,8 +114,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
-                "projectPath": "C:\\Users\\dmitr\\Source\\Repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
+              "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
+                "projectPath": "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
               }
             }
           }

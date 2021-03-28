@@ -77,7 +77,7 @@
                 </Grid>
                 <CollectionView ItemsSource="{Binding NewsCollection}"
                                 ItemsLayout="HorizontalList"
-                                HeightRequest="330"
+                                HeightRequest="350"
                                 x:Name="newsView">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
@@ -125,7 +125,26 @@
                     <Label Text="Задачи"
                            FontSize="16"
                            Grid.Column="1" />
+                    <Label Text="Все задачи >"
+                           FontSize="16"
+                           Grid.Column="2"
+                           HorizontalOptions="End"
+                           Margin="0,0,20,0">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding OpenAllToDo}" />
+                        </Label.GestureRecognizers>
+                    </Label>
                 </Grid>
+                <CollectionView ItemsSource="{Binding TodoItemsToday}"
+                                HeightRequest="300"
+                                ItemsLayout="VerticalList"
+                                x:Name="todoView">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Label Text="{Binding ItemName}"/>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
             </StackLayout>
         </Frame>
     </StackLayout>
