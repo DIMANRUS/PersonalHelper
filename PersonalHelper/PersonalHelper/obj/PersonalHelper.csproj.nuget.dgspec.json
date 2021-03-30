@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {}
+    "C:\\Users\\dmitr\\OneDrive\\Projects\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
+    "C:\\Users\\dmitr\\OneDrive\\Projects\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
+        "projectUniqueName": "C:\\Users\\dmitr\\OneDrive\\Projects\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
         "projectName": "PersonalHelper",
-        "projectPath": "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
+        "projectPath": "C:\\Users\\dmitr\\OneDrive\\Projects\\PersonalHelper\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
         "packagesPath": "C:\\Users\\dmitr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dmitr\\source\\repos\\DIMANRUS\\PersonalHelper\\PersonalHelper\\PersonalHelper\\obj\\",
+        "outputPath": "C:\\Users\\dmitr\\OneDrive\\Projects\\PersonalHelper\\PersonalHelper\\PersonalHelper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

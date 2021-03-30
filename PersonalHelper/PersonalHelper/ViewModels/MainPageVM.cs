@@ -17,12 +17,13 @@ namespace PersonalHelper.ViewModels {
                 await CurrentPage.Navigation.PushAsync(new Settings(), true);
             });
             OpenAllToDo = new Command(execute: async () => {
-                TodoItem newTodo = new TodoItem() { ItemName = "Hello", DateRemember = DateTime.Now };
-                TodoItemDatabase todoItemDatabase = await TodoItemDatabase.Instance;
-                await todoItemDatabase.SaveItemAsync(newTodo);
-                IEnumerable<TodoItem> listtodo = await todoItemDatabase.GetItemsTodayAsync();
-                todoItemsToday = new ObservableCollection<TodoItem>(listtodo);
-                NotifyPropertyChanged(nameof(TodoItemsToday));
+                //TodoItem newTodo = new TodoItem() { ItemName = "Hello", DateRemember = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day).ToString() };
+                //TodoItemDatabase todoItemDatabase = await TodoItemDatabase.Instance;
+                //await todoItemDatabase.SaveItemAsync(newTodo);
+                //IEnumerable<TodoItem> listtodo = await todoItemDatabase.GetItemsTodayAsync();
+                //IEnumerable<TodoItem> listAllToDo = await todoItemDatabase.GetAllToDo();
+                //todoItemsToday = new ObservableCollection<TodoItem>(listtodo);
+                //NotifyPropertyChanged(nameof(TodoItemsToday));
             });
             OpenAllNews = new Command(execute: async () => {
                 await CurrentPage.Navigation.PushAsync(new NewsPage());

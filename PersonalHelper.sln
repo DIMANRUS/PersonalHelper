@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalHelper.Android", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalHelper.iOS", "PersonalHelper\PersonalHelper.iOS\PersonalHelper.iOS.csproj", "{9073C8FB-EE88-4752-B681-FBB650290AB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalHelper", "PersonalHelper\PersonalHelper\PersonalHelper.csproj", "{12244FD9-3D79-4A7B-A45C-B4593453C2A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalHelper", "PersonalHelper\PersonalHelper\PersonalHelper.csproj", "{12244FD9-3D79-4A7B-A45C-B4593453C2A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PertsonalHelper.Api", "PertsonalHelper.Api\PertsonalHelper.Api.csproj", "{4E1EC618-C54D-43D6-9179-43BC639CC3D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PertsonalHelper.Api", "PertsonalHelper.Api\PertsonalHelper.Api.csproj", "{4E1EC618-C54D-43D6-9179-43BC639CC3D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

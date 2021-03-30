@@ -33,8 +33,12 @@ namespace PersonalHelper {
             Database = new SQLiteAsyncConnection(Constants.DatabasePath, Constants.Flags);
         }
 
+        public async Task<IEnumerable<TodoItem>> GetAllToDo() => await Database.Table<TodoItem>().ToListAsync();
+
+        public async Task DeleteAllItems() => await Database.Table<TodoItem>().DeleteAsync();
+
         public async Task<IEnumerable<TodoItem>> GetItemsTodayAsync() =>
-               await Database.QueryAsync<TodoItem>("SELECT * FROM [TodoItem] WHERE [Id] = 1");
+               await Database.QueryAsync<TodoItem>($"SELECT * FROM [TodoItem] WHERE [DateRemember] = '{new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day).ToString()}'");
         //.Where(x => x.DateRemember.Day == DateTime.Now.Day && x.DateRemember.Year == DateTime.Now.Year)
         //public Task<List<TodoItem>> GetItemsNotDoneAsync() {
         //    // SQL queries are also possible

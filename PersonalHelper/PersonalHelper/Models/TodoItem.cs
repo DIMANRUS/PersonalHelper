@@ -9,6 +9,6 @@ namespace PersonalHelper.Models {
         [AutoIncrement]
         public int Id { get; set; }
         public string ItemName { get; set; }
-        public DateTime DateRemember { get; set; }
+        public string DateRemember { get; set; }
     }
 }
