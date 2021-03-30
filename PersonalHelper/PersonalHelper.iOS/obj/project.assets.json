@@ -1369,11 +1369,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leowa\\Desktop\\PersonHelp\\PersonalHelper\\PersonalHelper.iOS\\PersonalHelper.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PersonalHelper\\PersonalHelper.iOS\\PersonalHelper.iOS.csproj",
       "projectName": "PersonalHelper.iOS",
-      "projectPath": "C:\\Users\\leowa\\Desktop\\PersonHelp\\PersonalHelper\\PersonalHelper.iOS\\PersonalHelper.iOS.csproj",
+      "projectPath": "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PersonalHelper\\PersonalHelper.iOS\\PersonalHelper.iOS.csproj",
       "packagesPath": "C:\\Users\\leowa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leowa\\Desktop\\PersonHelp\\PersonalHelper\\PersonalHelper.iOS\\obj\\",
+      "outputPath": "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PersonalHelper\\PersonalHelper.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1394,8 +1394,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\leowa\\Desktop\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
-              "projectPath": "C:\\Users\\leowa\\Desktop\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
+            "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
+              "projectPath": "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
             }
           }
         }

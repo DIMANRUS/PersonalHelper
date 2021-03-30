@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W9ObX6FkPOe4vSAK0P7GFf3D2xq178QTOR34iAakLmKUwT2H6NlhVPauQEIoTuQc0yGJgbtp0mHctm17a8TniA==",
+  "dgSpecHash": "EUIYFWf5jKbP4Xh31SuidQQtwZM4aFiZelxJEMR0SmnZwjZMONiEABfjYdWvY5DsuDJeWg27SmXIikFK6PWLIQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\leowa\\Desktop\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
+  "projectFilePath": "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leowa\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\leowa\\.nuget\\packages\\sqlite-net\\1.6.292\\sqlite-net.1.6.292.nupkg.sha512",

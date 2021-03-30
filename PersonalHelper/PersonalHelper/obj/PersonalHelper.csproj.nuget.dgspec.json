@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leowa\\Desktop\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {}
+    "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leowa\\Desktop\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
+    "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leowa\\Desktop\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
+        "projectUniqueName": "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
         "projectName": "PersonalHelper",
-        "projectPath": "C:\\Users\\leowa\\Desktop\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
+        "projectPath": "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj",
         "packagesPath": "C:\\Users\\leowa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leowa\\Desktop\\PersonHelp\\PersonalHelper\\PersonalHelper\\obj\\",
+        "outputPath": "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PersonalHelper\\PersonalHelper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

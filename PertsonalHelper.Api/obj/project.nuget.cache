@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rY1jmf5m/z38vz3wCQh4dxpM6JWsIjiJOx8r+MAI228JhL1TDU3tSTEcCs/V1io9lsz2H0cKvT0uyKXTLUMynw==",
+  "dgSpecHash": "VZthQyOA8DWtZJ7jugS7lYfRelrJY1Rvu6XU4jxz2/KQU07wSVKH8s3lE55kma7SqPo3ZgHL6mE49pYBurdTfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\leowa\\Desktop\\PersonHelp\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
+  "projectFilePath": "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leowa\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\leowa\\.nuget\\packages\\sqlite-net\\1.6.292\\sqlite-net.1.6.292.nupkg.sha512",

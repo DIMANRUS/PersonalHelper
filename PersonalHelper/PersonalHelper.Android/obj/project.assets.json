@@ -2352,11 +2352,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leowa\\Desktop\\PersonHelp\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj",
+      "projectUniqueName": "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj",
       "projectName": "PersonalHelper.Android",
-      "projectPath": "C:\\Users\\leowa\\Desktop\\PersonHelp\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj",
+      "projectPath": "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PersonalHelper\\PersonalHelper.Android\\PersonalHelper.Android.csproj",
       "packagesPath": "C:\\Users\\leowa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leowa\\Desktop\\PersonHelp\\PersonalHelper\\PersonalHelper.Android\\obj\\",
+      "outputPath": "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PersonalHelper\\PersonalHelper.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2377,8 +2377,8 @@
       "frameworks": {
         "monoandroid10.0": {
           "projectReferences": {
-            "C:\\Users\\leowa\\Desktop\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
-              "projectPath": "C:\\Users\\leowa\\Desktop\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
+            "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
+              "projectPath": "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
             }
           }
         }

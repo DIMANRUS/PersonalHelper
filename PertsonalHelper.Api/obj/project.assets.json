@@ -480,11 +480,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leowa\\Desktop\\PersonHelp\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
+      "projectUniqueName": "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
       "projectName": "PertsonalHelper.Api",
-      "projectPath": "C:\\Users\\leowa\\Desktop\\PersonHelp\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
+      "projectPath": "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PertsonalHelper.Api\\PertsonalHelper.Api.csproj",
       "packagesPath": "C:\\Users\\leowa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leowa\\Desktop\\PersonHelp\\PertsonalHelper.Api\\obj\\",
+      "outputPath": "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PertsonalHelper.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -505,8 +505,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\leowa\\Desktop\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
-              "projectPath": "C:\\Users\\leowa\\Desktop\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
+            "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj": {
+              "projectPath": "C:\\Users\\leowa\\Desktop\\Новая папка\\PersonHelp\\PersonalHelper\\PersonalHelper\\PersonalHelper.csproj"
             }
           }
         }
