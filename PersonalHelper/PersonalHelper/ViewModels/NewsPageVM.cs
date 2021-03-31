@@ -1,15 +1,12 @@
 ﻿using PersonalHelper.Models;
-using System;
+using PersonalHelper.SharedVM;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace PersonalHelper.ViewModels {
-    class NewsPageVM : NewsVM, INotifyPropertyChanged {
+    class NewsPageVM : BaseVM {
         private readonly News newsModel = new News();
         public NewsPageVM() {
             Task.Run(async () => {
@@ -38,7 +35,7 @@ namespace PersonalHelper.ViewModels {
                     NotifyPropertyChanged("NewsCategoriesCollection");
                 }
             });
-            DeleteCategory = new Command<string>(async(string keyword) => {
+            DeleteCategory = new Command<string>(async (string keyword) => {
                 User.DeleteNewsKeyWord(keyword);
                 NewsCategoriesCollection = await newsModel.GetNewsCategories();
                 _HeightCategoryCollection = 370 * NewsCategoriesCollection.Count;
@@ -46,8 +43,10 @@ namespace PersonalHelper.ViewModels {
                 NotifyPropertyChanged("NewsCategoriesCollection");
             });
         }
+        public NewsVM NewsVM { get; } = new NewsVM();
+        public ICommand AddKeyword { get; private set; }
+        public ICommand DeleteCategory { get; private set; }
         #region Private fields, property
-        private Page CurrentPage { get => Application.Current.MainPage; }
         private int _HeightCategoryCollection = 0;
         private int _HeightNewsCityCollection = 0;
         private string _IsVisibleNoNewsIcon = "true";
@@ -59,16 +58,6 @@ namespace PersonalHelper.ViewModels {
         public int HeightCategoryCollection { get => _HeightCategoryCollection; }
         public string IsVisibleNoNewsItem { get => _IsVisibleNoNewsIcon; }
         public int HeightNewsCityCollection { get => _HeightNewsCityCollection; }
-        #endregion
-        #region Commands
-        public ICommand AddKeyword { get; private set; }
-        public ICommand DeleteCategory { get; private set; }
-        #endregion
-        #region Interface realization
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "") {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
         #endregion
     }
 }

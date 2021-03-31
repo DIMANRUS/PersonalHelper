@@ -1,15 +1,11 @@
 ﻿using PersonalHelper.Models;
+using PersonalHelper.SharedVM;
 using PersonalHelper.Views;
-using System;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
 using System.Windows.Input;
-using Xamarin.Essentials;
 using Xamarin.Forms;
 
-namespace PersonalHelper.ViewModels
-{
-    class SettingsPageVM : INotifyPropertyChanged
+namespace PersonalHelper.ViewModels {
+    class SettingsPageVM : BaseVM
     {
         #region Commands realization
         public SettingsPageVM()
@@ -29,7 +25,6 @@ namespace PersonalHelper.ViewModels
             });
         }
         #endregion
-        private Page CurrentPage { get => Application.Current.MainPage; }
         #region Private field
         private string userCity = User.GetUserCity();
         private Color userCityStatusChangingTextColor = Color.Green;
@@ -66,13 +61,6 @@ namespace PersonalHelper.ViewModels
         #endregion
         #region Commands
         public ICommand Exit { private set; get; }
-        #endregion
-        #region ICommand realization
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
         #endregion
     }
 }

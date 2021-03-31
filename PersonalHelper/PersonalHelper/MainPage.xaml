@@ -148,11 +148,13 @@
                                             <SwipeItem Text="Завершить"
                                                        IconImageSource="CompleteIcon.png"
                                                        BackgroundColor="DarkGreen"
-                                                       Command="{Binding Path=BindingContext.OpenAllToDo, Source={x:Reference Name=todoView}}" />
+                                                       Command="{Binding Path=BindingContext.CompleteTask, Source={x:Reference Name=todoView}}"
+                                                       CommandParameter="{Binding Id}"/>
                                             <SwipeItem Text="Удалить"
                                                        IconImageSource="RemoveIcon.png"
                                                        BackgroundColor="DarkRed"
-                                                       Command="{Binding Path=BindingContext.OpenAllToDo, Source={x:Reference Name=todoView}}" />
+                                                       Command="{Binding Path=BindingContext.RemoveTask, Source={x:Reference Name=todoView}}"
+                                                       CommandParameter="{Binding Id}" />
                                         </SwipeItems>
                                     </SwipeView.LeftItems>
                                     <Grid BackgroundColor="Black">

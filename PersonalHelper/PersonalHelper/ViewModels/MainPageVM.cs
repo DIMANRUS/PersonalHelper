@@ -3,27 +3,25 @@ using System;
 using System.Windows.Input;
 using Xamarin.Forms;
 using System.Threading.Tasks;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
 using PersonalHelper.Models;
 using System.Collections.ObjectModel;
-using System.Collections;
 using System.Collections.Generic;
+using PersonalHelper.SharedVM;
 
 namespace PersonalHelper.ViewModels {
-    partial class MainPageVM : INotifyPropertyChanged {
+    partial class MainPageVM : BaseVM {
         public MainPageVM() {
             OpenSettings = new Command(execute: async () => {
                 await CurrentPage.Navigation.PushAsync(new Settings(), true);
             });
             OpenAllToDo = new Command(execute: async () => {
-                //TodoItem newTodo = new TodoItem() { ItemName = "Hello", DateRemember = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day).ToString() };
-                //TodoItemDatabase todoItemDatabase = await TodoItemDatabase.Instance;
-                //await todoItemDatabase.SaveItemAsync(newTodo);
-                //IEnumerable<TodoItem> listtodo = await todoItemDatabase.GetItemsTodayAsync();
-                //IEnumerable<TodoItem> listAllToDo = await todoItemDatabase.GetAllToDo();
-                //todoItemsToday = new ObservableCollection<TodoItem>(listtodo);
-                //NotifyPropertyChanged(nameof(TodoItemsToday));
+                TodoItem newTodo = new TodoItem() { ItemName = "Hello", DateRemember = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day).ToString(), TypeTodo = TypesTodo.Do };
+                TodoItemDatabase todoItemDatabase = await TodoItemDatabase.Instance;
+                await todoItemDatabase.SaveItemAsync(newTodo);
+                IEnumerable<TodoItem> listtodo = await todoItemDatabase.GetItemsTodayAsync();
+                IEnumerable<TodoItem> listAllToDo = await todoItemDatabase.GetAllToDo();
+                todoItemsToday = new ObservableCollection<TodoItem>(listtodo);
+                NotifyPropertyChanged(nameof(TodoItemsToday));
             });
             OpenAllNews = new Command(execute: async () => {
                 await CurrentPage.Navigation.PushAsync(new NewsPage());
@@ -38,10 +36,16 @@ namespace PersonalHelper.ViewModels {
                 NewsCollection = await newsModel.GetTopNews();
                 NotifyPropertyChanged(nameof(NewsCollection));
             });
+            CompleteTask = new Command<int>(async (int todoId) => { });
+            RemoveTask = new Command<int>(async (int todoId) => { });
+            AddTask = new Command<int>(async (int todoId) => { });
         }
         #region ToDo
         private ObservableCollection<TodoItem> todoItemsToday;
         public ObservableCollection<TodoItem> TodoItemsToday { get => todoItemsToday; }
+        public ICommand CompleteTask { get; private set; }
+        public ICommand RemoveTask { get; private set; }
+        public ICommand AddTask { get; private set; }
         #endregion
         private Wheather wheather { get; set; }
         public ICommand OpenWeatherForOneDay { get; set; }
@@ -54,9 +58,5 @@ namespace PersonalHelper.ViewModels {
         public ICommand OpenAllToDo { get; private set; }
         public string HelloUserName { get => "Доброе утро, " + User.GetUserName(); }
         public NewsVM NewsVM { get; } = new NewsVM();
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "") {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
     }
 }

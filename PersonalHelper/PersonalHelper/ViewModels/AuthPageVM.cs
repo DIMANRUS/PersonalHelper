@@ -1,12 +1,9 @@
 ﻿using PersonalHelper.Models;
-using System;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using System.Windows.Input;
+using PersonalHelper.SharedVM;
 using Xamarin.Forms;
 
 namespace PersonalHelper.ViewModels {
-    class AuthPageVM : INotifyPropertyChanged {
+    class AuthPageVM : BaseVM {
         public AuthPageVM() {
             NextPage = new Command(execute: async () => {
                 if (userName != "" && userCityStatusChangingTextColor == Color.Green) {
@@ -43,12 +40,6 @@ namespace PersonalHelper.ViewModels {
         #region Commands
         public Command NextPage { get; private set; }
         public Command ShowLocationInformation { get; private set; }
-        #endregion
-        #region Interface realization
-        public event PropertyChangedEventHandler PropertyChanged;
-        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "") {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
         #endregion
     }
 }

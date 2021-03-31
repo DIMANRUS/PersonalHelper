@@ -34,7 +34,7 @@
                                 <Frame CornerRadius="0"
                                        Padding="1">
                                     <Frame.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding Path=BindingContext.OpenNews, Source={x:Reference Name=newsView}}"
+                                        <TapGestureRecognizer Command="{Binding Path=BindingContext.NewsVM.OpenNews, Source={x:Reference Name=newsView}}"
                                                               CommandParameter="{Binding url}" />
                                     </Frame.GestureRecognizers>
                                     <StackLayout>
@@ -87,7 +87,7 @@
                                                 <Frame CornerRadius="0"
                                                        Padding="1">
                                                     <Frame.GestureRecognizers>
-                                                        <TapGestureRecognizer Command="{Binding Path=BindingContext.OpenNews, Source={x:Reference Name=newsCategoryView}}"
+                                                        <TapGestureRecognizer Command="{Binding Path=BindingContext.NewsVM.OpenNews, Source={x:Reference Name=newsCategoryView}}"
                                                                               CommandParameter="{Binding url}" />
                                                     </Frame.GestureRecognizers>
                                                     <StackLayout>
