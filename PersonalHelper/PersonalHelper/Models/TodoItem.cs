@@ -12,7 +12,7 @@ namespace PersonalHelper.Models {
         [AutoIncrement]
         public int Id { get; set; }
         public string ItemName { get; set; }
-        public string DateRemember { get; set; }
+        public DateTime DateRemember { get; set; }
         public TypesTodo TypeTodo { get; set; }
     }
 }

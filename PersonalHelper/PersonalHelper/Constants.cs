@@ -37,8 +37,19 @@ namespace PersonalHelper {
 
         public async Task DeleteAllItems() => await Database.Table<TodoItem>().DeleteAsync();
 
-        public async Task<IEnumerable<TodoItem>> GetItemsTodayAsync() =>
-               await Database.QueryAsync<TodoItem>($"SELECT * FROM [TodoItem] WHERE [DateRemember] = '{new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day).ToString()}'");
+        public async Task<List<TodoItem>> GetItemsTodayAsync() => await Database.Table<TodoItem>().Where(x => x.DateRemember == DateTime.Now.Date && x.TypeTodo == TypesTodo.Do).ToListAsync(); 
+               //await Database.QueryAsync<TodoItem>($"SELECT * FROM [TodoItem] WHERE [DateRemember] = '{new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day).ToString()}'");
+
+        public async Task CompleteTaskAsync(int taskId) {
+            TodoItem todoItem = await Database.Table<TodoItem>().FirstOrDefaultAsync(x => x.Id == taskId);
+            todoItem.TypeTodo = TypesTodo.Complete;
+            await Database.UpdateAsync(todoItem);
+        }
+
+        public async Task RemoveTaskAsync(int taskId) {
+            TodoItem todoItem = await Database.Table<TodoItem>().FirstOrDefaultAsync(x => x.Id == taskId);
+            await Database.DeleteAsync(todoItem);
+        }
         //.Where(x => x.DateRemember.Day == DateTime.Now.Day && x.DateRemember.Year == DateTime.Now.Year)
         //public Task<List<TodoItem>> GetItemsNotDoneAsync() {
         //    // SQL queries are also possible
