@@ -2,6 +2,27 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "OpenTK/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net20/OpenTK.dll": {}
+        },
+        "runtime": {
+          "lib/net20/OpenTK.dll": {}
+        }
+      },
+      "OpenTK.GLControl/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "OpenTK": "3.0.1"
+        },
+        "compile": {
+          "lib/net20/OpenTK.GLControl.dll": {}
+        },
+        "runtime": {
+          "lib/net20/OpenTK.GLControl.dll": {}
+        }
+      },
       "sqlite-net-pcl/1.7.335": {
         "type": "package",
         "dependencies": {
@@ -140,6 +161,25 @@
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
       },
+      "Xamarin.CommunityToolkit/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.1874",
+          "Xamarin.Forms.Platform.WPF": "5.0.0.1874"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Xamarin.CommunityToolkit.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Xamarin.CommunityToolkit.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ],
+        "build": {
+          "build/_._": {}
+        }
+      },
       "Xamarin.Essentials/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -169,11 +209,26 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Platform.WPF/5.0.0.1874": {
+        "type": "package",
+        "dependencies": {
+          "OpenTK": "3.0.1",
+          "OpenTK.GLControl": "3.0.1",
+          "Xamarin.Forms": "5.0.0.1874"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Xamarin.Forms.Platform.WPF.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Xamarin.Forms.Platform.WPF.dll": {}
+        }
+      },
       "PersonalHelper/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "System.Text.Json": "5.0.1",
+          "Xamarin.CommunityToolkit": "1.1.0",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "5.0.0.2012",
           "sqlite-net-pcl": "1.7.335"
@@ -188,6 +243,35 @@
     }
   },
   "libraries": {
+    "OpenTK/3.0.1": {
+      "sha512": "X/jjhmvXvzzX+T4gTstdmeqMCcD51P+HD/cy1AZinFn1Rcu5KOrgQVZiD4Gm4pj2PjZ91dY8NEs2i9qjIDgJJA==",
+      "type": "package",
+      "path": "opentk/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/OpenTK.dll.config",
+        "lib/net20/OpenTK.dll",
+        "lib/net20/OpenTK.pdb",
+        "lib/net20/OpenTK.xml",
+        "opentk.3.0.1.nupkg.sha512",
+        "opentk.nuspec"
+      ]
+    },
+    "OpenTK.GLControl/3.0.1": {
+      "sha512": "bDbxxCWkOvTJGaRlaKscZcP1cu1jDKbn+a6wMAsMzmGtrYZZbrVoc+SaMjSEOgavLEJQ8SHqLeXfZ0tlM1Jn4g==",
+      "type": "package",
+      "path": "opentk.glcontrol/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/OpenTK.GLControl.dll",
+        "lib/net20/OpenTK.GLControl.pdb",
+        "lib/net20/OpenTK.GLControl.xml",
+        "opentk.glcontrol.3.0.1.nupkg.sha512",
+        "opentk.glcontrol.nuspec"
+      ]
+    },
     "sqlite-net-pcl/1.7.335": {
       "sha512": "0A9YNPbp66aB+Sitxmh9lq1KDtD4+EBPfdtnYN8WenvQqh5dNgMxUV7kaEG6EXYTi4zBxcsDKpyYJzbViWJXtw==",
       "type": "package",
@@ -362,6 +446,48 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Xamarin.CommunityToolkit/1.1.0": {
+      "sha512": "GJiaXaPLrM1qn1HYxDPKlECYAzX5CI6FKtv4NXCq8K7SJTscmFo79RcwZoj1o3de+4V0aiJAVZMCpbMIF/sZVA==",
+      "type": "package",
+      "path": "xamarin.communitytoolkit/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/PreserveXamarinCommunityToolkit.cs",
+        "build/Xamarin.CommunityToolkit.targets",
+        "icon.png",
+        "lib/monoandroid10.0/Xamarin.CommunityToolkit.dll",
+        "lib/monoandroid10.0/Xamarin.CommunityToolkit.xml",
+        "lib/net471/Xamarin.CommunityToolkit.dll",
+        "lib/net471/Xamarin.CommunityToolkit.xml",
+        "lib/net472/Xamarin.CommunityToolkit.dll",
+        "lib/net472/Xamarin.CommunityToolkit.xml",
+        "lib/netcoreapp3.1/Xamarin.CommunityToolkit.dll",
+        "lib/netcoreapp3.1/Xamarin.CommunityToolkit.xml",
+        "lib/netstandard1.0/Xamarin.CommunityToolkit.dll",
+        "lib/netstandard1.0/Xamarin.CommunityToolkit.xml",
+        "lib/netstandard2.0/Xamarin.CommunityToolkit.dll",
+        "lib/netstandard2.0/Xamarin.CommunityToolkit.xml",
+        "lib/netstandard2.1/Xamarin.CommunityToolkit.dll",
+        "lib/netstandard2.1/Xamarin.CommunityToolkit.xml",
+        "lib/tizen40/Xamarin.CommunityToolkit.dll",
+        "lib/tizen40/Xamarin.CommunityToolkit.xml",
+        "lib/uap10.0.19041/Xamarin.CommunityToolkit.dll",
+        "lib/uap10.0.19041/Xamarin.CommunityToolkit.pri",
+        "lib/uap10.0.19041/Xamarin.CommunityToolkit.xml",
+        "lib/xamarinios10/Xamarin.CommunityToolkit.dll",
+        "lib/xamarinios10/Xamarin.CommunityToolkit.xml",
+        "lib/xamarinmac20/Xamarin.CommunityToolkit.dll",
+        "lib/xamarinmac20/Xamarin.CommunityToolkit.xml",
+        "lib/xamarintvos10/Xamarin.CommunityToolkit.dll",
+        "lib/xamarintvos10/Xamarin.CommunityToolkit.xml",
+        "lib/xamarinwatchos10/Xamarin.CommunityToolkit.dll",
+        "lib/xamarinwatchos10/Xamarin.CommunityToolkit.xml",
+        "xamarin.communitytoolkit.1.1.0.nupkg.sha512",
+        "xamarin.communitytoolkit.nuspec"
       ]
     },
     "Xamarin.Essentials/1.6.1": {
@@ -631,6 +757,22 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.Platform.WPF/5.0.0.1874": {
+      "sha512": "lZ5GI2Mg4wLSX+JXqvwZlSSfpDoVFyLpVRumJtaK9KNe31kC+JHtSEOcvXVZI/N3iVH+SXVV0z4QHpCW+m+aFw==",
+      "type": "package",
+      "path": "xamarin.forms.platform.wpf/5.0.0.1874",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Assets/xamarin_128x128.png",
+        "lib/net461/Xamarin.Forms.Platform.WPF.dll",
+        "lib/net461/Xamarin.Forms.Platform.WPF.pdb",
+        "lib/netcoreapp3.1/Xamarin.Forms.Platform.WPF.dll",
+        "lib/netcoreapp3.1/Xamarin.Forms.Platform.WPF.pdb",
+        "xamarin.forms.platform.wpf.5.0.0.1874.nupkg.sha512",
+        "xamarin.forms.platform.wpf.nuspec"
+      ]
+    },
     "PersonalHelper/1.0.0": {
       "type": "project",
       "path": "../PersonalHelper/PersonalHelper/PersonalHelper.csproj",
@@ -721,5 +863,27 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"OpenTK 3.0.1\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \"net5.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "OpenTK",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"OpenTK.GLControl 3.0.1\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \"net5.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "OpenTK.GLControl",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

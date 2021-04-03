@@ -2,10 +2,9 @@
 using SQLite;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.IO;
+using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace PersonalHelper {
@@ -32,53 +31,30 @@ namespace PersonalHelper {
         public TodoItemDatabase() {
             Database = new SQLiteAsyncConnection(Constants.DatabasePath, Constants.Flags);
         }
-
+        public class AsyncLazy<T> : Lazy<Task<T>> {
+            readonly Lazy<Task<T>> instance;
+            public AsyncLazy(Func<T> factory) =>
+                instance = new Lazy<Task<T>>(() => Task.Run(factory));
+            public AsyncLazy(Func<Task<T>> factory) =>
+                instance = new Lazy<Task<T>>(() => Task.Run(factory));
+            public TaskAwaiter<T> GetAwaiter() => instance.Value.GetAwaiter();
+        }
+        #region Methods for job with DataBase
         public async Task<IEnumerable<TodoItem>> GetAllToDo() => await Database.Table<TodoItem>().ToListAsync();
-
-        public async Task DeleteAllItems() => await Database.Table<TodoItem>().DeleteAsync();
-
-        public async Task<List<TodoItem>> GetItemsTodayAsync() => await Database.Table<TodoItem>().Where(x => x.DateRemember == DateTime.Now.Date && x.TypeTodo == TypesTodo.Do).ToListAsync(); 
-               //await Database.QueryAsync<TodoItem>($"SELECT * FROM [TodoItem] WHERE [DateRemember] = '{new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day).ToString()}'");
-
+        public async Task DeleteAllItems() => await Database.DeleteAllAsync<TodoItem>();
+        public async Task<IEnumerable<TodoItem>> GetItemsTodayAsync() => (await Database.Table<TodoItem>().ToListAsync()).Where(x => x.DateRemember.Date == DateTime.Now.Date && x.TypeTodo == TypesTodo.Do);
+        public async Task<IEnumerable<TodoItem>> GetToDoCompleteTodayAsync() => (await Database.Table<TodoItem>().ToListAsync()).Where(x => x.DateRemember.Date == DateTime.Now.Date && x.TypeTodo == TypesTodo.Complete);
+        public async Task<IEnumerable<TodoItem>> GetToDoTomorrowAsync() => (await Database.Table<TodoItem>().ToListAsync()).Where(x => x.DateRemember.Date == DateTime.Now.AddDays(1).Date);
         public async Task CompleteTaskAsync(int taskId) {
             TodoItem todoItem = await Database.Table<TodoItem>().FirstOrDefaultAsync(x => x.Id == taskId);
             todoItem.TypeTodo = TypesTodo.Complete;
             await Database.UpdateAsync(todoItem);
         }
-
         public async Task RemoveTaskAsync(int taskId) {
             TodoItem todoItem = await Database.Table<TodoItem>().FirstOrDefaultAsync(x => x.Id == taskId);
             await Database.DeleteAsync(todoItem);
         }
-        //.Where(x => x.DateRemember.Day == DateTime.Now.Day && x.DateRemember.Year == DateTime.Now.Year)
-        //public Task<List<TodoItem>> GetItemsNotDoneAsync() {
-        //    // SQL queries are also possible
-        //    return Database.QueryAsync<TodoItem>("SELECT * FROM [TodoItem] WHERE [Id] = 0");
-        //}
-        //public Task<TodoItem> GetItemAsync(int id) {
-        //    return Database.Table<TodoItem>().Where(i => i.Id == id).FirstOrDefaultAsync();
-        //}
-        public Task<int> SaveItemAsync(TodoItem item) {
-            return Database.InsertAsync(item);
-            //}
-            //public Task<int> DeleteItemAsync(TodoItem item) {
-            //    return Database.DeleteAsync(item);
-            //}
-        }
-        public class AsyncLazy<T> : Lazy<Task<T>> {
-            readonly Lazy<Task<T>> instance;
-
-            public AsyncLazy(Func<T> factory) {
-                instance = new Lazy<Task<T>>(() => Task.Run(factory));
-            }
-
-            public AsyncLazy(Func<Task<T>> factory) {
-                instance = new Lazy<Task<T>>(() => Task.Run(factory));
-            }
-
-            public TaskAwaiter<T> GetAwaiter() {
-                return instance.Value.GetAwaiter();
-            }
-        }
+        public Task<int> SaveItemAsync(TodoItem item) => Database.InsertAsync(item);
+        #endregion
     }
 }

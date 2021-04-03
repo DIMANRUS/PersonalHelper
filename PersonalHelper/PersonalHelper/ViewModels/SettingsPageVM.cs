@@ -5,22 +5,20 @@ using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace PersonalHelper.ViewModels {
-    class SettingsPageVM : BaseVM
-    {
+    class SettingsPageVM : BaseVM {
         #region Commands realization
-        public SettingsPageVM()
-        {
-            if (User.GetUserTheme() == "Dark")
-            {
-                _IsCheckedRadioButtonDarkTheme = "True"; NotifyPropertyChanged(nameof(IsCheckedRadioButtonDarkTheme));
+        public SettingsPageVM() {
+            if (User.GetUserTheme() == "Dark") {
+                _IsCheckedRadioButtonDarkTheme = "True";
+                NotifyPropertyChanged(nameof(IsCheckedRadioButtonDarkTheme));
+            } else {
+                _IsCheckedRadioButtonLightTheme = "True";
+                NotifyPropertyChanged(nameof(IsCheckedRadioButtonLightTheme));
             }
-            else
-            {
-                _IsCheckedRadioButtonLightTheme = "True"; NotifyPropertyChanged(nameof(IsCheckedRadioButtonLightTheme));
-            }
-            Exit = new Command(execute: async () =>
-            {
+            Exit = new Command(async () => {
                 User.ClearUserData();
+                TodoItemDatabase db = await TodoItemDatabase.Instance;
+                await db.DeleteAllItems();
                 await CurrentPage.Navigation.PushAsync(new Auth(), true);
             });
         }
@@ -32,30 +30,23 @@ namespace PersonalHelper.ViewModels {
         #endregion
         #region Properties
         public string UserName { get => User.GetUserName(); set { if (value.Length > 2) User.SetUserName(value); } }
-        public string UserCity
-        {
-            get => userCity; set
-            {
-                if (User.VerifyCity(value))
-                {
+        public string UserCity {
+            get => userCity; set {
+                if (User.VerifyCity(value)) {
                     userCityStatusChangingTextColor = Color.Green;
                     NotifyPropertyChanged("UserCityStatusChangingTextColor");
                     User.SetUserCity(value);
-                }
-                else
-                {
+                } else {
                     userCityStatusChangingTextColor = Color.Red;
                     NotifyPropertyChanged("UserCityStatusChangingTextColor");
                 }
             }
         }
         public Color UserCityStatusChangingTextColor { get => userCityStatusChangingTextColor; }
-        public string IsCheckedRadioButtonDarkTheme
-        {
+        public string IsCheckedRadioButtonDarkTheme {
             get => _IsCheckedRadioButtonDarkTheme;
         }
-        public string IsCheckedRadioButtonLightTheme
-        {
+        public string IsCheckedRadioButtonLightTheme {
             get => _IsCheckedRadioButtonLightTheme;
         }
         #endregion

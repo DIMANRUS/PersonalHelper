@@ -5,19 +5,20 @@ using System.Threading.Tasks;
 using PersonalHelper.Models;
 using System.Collections.ObjectModel;
 using PersonalHelper.SharedVM;
+using System;
+using System.Collections.Generic;
 
 namespace PersonalHelper.ViewModels {
     partial class MainPageVM : BaseVM {
         public MainPageVM() {
-            OpenSettings = new Command(execute: async () => {
+            OpenSettings = new Command(async () => {
                 await CurrentPage.Navigation.PushAsync(new Settings(), true);
             });
-            //OpenAllToDo = new Command(execute: async () => {
-            //});
-            OpenAllNews = new Command(execute: async () => {
+            OpenAllToDo = new Command(async () => await CurrentPage.Navigation.PushAsync(new ToDoPage()));
+            OpenAllNews = new Command(async () => {
                 await CurrentPage.Navigation.PushAsync(new NewsPage());
             });
-            OpenWeatherForOneDay = new Command(execute: async () => {
+            OpenWeatherForOneDay = new Command(async () => {
                 await CurrentPage.Navigation.PushAsync(new WeatherPage());
             });
             Task.Run(async () => {
@@ -27,24 +28,39 @@ namespace PersonalHelper.ViewModels {
                 NotifyPropertyChanged(nameof(TodoItemsToday));
                 NotifyPropertyChanged(nameof(NewsCollection));
             });
-            CompleteTask = new Command<int>(async (int todoId) => { await db.CompleteTaskAsync(todoId); 
+            ToDoVM.CompleteTask = new Command<int>(async (int todoId) => {
+                await db.CompleteTaskAsync(todoId); 
                 todoItemsToday = new ObservableCollection<TodoItem>(await db.GetItemsTodayAsync()); 
                 NotifyPropertyChanged(nameof(TodoItemsToday)); });
-            RemoveTask = new Command<int>(async (int todoId) => {
+            ToDoVM.RemoveTask = new Command<int>(async (int todoId) => {
                 await db.RemoveTaskAsync(todoId);
                 todoItemsToday = new ObservableCollection<TodoItem>(await db.GetItemsTodayAsync());
                 NotifyPropertyChanged(nameof(TodoItemsToday));
             });
-            //AddTask = new Command<int>(async (int todoId) => { });
+            AddTask = new Command<string>(async(string taskText) => {
+                taskDate = taskDate.Date + TaskTimePicker;
+                TodoItem newToDo = new TodoItem() { 
+                    ItemName = taskText,
+                    DateRemember = taskDate,
+                    TypeTodo = TypesTodo.Do
+                };
+                await db.SaveItemAsync(newToDo);
+                IEnumerable<TodoItem> toList = await db.GetAllToDo();
+                todoItemsToday = new ObservableCollection<TodoItem>(await db.GetItemsTodayAsync());
+                NotifyPropertyChanged(nameof(TodoItemsToday));
+            });
+            TaskDateCommand = new Command<DatePicker>((DatePicker datePicker) => taskDate = datePicker.Date);
         }
         private static TodoItemDatabase db;
         #region ToDo
-
         private ObservableCollection<TodoItem> todoItemsToday;
         public ObservableCollection<TodoItem> TodoItemsToday { get => todoItemsToday; }
-        public ICommand CompleteTask { get; private set; }
-        public ICommand RemoveTask { get; private set; } = new Command<int>(async (int taskId) => await db.RemoveTaskAsync(taskId));
+        #region Add New Task
         public ICommand AddTask { get; private set; }
+        public ICommand TaskDateCommand { get; private set; }
+        private DateTime taskDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
+        public TimeSpan TaskTimePicker { get; set; }
+        #endregion
         #endregion
         private Wheather wheather { get; set; }
         public ICommand OpenWeatherForOneDay { get; set; }

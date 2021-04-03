@@ -10,6 +10,7 @@
     </ContentPage.BindingContext>
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Далее"
+                     IconImageSource="next.png"
                      Priority="0"
                      Order="Primary"
                      Command="{Binding NextPage}"/>

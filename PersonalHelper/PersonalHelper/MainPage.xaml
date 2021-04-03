@@ -4,16 +4,19 @@
              x:Class="PersonalHelper.MainPage"
              BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
              xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              Title="{Binding HelloUserName}"
              NavigationPage.HasBackButton="False">
     <ContentPage.BindingContext>
         <ViewModels:MainPageVM />
     </ContentPage.BindingContext>
+    
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Настройки"
-                 Order="Primary"
-                 Priority="0"
-                     Command="{Binding OpenSettings}"/>
+                     IconImageSource="SettingsIcon.png"
+                     Order="Primary"
+                     Priority="0"
+                     Command="{Binding OpenSettings}" />
     </ContentPage.ToolbarItems>
     <ScrollView>
         <StackLayout Padding="0,10,0,0">
@@ -121,6 +124,10 @@
                             <ColumnDefinition Width="70" />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
                         <Image Source="TaskBlockIcon.png"
                                HeightRequest="20" />
                         <Label Text="Задачи"
@@ -137,9 +144,20 @@
                         </Label>
                     </Grid>
                     <CollectionView ItemsSource="{Binding TodoItemsToday}"
-                                    HeightRequest="300"
+                                    HeightRequest="220"
                                     ItemsLayout="VerticalList"
                                     x:Name="todoView">
+                        <CollectionView.EmptyView>
+                            <ContentView>
+                                <StackLayout HorizontalOptions="CenterAndExpand"
+                                             VerticalOptions="CenterAndExpand">
+                                    <Image Source="CompleteIcon.png"
+                                           HeightRequest="70" />
+                                    <Label Text="Молодец! На сегодня всё."
+                                           FontSize="25" />
+                                </StackLayout>
+                            </ContentView>
+                        </CollectionView.EmptyView>
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
                                 <SwipeView Margin="5">
@@ -148,24 +166,71 @@
                                             <SwipeItem Text="Завершить"
                                                        IconImageSource="CompleteIcon.png"
                                                        BackgroundColor="DarkGreen"
-                                                       Command="{Binding Path=BindingContext.CompleteTask, Source={x:Reference Name=todoView}}"
-                                                       CommandParameter="{Binding Id}"/>
+                                                       Command="{Binding Path=BindingContext.ToDoVM.CompleteTask, Source={x:Reference Name=todoView}}"
+                                                       CommandParameter="{Binding Id}" />
                                             <SwipeItem Text="Удалить"
                                                        IconImageSource="RemoveIcon.png"
                                                        BackgroundColor="DarkRed"
-                                                       Command="{Binding Path=BindingContext.RemoveTask, Source={x:Reference Name=todoView}}"
+                                                       Command="{Binding Path=BindingContext.ToDoVM.RemoveTask, Source={x:Reference Name=todoView}}"
                                                        CommandParameter="{Binding Id}" />
                                         </SwipeItems>
                                     </SwipeView.LeftItems>
-                                    <Grid BackgroundColor="Black">
+                                    <StackLayout Orientation="Horizontal" BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
                                         <Label Text="{Binding ItemName}"
                                                Margin="4"
-                                               FontSize="25" />
-                                    </Grid>
+                                               FontSize="20" />
+                                        <Label Text="{Binding DateRemember, StringFormat='{0:HH:mm}'}"
+                                               Margin="4"
+                                               FontSize="20"
+                                               HorizontalOptions="EndAndExpand"/>
+                                    </StackLayout>
                                 </SwipeView>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
+                    <Frame Grid.Row="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="35" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.ColumnSpan="2"
+                                   Text="Добавление задачи"
+                                   FontSize="25"
+                                   HorizontalOptions="Center" />
+                            <Entry Grid.ColumnSpan="3"
+                                   Grid.Row="1"
+                                   Placeholder="Введите задачу"
+                                   x:Name="TaskText"/>
+                            <DatePicker Grid.Row="2"
+                                        FontSize="20"
+                                        x:Name="TaskDate">
+                                <DatePicker.Behaviors>
+                                    <xct:EventToCommandBehavior EventName="DateSelected"
+                                                                Command="{Binding TaskDateCommand}"
+                                                                CommandParameter="{Binding Source={x:Reference TaskDate}}"/>
+                                </DatePicker.Behaviors>
+                            </DatePicker>
+                            <TimePicker Grid.Row="2"
+                                        Grid.Column="1"
+                                        FontSize="20"
+                                        Time="{Binding TaskTimePicker}">
+                            </TimePicker>
+                            <ImageButton Source="AddIcon.png"
+                                         HeightRequest="33"
+                                         Grid.Row="2"
+                                         Grid.Column="2"
+                                         HorizontalOptions="End"
+                                         Command="{Binding AddTask}"
+                                         CommandParameter="{Binding Path=Text, Source={x:Reference TaskText}}" />
+                        </Grid>
+                    </Frame>
                 </StackLayout>
             </Frame>
         </StackLayout>

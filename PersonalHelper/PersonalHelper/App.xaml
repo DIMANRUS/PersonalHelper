@@ -54,6 +54,14 @@
                 <Setter Property="BackgroundColor"
                         Value="Transparent" />
             </Style>
+            <Style TargetType="{x:Type TimePicker}">
+                <Setter Property="TextColor"
+                        Value="{AppThemeBinding Light=Black, Dark=White}" />
+            </Style>
+            <Style TargetType="{x:Type DatePicker}">
+                <Setter Property="TextColor"
+                        Value="{AppThemeBinding Light=Black, Dark=White}" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

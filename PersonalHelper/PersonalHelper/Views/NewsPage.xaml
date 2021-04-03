@@ -14,20 +14,22 @@
                 <Label Text="Новости в городе"
                        FontSize="30"
                        Margin="15,0,0,0" />
-                <Image WidthRequest="90"
-                       HeightRequest="90"
-                       HorizontalOptions="Center"
-                       Source="NoNewsIcon.png"
-                       Aspect="AspectFill"
-                       IsVisible="{Binding IsVisibleNoNewsItem}"/>
-                <Label Text="Нету новостей"
-                       HorizontalOptions="Center"
-                       IsVisible="{Binding IsVisibleNoNewsItem}"/>
                 <CollectionView ItemsSource="{Binding NewsCityCollection}"
                                 ItemsLayout="HorizontalList"
                                 HeightRequest="{Binding HeightNewsCityCollection}"
                                 x:Name="newsView"
                                 Margin="10,0,0,0">
+                    <CollectionView.EmptyView>
+                        <ContentView>
+                            <StackLayout HorizontalOptions="CenterAndExpand"
+                                         VerticalOptions="CenterAndExpand">
+                                <Image Source="NoNewsIcon.png"
+                                       HeightRequest="70" />
+                                <Label Text="Новости закончились."
+                                       FontSize="25" />
+                            </StackLayout>
+                        </ContentView>
+                    </CollectionView.EmptyView>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <Grid>
@@ -64,6 +66,17 @@
                                 Margin="15,0,0,0"
                                 HeightRequest="{Binding HeightCategoryCollection}"
                                 VerticalScrollBarVisibility="Never">
+                    <CollectionView.EmptyView>
+                        <ContentView>
+                            <StackLayout HorizontalOptions="CenterAndExpand"
+                                         VerticalOptions="CenterAndExpand">
+                                <Image Source="NoNewsIcon.png"
+                                       HeightRequest="70" />
+                                <Label Text="Новости закончились."
+                                       FontSize="25" />
+                            </StackLayout>
+                        </ContentView>
+                    </CollectionView.EmptyView>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout>
