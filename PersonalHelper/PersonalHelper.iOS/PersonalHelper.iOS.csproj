@@ -19,7 +19,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
     <DefineConstants>
     </DefineConstants>
@@ -30,7 +30,7 @@
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
     <MtouchFastDev>true</MtouchFastDev>
     <IOSDebuggerPort>26822</IOSDebuggerPort>
-    <MtouchLink>None</MtouchLink>
+    <MtouchLink>Full</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
     <DebugSymbols>false</DebugSymbols>
   </PropertyGroup>
@@ -77,6 +77,8 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="iOSNotificationManager.cs" />
+    <Compile Include="NotificationEventArgs.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -248,6 +250,18 @@
     <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon-2.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon.png" />
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon-1.png" />
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon-2.png" />
+    <ImageAsset Include="Assets.xcassets\TaskBlockIcon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\TaskBlockIcon.imageset\TaskBlockIcon.png" />
+    <ImageAsset Include="Assets.xcassets\TaskBlockIcon.imageset\TaskBlockIcon-1.png" />
+    <ImageAsset Include="Assets.xcassets\TaskBlockIcon.imageset\TaskBlockIcon-2.png" />
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon.png" />
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon-1.png" />
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon-2.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -285,6 +299,9 @@
     <Folder Include="Assets.xcassets\SettingsIcon.imageset\" />
     <Folder Include="Assets.xcassets\WheatherBlockIcon.imageset\" />
     <Folder Include="Assets.xcassets\WheatherIconSun.imageset\" />
+    <Folder Include="Assets.xcassets\CompleteIcon.imageset\" />
+    <Folder Include="Assets.xcassets\TaskBlockIcon.imageset\" />
+    <Folder Include="Assets.xcassets\AddIcon.imageset\" />
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
