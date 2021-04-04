@@ -29,7 +29,7 @@
                                              VerticalOptions="CenterAndExpand">
                                     <Image Source="CompleteIcon.png"
                                            HeightRequest="70" />
-                                    <Label Text="Молодец! На сегодня всё."
+                                    <Label Text="Может пора выполнить задачу?"
                                            FontSize="25" />
                                 </StackLayout>
                             </ContentView>
@@ -132,7 +132,7 @@
                                              VerticalOptions="CenterAndExpand">
                                     <Image Source="CompleteIcon.png"
                                            HeightRequest="70" />
-                                    <Label Text="На завтра пусто! Планируй, делай!"
+                                    <Label Text="Пока пусто! Планируй, делай!"
                                            FontSize="25" />
                                 </StackLayout>
                             </ContentView>

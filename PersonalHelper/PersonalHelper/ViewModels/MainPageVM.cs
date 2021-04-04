@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using PersonalHelper.SharedVM;
 using System;
 using System.Collections.Generic;
+using PersonalHelper.Interfaces;
 
 namespace PersonalHelper.ViewModels {
     partial class MainPageVM : BaseVM {
@@ -45,12 +46,14 @@ namespace PersonalHelper.ViewModels {
                     TypeTodo = TypesTodo.Do
                 };
                 await db.SaveItemAsync(newToDo);
-                IEnumerable<TodoItem> toList = await db.GetAllToDo();
+                DependencyService.Get<INotificationManager>().SendNotification("Пора выполнить задачу!", newToDo.ItemName, newToDo.DateRemember);
                 todoItemsToday = new ObservableCollection<TodoItem>(await db.GetItemsTodayAsync());
                 NotifyPropertyChanged(nameof(TodoItemsToday));
             });
             TaskDateCommand = new Command<DatePicker>((DatePicker datePicker) => taskDate = datePicker.Date);
         }
+        #region Notifycation
+        #endregion
         private static TodoItemDatabase db;
         #region ToDo
         private ObservableCollection<TodoItem> todoItemsToday;

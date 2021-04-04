@@ -3,6 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>Samsung SM-A515F</SelectedDevice>
     <ActiveDebugProfile>Samsung SM-A515F</ActiveDebugProfile>
-    <DefaultDevice>android_tv</DefaultDevice>
+    <DefaultDevice>pixel_3a</DefaultDevice>
   </PropertyGroup>
 </Project>

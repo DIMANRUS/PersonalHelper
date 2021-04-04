@@ -13,12 +13,8 @@
     <None Include="web.config" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
-  </ItemGroup>
-
-  <ItemGroup>
+  <!--<ItemGroup>
     <ProjectReference Include="..\PersonalHelper\PersonalHelper\PersonalHelper.csproj" />
-  </ItemGroup>
+  </ItemGroup>-->
 
 </Project>
