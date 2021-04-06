@@ -251,18 +251,42 @@
     <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon-2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon.png" />
-    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon-2.png" />
-    <ImageAsset Include="Assets.xcassets\TaskBlockIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\TaskBlockIcon.imageset\TaskBlockIcon.png" />
-    <ImageAsset Include="Assets.xcassets\TaskBlockIcon.imageset\TaskBlockIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\TaskBlockIcon.imageset\TaskBlockIcon-2.png" />
-    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon.png" />
-    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon-2.png" />
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TaskBlockIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TaskBlockIcon.imageset\TaskBlockIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TaskBlockIcon.imageset\TaskBlockIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TaskBlockIcon.imageset\TaskBlockIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
