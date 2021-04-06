@@ -6,7 +6,6 @@ using PersonalHelper.Models;
 using System.Collections.ObjectModel;
 using PersonalHelper.SharedVM;
 using System;
-using System.Collections.Generic;
 using PersonalHelper.Interfaces;
 
 namespace PersonalHelper.ViewModels {
@@ -19,28 +18,31 @@ namespace PersonalHelper.ViewModels {
             OpenAllNews = new Command(async () => {
                 await CurrentPage.Navigation.PushAsync(new NewsPage());
             });
-            OpenWeatherForOneDay = new Command(async () => {
+            OpenAllWeather = new Command(async () => {
                 await CurrentPage.Navigation.PushAsync(new WeatherPage());
             });
             Task.Run(async () => {
                 db = await TodoItemDatabase.Instance;
                 todoItemsToday = new ObservableCollection<TodoItem>(await db.GetItemsTodayAsync());
                 NewsCollection = await newsModel.GetTopNews();
+                Temperature = (await weatherModel.GetWheatherForOneDay())[1];
                 NotifyPropertyChanged(nameof(TodoItemsToday));
                 NotifyPropertyChanged(nameof(NewsCollection));
+                NotifyPropertyChanged(nameof(Temperature));
             });
             ToDoVM.CompleteTask = new Command<int>(async (int todoId) => {
-                await db.CompleteTaskAsync(todoId); 
-                todoItemsToday = new ObservableCollection<TodoItem>(await db.GetItemsTodayAsync()); 
-                NotifyPropertyChanged(nameof(TodoItemsToday)); });
+                await db.CompleteTaskAsync(todoId);
+                todoItemsToday = new ObservableCollection<TodoItem>(await db.GetItemsTodayAsync());
+                NotifyPropertyChanged(nameof(TodoItemsToday));
+            });
             ToDoVM.RemoveTask = new Command<int>(async (int todoId) => {
                 await db.RemoveTaskAsync(todoId);
                 todoItemsToday = new ObservableCollection<TodoItem>(await db.GetItemsTodayAsync());
                 NotifyPropertyChanged(nameof(TodoItemsToday));
             });
-            AddTask = new Command<string>(async(string taskText) => {
+            AddTask = new Command<string>(async (string taskText) => {
                 taskDate = taskDate.Date + TaskTimePicker;
-                TodoItem newToDo = new TodoItem() { 
+                TodoItem newToDo = new TodoItem() {
                     ItemName = taskText,
                     DateRemember = taskDate,
                     TypeTodo = TypesTodo.Do
@@ -52,12 +54,16 @@ namespace PersonalHelper.ViewModels {
             });
             TaskDateCommand = new Command<DatePicker>((DatePicker datePicker) => taskDate = datePicker.Date);
         }
+        private TodoItemDatabase db;
+        private readonly News newsModel = new News();
+        private readonly Weather weatherModel = new Weather();
+        public NewsVM NewsVM { get; } = new NewsVM();
         #region Notifycation
         #endregion
-        private static TodoItemDatabase db;
         #region ToDo
         private ObservableCollection<TodoItem> todoItemsToday;
         public ObservableCollection<TodoItem> TodoItemsToday { get => todoItemsToday; }
+        public ICommand OpenAllToDo { get; private set; }
         #region Add New Task
         public ICommand AddTask { get; private set; }
         public ICommand TaskDateCommand { get; private set; }
@@ -65,15 +71,16 @@ namespace PersonalHelper.ViewModels {
         public TimeSpan TaskTimePicker { get; set; }
         #endregion
         #endregion
-        private Wheather wheather { get; set; }
-        public ICommand OpenWeatherForOneDay { get; set; }
-        public ICommand OpenWeatherForWeek { get; private set; }
-        private readonly News newsModel = new News();
+        #region Weather
+        public string Temperature { get; private set; }
+        public ICommand OpenAllWeather { get; private set; }
+        public string UserCity { get => User.GetUserCity(); }
+        #endregion
+        #region News
         public ObservableCollection<Article> NewsCollection { get; private set; }
         public ICommand OpenAllNews { get; private set; }
+        #endregion
         public ICommand OpenSettings { private set; get; }
-        public ICommand OpenAllToDo { get; private set; }
         public string HelloUserName { get => "Доброе утро, " + User.GetUserName(); }
-        public NewsVM NewsVM { get; } = new NewsVM();
     }
 }

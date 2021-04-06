@@ -3,8 +3,9 @@ using System.Threading.Tasks;
 
 namespace PersonalHelper.Helpers 
 {
-    class HttpHelper
+    static class HttpHelper
     {
-        public async Task<string> HttpRequest(string url) => await (new HttpClient()).GetStringAsync(url);         
+        private static readonly HttpClient httpClient = new HttpClient();
+        public static async Task<string> HttpRequest(string url) => await httpClient.GetStringAsync(url);         
     }
 }
