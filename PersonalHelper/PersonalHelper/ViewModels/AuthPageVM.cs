@@ -25,7 +25,7 @@ namespace PersonalHelper.ViewModels {
         public string UserName { get => userName; set => userName = value; }
         public string UserCity {
             get => userCity; set {
-                userCity = value;
+                userCity = value.Replace(" ", "");
                 if (User.VerifyCity(value)) {
                     userCityStatusChangingTextColor = Color.Green;
                     NotifyPropertyChanged("UserCityStatusChangingTextColor");

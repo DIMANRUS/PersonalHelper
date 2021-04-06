@@ -25,10 +25,13 @@ namespace PersonalHelper.ViewModels {
                 db = await TodoItemDatabase.Instance;
                 todoItemsToday = new ObservableCollection<TodoItem>(await db.GetItemsTodayAsync());
                 NewsCollection = await newsModel.GetTopNews();
-                Temperature = (await weatherModel.GetWheatherForOneDay())[1];
+                string[] weatherFromApi = await weatherModel.GetWheatherForOneDay();
+                Temperature = weatherFromApi[0];
+                IconSource = weatherFromApi[1];
                 NotifyPropertyChanged(nameof(TodoItemsToday));
                 NotifyPropertyChanged(nameof(NewsCollection));
                 NotifyPropertyChanged(nameof(Temperature));
+                NotifyPropertyChanged(nameof(IconSource));
             });
             ToDoVM.CompleteTask = new Command<int>(async (int todoId) => {
                 await db.CompleteTaskAsync(todoId);
@@ -73,6 +76,7 @@ namespace PersonalHelper.ViewModels {
         #endregion
         #region Weather
         public string Temperature { get; private set; }
+        public string IconSource { get; private set; }
         public ICommand OpenAllWeather { get; private set; }
         public string UserCity { get => User.GetUserCity(); }
         #endregion
