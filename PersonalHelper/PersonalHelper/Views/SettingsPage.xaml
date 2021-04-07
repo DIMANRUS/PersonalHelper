@@ -14,23 +14,22 @@
                 <Label Text="Изменения вступят в силу при след. запуске"
                        Margin="5"
                        HorizontalTextAlignment="Center" 
-                       FontSize="18"/>
+                       FontSize="Medium"/>
                 <Frame Padding="0">
-
                     <Entry Text="{Binding UserName, Mode=TwoWay}"
                        Margin="15,7,15,0"
-                       FontSize="25" />
+                       FontSize="Large" />
                 </Frame>
                 <Frame Padding="0">
                     <Entry Text="{Binding UserCity, Mode=TwoWay}"
                        Margin="15,7,15,0"
-                       FontSize="25"
+                       FontSize="Large"
                        TextColor="{Binding UserCityStatusChangingTextColor,  Mode=OneWay}" />
                 </Frame>
                 <Frame>
                     <StackLayout>
                         <Label Text="Тема приложения"
-                       FontSize="20"/>
+                       FontSize="Large"/>
                         <RadioButton Content="Тёмный"
                                      GroupName="Theme"
                                      CheckedChanged="RadioButton_CheckedChanged"

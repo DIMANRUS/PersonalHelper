@@ -11,14 +11,17 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Label Text="Новости в городе"
-                       FontSize="30"
-                       Margin="15,0,0,0" />
                 <CollectionView ItemsSource="{Binding NewsCityCollection}"
                                 ItemsLayout="HorizontalList"
                                 HeightRequest="{Binding HeightNewsCityCollection}"
                                 x:Name="newsView"
                                 Margin="10,0,0,0">
+                    <CollectionView.Header>
+                        <Label Text="Новости в городе"
+                       FontSize="Title"
+                       Margin="15,0,0,0"
+                               VerticalTextAlignment="Center"/>
+                    </CollectionView.Header>
                     <CollectionView.EmptyView>
                         <ContentView>
                             <StackLayout HorizontalOptions="CenterAndExpand"
@@ -26,15 +29,14 @@
                                 <Image Source="NoNewsIcon.png"
                                        HeightRequest="70" />
                                 <Label Text="Новости закончились."
-                                       FontSize="25" />
+                                       FontSize="Medium" />
                             </StackLayout>
                         </ContentView>
                     </CollectionView.EmptyView>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <Grid>
-                                <Frame CornerRadius="0"
-                                       Padding="1">
+                                <Frame CornerRadius="10" Padding="0">
                                     <Frame.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding Path=BindingContext.NewsVM.OpenNews, Source={x:Reference Name=newsView}}"
                                                               CommandParameter="{Binding url}" />
@@ -43,7 +45,7 @@
                                         <Image Source="{Binding urlToImage}"
                                                HeightRequest="170" />
                                         <Label Text="{Binding title}"
-                                               FontSize="20"
+                                               FontSize="Title"
                                                MaxLines="2"
                                                WidthRequest="170"
                                                Margin="15,0,0,0" />
@@ -51,7 +53,7 @@
                                                    BackgroundColor="DarkOrange"
                                                    Margin="10,0,10,2" />
                                         <Label Text="{Binding description}"
-                                               FontSize="16"
+                                               FontSize="Default"
                                                MaxLines="4"
                                                WidthRequest="170"
                                                Margin="15,0,0,0" />
@@ -79,21 +81,24 @@
                     </CollectionView.EmptyView>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <StackLayout>
-                                <StackLayout Orientation="Horizontal" Spacing="10">
-                                    <Label Text="{Binding Keyword}"
-                                       FontSize="30" />
-                                    <ImageButton
-                                        HeightRequest="27"
-                                        Source="RemoveIcon.png"
-                                        Command="{Binding Path=BindingContext.DeleteCategory, Source={x:Reference Name=newsCategoryView}}"
-                                                                              CommandParameter="{Binding Keyword}"/>
-                                </StackLayout>
                                 <CollectionView ItemsSource="{Binding ArticlesCollection}"
                                                 x:Name="newsCollection"
                                                 ItemsLayout="HorizontalList"
                                                 Margin="10,0,0,0"
                                                 HeightRequest="330">
+                                                        <CollectionView.Header>
+                                                            <StackLayout Orientation="Horizontal">
+                        <Label Text="{Binding Keyword}"
+                       FontSize="Title"
+                       Margin="15,0,0,0"
+                               VerticalTextAlignment="Center"/>
+                                                                                                    <ImageButton
+                                        HeightRequest="27"
+                                        Source="RemoveIcon.png"
+                                        Command="{Binding Path=BindingContext.DeleteCategory, Source={x:Reference Name=newsCategoryView}}"
+                                                                              CommandParameter="{Binding Keyword}"/>
+                                                                </StackLayout>
+                    </CollectionView.Header>
                                     <CollectionView.ItemTemplate>
                                         <DataTemplate>
                                             <Grid>
@@ -107,7 +112,7 @@
                                                         <Image Source="{Binding urlToImage}"
                                                                HeightRequest="170" />
                                                         <Label Text="{Binding title}"
-                                                               FontSize="20"
+                                                               FontSize="Title"
                                                                MaxLines="2"
                                                                WidthRequest="170"
                                                                Margin="15,0,0,0" />
@@ -115,7 +120,7 @@
                                                                    BackgroundColor="DarkOrange"
                                                                    Margin="10,0,10,2" />
                                                         <Label Text="{Binding description}"
-                                                               FontSize="16"
+                                                               FontSize="Default"
                                                                MaxLines="4"
                                                                WidthRequest="170"
                                                                Margin="15,0,0,0" />
@@ -125,7 +130,6 @@
                                         </DataTemplate>
                                     </CollectionView.ItemTemplate>
                                 </CollectionView>
-                            </StackLayout>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
@@ -133,16 +137,15 @@
                     <StackLayout>
                         <Label Text="Закрепите ваши любимые новости"
                                HorizontalTextAlignment="Center"
-                               FontSize="27" />
+                               FontSize="Title" />
                         <Entry Placeholder="Введите ключевое слово для поиска"
-                               FontSize="22"
-                               Margin="15,2,15,0"
+                               FontSize="Medium"
                                HorizontalOptions="Center"
                                MaxLength="20"
                                Text="{Binding Keyword, Mode=TwoWay}"
                                HorizontalTextAlignment="Center"/>
                         <Button Text="Добавить"
-                                FontSize="16"
+                                FontSize="Body"
                                 TextColor="DarkOrange"
                                 Command="{Binding AddKeyword}" />
                     </StackLayout>

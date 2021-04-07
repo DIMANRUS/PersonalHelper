@@ -21,7 +21,7 @@
                                 Margin="10,5,10,0">
                     <CollectionView.Header>
                         <Label Text="Завершённые"
-                               FontSize="30" />
+                               FontSize="Title" />
                     </CollectionView.Header>
                     <CollectionView.EmptyView>
                         <ContentView>
@@ -30,7 +30,8 @@
                                 <Image Source="CompleteIcon.png"
                                        HeightRequest="70" />
                                 <Label Text="Может пора выполнить задачу?"
-                                       FontSize="25" />
+                                       FontSize="Medium"
+                                       HorizontalTextAlignment="Center"/>
                             </StackLayout>
                         </ContentView>
                     </CollectionView.EmptyView>
@@ -69,7 +70,7 @@
                                 Margin="10,5,10,0"
                                 x:Name="todoView2">
                     <CollectionView.Header>
-                        <Label FontSize="30">
+                        <Label FontSize="Title">
                             <Label.Text>
                                 <MultiBinding StringFormat="Задачи на завтра ({0} {1})">
                                     <Binding Path="NextDay.Day" />
@@ -85,7 +86,8 @@
                                 <Image Source="CompleteIcon.png"
                                        HeightRequest="70" />
                                 <Label Text="На завтра пусто! Планируй, делай!"
-                                       FontSize="25" />
+                                       FontSize="Medium"
+                                       HorizontalTextAlignment="Center"/>
                             </StackLayout>
                         </ContentView>
                     </CollectionView.EmptyView>
@@ -125,7 +127,7 @@
                                 Margin="10,5,10,0">
                     <CollectionView.Header>
                         <Label Text="Остальные задачи"
-                               FontSize="30" />
+                               FontSize="Title" />
                     </CollectionView.Header>
                     <CollectionView.EmptyView>
                         <ContentView>
@@ -134,7 +136,8 @@
                                 <Image Source="CompleteIcon.png"
                                        HeightRequest="70" />
                                 <Label Text="Пока пусто! Планируй, делай!"
-                                       FontSize="25" />
+                                       FontSize="Medium"
+                                       HorizontalTextAlignment="Center"/>
                             </StackLayout>
                         </ContentView>
                     </CollectionView.EmptyView>

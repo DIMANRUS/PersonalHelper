@@ -26,9 +26,9 @@
                         <Image  Source="WheatherIconSun.png"
                                 HeightRequest="20" />
                         <Label Text="Погода"
-                               FontSize="16" />
+                               FontSize="Body" />
                         <Label Text="Детально >"
-                               FontSize="16"
+                               FontSize="Body"
                                HorizontalOptions="EndAndExpand"
                                Margin="0,0,20,0">
                             <Label.GestureRecognizers>
@@ -40,19 +40,15 @@
                                  HorizontalOptions="Center"
                                  Margin="0,0,0,10">
                         <Label Text="{Binding UserCity, Mode=OneWay}"
-                               FontSize="30"
+                               FontSize="Large"
                                Margin="0,5,7,0"
-                               HeightRequest="30"
                                VerticalTextAlignment="Center"/>
                         <Image Source="{Binding IconSource}"
-                               HeightRequest="30"
                                WidthRequest="30"
-                               Aspect="AspectFill">
-                        </Image>
+                               Aspect="AspectFill"/>
                         <Label Text="{Binding Temperature, Mode=OneWay, StringFormat='{0} °C'}"
-                               FontSize="30"
+                               FontSize="Large"
                                Margin="0,5,0,0"
-                               HeightRequest="30"
                                VerticalTextAlignment="Center"/>
                     </StackLayout>
                 </StackLayout>
@@ -68,10 +64,10 @@
                         <Image Source="NewsBlockIcon.png"
                                HeightRequest="20" />
                         <Label Text="Новости"
-                               FontSize="16"
+                               FontSize="Body"
                                Grid.Column="1" />
                         <Label Text="Ещё новости >"
-                               FontSize="16"
+                               FontSize="Body"
                                Grid.Column="2"
                                HorizontalOptions="End"
                                Margin="0,0,20,0">
@@ -87,8 +83,8 @@
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
                                 <Grid>
-                                    <Frame CornerRadius="0"
-                                           Padding="1">
+                                    <Frame CornerRadius="10"
+                                           Padding="0">
                                         <Frame.GestureRecognizers>
                                             <TapGestureRecognizer Command="{Binding Path=BindingContext.NewsVM.OpenNews, Source={x:Reference Name=newsView}}"
                                                                   CommandParameter="{Binding url}" />
@@ -97,7 +93,7 @@
                                             <Image Source="{Binding urlToImage}"
                                                    HeightRequest="170" />
                                             <Label Text="{Binding title}"
-                                                   FontSize="20"
+                                                   FontSize="Title"
                                                    MaxLines="2"
                                                    WidthRequest="170"
                                                    Margin="15,0,0,0" />
@@ -105,7 +101,7 @@
                                                        BackgroundColor="DarkOrange"
                                                        Margin="10,0,10,2" />
                                             <Label Text="{Binding description}"
-                                                   FontSize="16"
+                                                   FontSize="Default"
                                                    MaxLines="4"
                                                    WidthRequest="170"
                                                    Margin="15,0,0,0" />
@@ -132,10 +128,10 @@
                         <Image Source="TaskBlockIcon.png"
                                HeightRequest="20" />
                         <Label Text="Задачи"
-                               FontSize="16"
+                               FontSize="Body"
                                Grid.Column="1" />
                         <Label Text="Все задачи >"
-                               FontSize="16"
+                               FontSize="Body"
                                Grid.Column="2"
                                HorizontalOptions="End"
                                Margin="0,0,20,0">
@@ -155,7 +151,7 @@
                                     <Image Source="CompleteIcon.png"
                                            HeightRequest="70" />
                                     <Label Text="Молодец! На сегодня всё."
-                                           FontSize="25" />
+                                           FontSize="Medium" />
                                 </StackLayout>
                             </ContentView>
                         </CollectionView.EmptyView>
@@ -202,16 +198,17 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="35" />
                             </Grid.ColumnDefinitions>
-                            <Label Grid.ColumnSpan="2"
+                            <Label Grid.ColumnSpan="3"
                                    Text="Добавление задачи"
-                                   FontSize="25"
-                                   HorizontalOptions="Center" />
+                                   FontSize="Title"
+                                   HorizontalTextAlignment="Center" />
                             <Entry Grid.ColumnSpan="3"
                                    Grid.Row="1"
                                    Placeholder="Введите задачу"
+                                   FontSize="Medium"
                                    x:Name="TaskText" />
                             <DatePicker Grid.Row="2"
-                                        FontSize="20"
+                                        FontSize="Medium"
                                         x:Name="TaskDate">
                                 <DatePicker.Behaviors>
                                     <xct:EventToCommandBehavior EventName="DateSelected"
@@ -221,7 +218,7 @@
                             </DatePicker>
                             <TimePicker Grid.Row="2"
                                         Grid.Column="1"
-                                        FontSize="20"
+                                        FontSize="Medium"
                                         Time="{Binding TaskTimePicker}">
                             </TimePicker>
                             <ImageButton Source="AddIcon.png"

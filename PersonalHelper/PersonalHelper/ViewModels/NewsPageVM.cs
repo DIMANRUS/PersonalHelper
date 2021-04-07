@@ -13,7 +13,7 @@ namespace PersonalHelper.ViewModels {
                 NewsCityCollection = await newsModel.GetAllNewsForKeyword(User.GetUserCity());
                 if (NewsCityCollection.Count != 0)
                 {
-                    _HeightNewsCityCollection = 330;
+                    _HeightNewsCityCollection = 340;
                     NotifyPropertyChanged("IsVisibleNoNewsItem");
                     NotifyPropertyChanged("HeightNewsCityCollection");
                 }
