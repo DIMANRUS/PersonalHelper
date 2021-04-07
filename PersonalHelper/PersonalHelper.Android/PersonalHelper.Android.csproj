@@ -82,7 +82,7 @@
       <Version>1.7.335</Version>
     </PackageReference>
     <PackageReference Include="System.Text.Json">
-      <Version>5.0.1</Version>
+      <Version>5.0.2</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.CommunityToolkit">
       <Version>1.1.0</Version>
@@ -165,7 +165,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties XamarinHotReloadWrongLinkerErrorInfoBarPersonalHelperAndroidHideInfoBar="True" XamarinHotReloadDebuggerTimeoutExceptionPersonalHelperAndroidHideInfoBar="True" TriggeredFromHotReload="False" />
+      <UserProperties TriggeredFromHotReload="False" XamarinHotReloadDebuggerTimeoutExceptionPersonalHelperAndroidHideInfoBar="True" XamarinHotReloadWrongLinkerErrorInfoBarPersonalHelperAndroidHideInfoBar="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

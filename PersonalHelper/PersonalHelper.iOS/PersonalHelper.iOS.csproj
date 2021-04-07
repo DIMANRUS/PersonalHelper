@@ -300,7 +300,7 @@
       <Version>1.7.335</Version>
     </PackageReference>
     <PackageReference Include="System.Text.Json">
-      <Version>5.0.1</Version>
+      <Version>5.0.2</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.CommunityToolkit">
       <Version>1.1.0</Version>
@@ -316,17 +316,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Assets.xcassets\AddIcon.imageset\" />
+    <Folder Include="Assets.xcassets\CompleteIcon.imageset\" />
     <Folder Include="Assets.xcassets\info.imageset\" />
     <Folder Include="Assets.xcassets\NewsBlockIcon.imageset\" />
     <Folder Include="Assets.xcassets\next.imageset\" />
     <Folder Include="Assets.xcassets\NoNewsIco.imageset\" />
     <Folder Include="Assets.xcassets\RemoveIcon.imageset\" />
     <Folder Include="Assets.xcassets\SettingsIcon.imageset\" />
+    <Folder Include="Assets.xcassets\TaskBlockIcon.imageset\" />
     <Folder Include="Assets.xcassets\WheatherBlockIcon.imageset\" />
     <Folder Include="Assets.xcassets\WheatherIconSun.imageset\" />
-    <Folder Include="Assets.xcassets\CompleteIcon.imageset\" />
-    <Folder Include="Assets.xcassets\TaskBlockIcon.imageset\" />
-    <Folder Include="Assets.xcassets\AddIcon.imageset\" />
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
