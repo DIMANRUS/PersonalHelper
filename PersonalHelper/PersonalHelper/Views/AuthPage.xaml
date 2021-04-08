@@ -6,7 +6,7 @@
              xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels"
              Title="Добро пожаловать">
     <ContentPage.BindingContext>
-        <ViewModels:AuthPageVM />
+        <ViewModels:AuthPageVM/>
     </ContentPage.BindingContext>
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Далее"

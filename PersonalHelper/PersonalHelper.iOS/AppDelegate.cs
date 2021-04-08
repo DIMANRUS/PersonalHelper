@@ -4,7 +4,6 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
-using UserNotifications;
 
 namespace PersonalHelper.iOS
 {
@@ -24,7 +23,6 @@ namespace PersonalHelper.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            UNUserNotificationCenter.Current.Delegate = new iOSNotificationReceiver();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

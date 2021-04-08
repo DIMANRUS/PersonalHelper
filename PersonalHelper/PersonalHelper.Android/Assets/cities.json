@@ -1,0 +1,3499 @@
+﻿{
+    "Cities": [
+        {
+            "undefined": "абаза"
+        },
+        {
+            "undefined": "абакан"
+        },
+        {
+            "undefined": "абдулино"
+        },
+        {
+            "undefined": "абинск"
+        },
+        {
+            "undefined": "агидель"
+        },
+        {
+            "undefined": "агрыз"
+        },
+        {
+            "undefined": "адыгейск"
+        },
+        {
+            "undefined": "азнакаево"
+        },
+        {
+            "undefined": "азов"
+        },
+        {
+            "undefined": "ак-Довурак"
+        },
+        {
+            "undefined": "аксай"
+        },
+        {
+            "undefined": "алагир"
+        },
+        {
+            "undefined": "алапаевск"
+        },
+        {
+            "undefined": "алатырь"
+        },
+        {
+            "undefined": "алдан"
+        },
+        {
+            "undefined": "алейск"
+        },
+        {
+            "undefined": "александров"
+        },
+        {
+            "undefined": "александровск"
+        },
+        {
+            "undefined": "александровск-Сахалинский"
+        },
+        {
+            "undefined": "алексеевка"
+        },
+        {
+            "undefined": "алексин"
+        },
+        {
+            "undefined": "алзамай"
+        },
+        {
+            "undefined": "алупка"
+        },
+        {
+            "undefined": "алушта"
+        },
+        {
+            "undefined": "альметьевск"
+        },
+        {
+            "undefined": "амурск"
+        },
+        {
+            "undefined": "анадырь"
+        },
+        {
+            "undefined": "анапа"
+        },
+        {
+            "undefined": "ангарск"
+        },
+        {
+            "undefined": "андреаполь"
+        },
+        {
+            "undefined": "анжеро-Судженск"
+        },
+        {
+            "undefined": "анива"
+        },
+        {
+            "undefined": "апатиты"
+        },
+        {
+            "undefined": "апрелевка"
+        },
+        {
+            "undefined": "апшеронск"
+        },
+        {
+            "undefined": "арамиль"
+        },
+        {
+            "undefined": "аргун"
+        },
+        {
+            "undefined": "ардатов"
+        },
+        {
+            "undefined": "ардон"
+        },
+        {
+            "undefined": "арзамас"
+        },
+        {
+            "undefined": "аркадак"
+        },
+        {
+            "undefined": "армавир"
+        },
+        {
+            "undefined": "армянск"
+        },
+        {
+            "undefined": "армянськ"
+        },
+        {
+            "undefined": "арсеньев"
+        },
+        {
+            "undefined": "арск"
+        },
+        {
+            "undefined": "артем"
+        },
+        {
+            "undefined": "артемовск"
+        },
+        {
+            "undefined": "артемовский"
+        },
+        {
+            "undefined": "архангельск"
+        },
+        {
+            "undefined": "асбест"
+        },
+        {
+            "undefined": "асино"
+        },
+        {
+            "undefined": "астрахань"
+        },
+        {
+            "undefined": "аткарск"
+        },
+        {
+            "undefined": "ахтубинск"
+        },
+        {
+            "undefined": "ахтубинск-7"
+        },
+        {
+            "undefined": "ачинск"
+        },
+        {
+            "undefined": "аша"
+        },
+        {
+            "undefined": "бабаево"
+        },
+        {
+            "undefined": "бабушкин"
+        },
+        {
+            "undefined": "бавлы"
+        },
+        {
+            "undefined": "багратионовск"
+        },
+        {
+            "undefined": "байкальск"
+        },
+        {
+            "undefined": "баймак"
+        },
+        {
+            "undefined": "бакал"
+        },
+        {
+            "undefined": "баксан"
+        },
+        {
+            "undefined": "балабаново"
+        },
+        {
+            "undefined": "балаково"
+        },
+        {
+            "undefined": "балахна"
+        },
+        {
+            "undefined": "балашиха"
+        },
+        {
+            "undefined": "балашов"
+        },
+        {
+            "undefined": "балей"
+        },
+        {
+            "undefined": "балтийск"
+        },
+        {
+            "undefined": "барабинск"
+        },
+        {
+            "undefined": "барнаул"
+        },
+        {
+            "undefined": "барыш"
+        },
+        {
+            "undefined": "батайск"
+        },
+        {
+            "undefined": "бахчисарай"
+        },
+        {
+            "undefined": "бежецк"
+        },
+        {
+            "undefined": "белая Калитва"
+        },
+        {
+            "undefined": "белая Холуница"
+        },
+        {
+            "undefined": "белгород"
+        },
+        {
+            "undefined": "белебей"
+        },
+        {
+            "undefined": "белев"
+        },
+        {
+            "undefined": "белинский"
+        },
+        {
+            "undefined": "белово"
+        },
+        {
+            "undefined": "белогорск"
+        },
+        {
+            "undefined": "белогорск"
+        },
+        {
+            "undefined": "белозерск"
+        },
+        {
+            "undefined": "белокуриха"
+        },
+        {
+            "undefined": "беломорск"
+        },
+        {
+            "undefined": "белорецк"
+        },
+        {
+            "undefined": "белореченск"
+        },
+        {
+            "undefined": "белоусово"
+        },
+        {
+            "undefined": "белоярский"
+        },
+        {
+            "undefined": "белый"
+        },
+        {
+            "undefined": "бердск"
+        },
+        {
+            "undefined": "березники"
+        },
+        {
+            "undefined": "березовский"
+        },
+        {
+            "undefined": "березовский"
+        },
+        {
+            "undefined": "беслан"
+        },
+        {
+            "undefined": "бийск"
+        },
+        {
+            "undefined": "бикин"
+        },
+        {
+            "undefined": "билибино"
+        },
+        {
+            "undefined": "биробиджан"
+        },
+        {
+            "undefined": "бирск"
+        },
+        {
+            "undefined": "бирюсинск"
+        },
+        {
+            "undefined": "бирюч"
+        },
+        {
+            "undefined": "благовещенск"
+        },
+        {
+            "undefined": "благовещенск"
+        },
+        {
+            "undefined": "благодарный"
+        },
+        {
+            "undefined": "бобров"
+        },
+        {
+            "undefined": "богданович"
+        },
+        {
+            "undefined": "богородицк"
+        },
+        {
+            "undefined": "богородск"
+        },
+        {
+            "undefined": "боготол"
+        },
+        {
+            "undefined": "богучар"
+        },
+        {
+            "undefined": "бодайбо"
+        },
+        {
+            "undefined": "бокситогорск"
+        },
+        {
+            "undefined": "болгар"
+        },
+        {
+            "undefined": "бологое"
+        },
+        {
+            "undefined": "болотное"
+        },
+        {
+            "undefined": "болохово"
+        },
+        {
+            "undefined": "болхов"
+        },
+        {
+            "undefined": "большой Камень"
+        },
+        {
+            "undefined": "бор"
+        },
+        {
+            "undefined": "борзя"
+        },
+        {
+            "undefined": "борисоглебск"
+        },
+        {
+            "undefined": "боровичи"
+        },
+        {
+            "undefined": "боровск"
+        },
+        {
+            "undefined": "боровск-1"
+        },
+        {
+            "undefined": "бородино"
+        },
+        {
+            "undefined": "братск"
+        },
+        {
+            "undefined": "бронницы"
+        },
+        {
+            "undefined": "брянск"
+        },
+        {
+            "undefined": "бугульма"
+        },
+        {
+            "undefined": "бугуруслан"
+        },
+        {
+            "undefined": "буденновск"
+        },
+        {
+            "undefined": "бузулук"
+        },
+        {
+            "undefined": "буинск"
+        },
+        {
+            "undefined": "буй"
+        },
+        {
+            "undefined": "буйнакск"
+        },
+        {
+            "undefined": "бутурлиновка"
+        },
+        {
+            "undefined": "валдай"
+        },
+        {
+            "undefined": "валуйки"
+        },
+        {
+            "undefined": "велиж"
+        },
+        {
+            "undefined": "великие Луки"
+        },
+        {
+            "undefined": "великие Луки-1"
+        },
+        {
+            "undefined": "великий Новгород"
+        },
+        {
+            "undefined": "великий Устюг"
+        },
+        {
+            "undefined": "вельск"
+        },
+        {
+            "undefined": "венев"
+        },
+        {
+            "undefined": "верещагино"
+        },
+        {
+            "undefined": "верея"
+        },
+        {
+            "undefined": "верхнеуральск"
+        },
+        {
+            "undefined": "верхний Тагил"
+        },
+        {
+            "undefined": "верхний Уфалей"
+        },
+        {
+            "undefined": "верхняя Пышма"
+        },
+        {
+            "undefined": "верхняя Салда"
+        },
+        {
+            "undefined": "верхняя Тура"
+        },
+        {
+            "undefined": "верхотурье"
+        },
+        {
+            "undefined": "верхоянск"
+        },
+        {
+            "undefined": "весьегонск"
+        },
+        {
+            "undefined": "ветлуга"
+        },
+        {
+            "undefined": "видное"
+        },
+        {
+            "undefined": "вилюйск"
+        },
+        {
+            "undefined": "вилючинск"
+        },
+        {
+            "undefined": "вихоревка"
+        },
+        {
+            "undefined": "вичуга"
+        },
+        {
+            "undefined": "владивосток"
+        },
+        {
+            "undefined": "владикавказ"
+        },
+        {
+            "undefined": "владимир"
+        },
+        {
+            "undefined": "волгоград"
+        },
+        {
+            "undefined": "волгодонск"
+        },
+        {
+            "undefined": "волгореченск"
+        },
+        {
+            "undefined": "волжск"
+        },
+        {
+            "undefined": "волжский"
+        },
+        {
+            "undefined": "вологда"
+        },
+        {
+            "undefined": "володарск"
+        },
+        {
+            "undefined": "волоколамск"
+        },
+        {
+            "undefined": "волосово"
+        },
+        {
+            "undefined": "волхов"
+        },
+        {
+            "undefined": "волчанск"
+        },
+        {
+            "undefined": "вольск"
+        },
+        {
+            "undefined": "вольск-18"
+        },
+        {
+            "undefined": "воркута"
+        },
+        {
+            "undefined": "воронеж"
+        },
+        {
+            "undefined": "воронеж-45"
+        },
+        {
+            "undefined": "ворсма"
+        },
+        {
+            "undefined": "воскресенск"
+        },
+        {
+            "undefined": "воткинск"
+        },
+        {
+            "undefined": "всеволожск"
+        },
+        {
+            "undefined": "вуктыл"
+        },
+        {
+            "undefined": "выборг"
+        },
+        {
+            "undefined": "выкса"
+        },
+        {
+            "undefined": "высоковск"
+        },
+        {
+            "undefined": "высоцк"
+        },
+        {
+            "undefined": "вытегра"
+        },
+        {
+            "undefined": "вышний Волочек"
+        },
+        {
+            "undefined": "вяземский"
+        },
+        {
+            "undefined": "вязники"
+        },
+        {
+            "undefined": "вязьма"
+        },
+        {
+            "undefined": "вятские Поляны"
+        },
+        {
+            "undefined": "гаврилов Посад"
+        },
+        {
+            "undefined": "гаврилов-Ям"
+        },
+        {
+            "undefined": "гагарин"
+        },
+        {
+            "undefined": "гаджиево"
+        },
+        {
+            "undefined": "гай"
+        },
+        {
+            "undefined": "галич"
+        },
+        {
+            "undefined": "гатчина"
+        },
+        {
+            "undefined": "гвардейск"
+        },
+        {
+            "undefined": "гдов"
+        },
+        {
+            "undefined": "геленджик"
+        },
+        {
+            "undefined": "георгиевск"
+        },
+        {
+            "undefined": "глазов"
+        },
+        {
+            "undefined": "голицыно"
+        },
+        {
+            "undefined": "горбатов"
+        },
+        {
+            "undefined": "горно-Алтайск"
+        },
+        {
+            "undefined": "горнозаводск"
+        },
+        {
+            "undefined": "горняк"
+        },
+        {
+            "undefined": "городец"
+        },
+        {
+            "undefined": "городище"
+        },
+        {
+            "undefined": "городовиковск"
+        },
+        {
+            "undefined": "городской округ Черноголовка"
+        },
+        {
+            "undefined": "гороховец"
+        },
+        {
+            "undefined": "горячий Ключ"
+        },
+        {
+            "undefined": "грайворон"
+        },
+        {
+            "undefined": "гремячинск"
+        },
+        {
+            "undefined": "грозный"
+        },
+        {
+            "undefined": "грязи"
+        },
+        {
+            "undefined": "грязовец"
+        },
+        {
+            "undefined": "губаха"
+        },
+        {
+            "undefined": "губкин"
+        },
+        {
+            "undefined": "губкинский"
+        },
+        {
+            "undefined": "гудермес"
+        },
+        {
+            "undefined": "гуково"
+        },
+        {
+            "undefined": "гулькевичи"
+        },
+        {
+            "undefined": "гурьевск"
+        },
+        {
+            "undefined": "гурьевск"
+        },
+        {
+            "undefined": "гусев"
+        },
+        {
+            "undefined": "гусиноозерск"
+        },
+        {
+            "undefined": "гусь-Хрустальный"
+        },
+        {
+            "undefined": "давлеканово"
+        },
+        {
+            "undefined": "дагестанские Огни"
+        },
+        {
+            "undefined": "далматово"
+        },
+        {
+            "undefined": "дальнегорск"
+        },
+        {
+            "undefined": "дальнереченск"
+        },
+        {
+            "undefined": "данилов"
+        },
+        {
+            "undefined": "данков"
+        },
+        {
+            "undefined": "дегтярск"
+        },
+        {
+            "undefined": "дедовск"
+        },
+        {
+            "undefined": "демидов"
+        },
+        {
+            "undefined": "дербент"
+        },
+        {
+            "undefined": "десногорск"
+        },
+        {
+            "undefined": "джанкой"
+        },
+        {
+            "undefined": "джанкой"
+        },
+        {
+            "undefined": "дзержинск"
+        },
+        {
+            "undefined": "дзержинский"
+        },
+        {
+            "undefined": "дивногорск"
+        },
+        {
+            "undefined": "дигора"
+        },
+        {
+            "undefined": "димитровград"
+        },
+        {
+            "undefined": "дмитриев"
+        },
+        {
+            "undefined": "дмитров"
+        },
+        {
+            "undefined": "дмитровск"
+        },
+        {
+            "undefined": "дно"
+        },
+        {
+            "undefined": "добрянка"
+        },
+        {
+            "undefined": "долгопрудный"
+        },
+        {
+            "undefined": "долинск"
+        },
+        {
+            "undefined": "домодедово"
+        },
+        {
+            "undefined": "донецк"
+        },
+        {
+            "undefined": "донской"
+        },
+        {
+            "undefined": "дорогобуж"
+        },
+        {
+            "undefined": "дрезна"
+        },
+        {
+            "undefined": "дубна"
+        },
+        {
+            "undefined": "дубовка"
+        },
+        {
+            "undefined": "дудинка"
+        },
+        {
+            "undefined": "духовщина"
+        },
+        {
+            "undefined": "дюртюли"
+        },
+        {
+            "undefined": "дятьково"
+        },
+        {
+            "undefined": "евпатория"
+        },
+        {
+            "undefined": "егорьевск"
+        },
+        {
+            "undefined": "ейск"
+        },
+        {
+            "undefined": "екатеринбург"
+        },
+        {
+            "undefined": "елабуга"
+        },
+        {
+            "undefined": "елец"
+        },
+        {
+            "undefined": "елизово"
+        },
+        {
+            "undefined": "ельня"
+        },
+        {
+            "undefined": "еманжелинск"
+        },
+        {
+            "undefined": "емва"
+        },
+        {
+            "undefined": "енисейск"
+        },
+        {
+            "undefined": "ермолино"
+        },
+        {
+            "undefined": "ершов"
+        },
+        {
+            "undefined": "ессентуки"
+        },
+        {
+            "undefined": "ефремов"
+        },
+        {
+            "undefined": "железноводск"
+        },
+        {
+            "undefined": "железногорск"
+        },
+        {
+            "undefined": "железногорск"
+        },
+        {
+            "undefined": "железногорск-Илимский"
+        },
+        {
+            "undefined": "железнодорожный"
+        },
+        {
+            "undefined": "жердевка"
+        },
+        {
+            "undefined": "жигулевск"
+        },
+        {
+            "undefined": "жиздра"
+        },
+        {
+            "undefined": "жирновск"
+        },
+        {
+            "undefined": "жуков"
+        },
+        {
+            "undefined": "жуковка"
+        },
+        {
+            "undefined": "жуковский"
+        },
+        {
+            "undefined": "завитинск"
+        },
+        {
+            "undefined": "заводоуковск"
+        },
+        {
+            "undefined": "заволжск"
+        },
+        {
+            "undefined": "заволжье"
+        },
+        {
+            "undefined": "задонск"
+        },
+        {
+            "undefined": "заинск"
+        },
+        {
+            "undefined": "закаменск"
+        },
+        {
+            "undefined": "заозерный"
+        },
+        {
+            "undefined": "заозерск"
+        },
+        {
+            "undefined": "западная Двина"
+        },
+        {
+            "undefined": "заполярный"
+        },
+        {
+            "undefined": "зарайск"
+        },
+        {
+            "undefined": "заречный"
+        },
+        {
+            "undefined": "заречный"
+        },
+        {
+            "undefined": "заринск"
+        },
+        {
+            "undefined": "звенигово"
+        },
+        {
+            "undefined": "звенигород"
+        },
+        {
+            "undefined": "зверево"
+        },
+        {
+            "undefined": "зеленогорск"
+        },
+        {
+            "undefined": "зеленогорск"
+        },
+        {
+            "undefined": "зеленоград"
+        },
+        {
+            "undefined": "зеленоградск"
+        },
+        {
+            "undefined": "зеленодольск"
+        },
+        {
+            "undefined": "зеленокумск"
+        },
+        {
+            "undefined": "зерноград"
+        },
+        {
+            "undefined": "зея"
+        },
+        {
+            "undefined": "зима"
+        },
+        {
+            "undefined": "златоуст"
+        },
+        {
+            "undefined": "злынка"
+        },
+        {
+            "undefined": "змеиногорск"
+        },
+        {
+            "undefined": "знаменск"
+        },
+        {
+            "undefined": "зубцов"
+        },
+        {
+            "undefined": "зуевка"
+        },
+        {
+            "undefined": "ивангород"
+        },
+        {
+            "undefined": "иваново"
+        },
+        {
+            "undefined": "ивантеевка"
+        },
+        {
+            "undefined": "ивдель"
+        },
+        {
+            "undefined": "игарка"
+        },
+        {
+            "undefined": "ижевск"
+        },
+        {
+            "undefined": "избербаш"
+        },
+        {
+            "undefined": "изобильный"
+        },
+        {
+            "undefined": "иланский"
+        },
+        {
+            "undefined": "инза"
+        },
+        {
+            "undefined": "инкерман"
+        },
+        {
+            "undefined": "инсар"
+        },
+        {
+            "undefined": "инта"
+        },
+        {
+            "undefined": "ипатово"
+        },
+        {
+            "undefined": "ирбит"
+        },
+        {
+            "undefined": "иркутск"
+        },
+        {
+            "undefined": "иркутск-45"
+        },
+        {
+            "undefined": "исилькуль"
+        },
+        {
+            "undefined": "искитим"
+        },
+        {
+            "undefined": "истра"
+        },
+        {
+            "undefined": "истра-1"
+        },
+        {
+            "undefined": "ишим"
+        },
+        {
+            "undefined": "ишимбай"
+        },
+        {
+            "undefined": "йошкар-Ола"
+        },
+        {
+            "undefined": "кадников"
+        },
+        {
+            "undefined": "казань"
+        },
+        {
+            "undefined": "калач"
+        },
+        {
+            "undefined": "калачинск"
+        },
+        {
+            "undefined": "калач-на-Дону"
+        },
+        {
+            "undefined": "калининград"
+        },
+        {
+            "undefined": "калининск"
+        },
+        {
+            "undefined": "калтан"
+        },
+        {
+            "undefined": "калуга"
+        },
+        {
+            "undefined": "калязин"
+        },
+        {
+            "undefined": "камбарка"
+        },
+        {
+            "undefined": "каменка"
+        },
+        {
+            "undefined": "каменногорск"
+        },
+        {
+            "undefined": "каменск-Уральский"
+        },
+        {
+            "undefined": "каменск-Шахтинский"
+        },
+        {
+            "undefined": "камень-на-Оби"
+        },
+        {
+            "undefined": "камешково"
+        },
+        {
+            "undefined": "камызяк"
+        },
+        {
+            "undefined": "камышин"
+        },
+        {
+            "undefined": "камышлов"
+        },
+        {
+            "undefined": "канаш"
+        },
+        {
+            "undefined": "кандалакша"
+        },
+        {
+            "undefined": "канск"
+        },
+        {
+            "undefined": "карабаново"
+        },
+        {
+            "undefined": "карабаш"
+        },
+        {
+            "undefined": "карабулак"
+        },
+        {
+            "undefined": "карасук"
+        },
+        {
+            "undefined": "карачаевск"
+        },
+        {
+            "undefined": "карачев"
+        },
+        {
+            "undefined": "каргат"
+        },
+        {
+            "undefined": "каргополь"
+        },
+        {
+            "undefined": "карпинск"
+        },
+        {
+            "undefined": "карталы"
+        },
+        {
+            "undefined": "касимов"
+        },
+        {
+            "undefined": "касли"
+        },
+        {
+            "undefined": "каспийск"
+        },
+        {
+            "undefined": "катав-Ивановск"
+        },
+        {
+            "undefined": "катайск"
+        },
+        {
+            "undefined": "качканар"
+        },
+        {
+            "undefined": "кашин"
+        },
+        {
+            "undefined": "кашира"
+        },
+        {
+            "undefined": "кашира-8"
+        },
+        {
+            "undefined": "кедровый"
+        },
+        {
+            "undefined": "кемерово"
+        },
+        {
+            "undefined": "кемь"
+        },
+        {
+            "undefined": "керчь"
+        },
+        {
+            "undefined": "кизел"
+        },
+        {
+            "undefined": "кизилюрт"
+        },
+        {
+            "undefined": "кизляр"
+        },
+        {
+            "undefined": "кимовск"
+        },
+        {
+            "undefined": "кимры"
+        },
+        {
+            "undefined": "кингисепп"
+        },
+        {
+            "undefined": "кинель"
+        },
+        {
+            "undefined": "кинешма"
+        },
+        {
+            "undefined": "киреевск"
+        },
+        {
+            "undefined": "киренск"
+        },
+        {
+            "undefined": "киржач"
+        },
+        {
+            "undefined": "кириллов"
+        },
+        {
+            "undefined": "кириши"
+        },
+        {
+            "undefined": "киров"
+        },
+        {
+            "undefined": "киров"
+        },
+        {
+            "undefined": "кировград"
+        },
+        {
+            "undefined": "кирово-Чепецк"
+        },
+        {
+            "undefined": "кировск"
+        },
+        {
+            "undefined": "кировск"
+        },
+        {
+            "undefined": "кирс"
+        },
+        {
+            "undefined": "кирсанов"
+        },
+        {
+            "undefined": "киселевск"
+        },
+        {
+            "undefined": "кисловодск"
+        },
+        {
+            "undefined": "климовск"
+        },
+        {
+            "undefined": "клин"
+        },
+        {
+            "undefined": "клинцы"
+        },
+        {
+            "undefined": "княгинино"
+        },
+        {
+            "undefined": "ковдор"
+        },
+        {
+            "undefined": "ковров"
+        },
+        {
+            "undefined": "ковылкино"
+        },
+        {
+            "undefined": "когалым"
+        },
+        {
+            "undefined": "кодинск"
+        },
+        {
+            "undefined": "козельск"
+        },
+        {
+            "undefined": "козловка"
+        },
+        {
+            "undefined": "козьмодемьянск"
+        },
+        {
+            "undefined": "кола"
+        },
+        {
+            "undefined": "кологрив"
+        },
+        {
+            "undefined": "коломна"
+        },
+        {
+            "undefined": "колпашево"
+        },
+        {
+            "undefined": "колпино"
+        },
+        {
+            "undefined": "кольчугино"
+        },
+        {
+            "undefined": "коммунар"
+        },
+        {
+            "undefined": "комсомольск"
+        },
+        {
+            "undefined": "комсомольск-на-Амуре"
+        },
+        {
+            "undefined": "конаково"
+        },
+        {
+            "undefined": "кондопога"
+        },
+        {
+            "undefined": "кондрово"
+        },
+        {
+            "undefined": "константиновск"
+        },
+        {
+            "undefined": "копейск"
+        },
+        {
+            "undefined": "кораблино"
+        },
+        {
+            "undefined": "кореновск"
+        },
+        {
+            "undefined": "коркино"
+        },
+        {
+            "undefined": "королев"
+        },
+        {
+            "undefined": "короча"
+        },
+        {
+            "undefined": "корсаков"
+        },
+        {
+            "undefined": "коряжма"
+        },
+        {
+            "undefined": "костерево"
+        },
+        {
+            "undefined": "костомукша"
+        },
+        {
+            "undefined": "кострома"
+        },
+        {
+            "undefined": "котельники"
+        },
+        {
+            "undefined": "котельниково"
+        },
+        {
+            "undefined": "котельнич"
+        },
+        {
+            "undefined": "котлас"
+        },
+        {
+            "undefined": "котово"
+        },
+        {
+            "undefined": "котовск"
+        },
+        {
+            "undefined": "кохма"
+        },
+        {
+            "undefined": "красавино"
+        },
+        {
+            "undefined": "красноармейск"
+        },
+        {
+            "undefined": "красноармейск"
+        },
+        {
+            "undefined": "красновишерск"
+        },
+        {
+            "undefined": "красногорск"
+        },
+        {
+            "undefined": "краснодар"
+        },
+        {
+            "undefined": "красное Село"
+        },
+        {
+            "undefined": "краснозаводск"
+        },
+        {
+            "undefined": "краснознаменск"
+        },
+        {
+            "undefined": "краснознаменск"
+        },
+        {
+            "undefined": "краснокаменск"
+        },
+        {
+            "undefined": "краснокамск"
+        },
+        {
+            "undefined": "красноперекопск"
+        },
+        {
+            "undefined": "красноперекопск"
+        },
+        {
+            "undefined": "краснослободск"
+        },
+        {
+            "undefined": "краснослободск"
+        },
+        {
+            "undefined": "краснотурьинск"
+        },
+        {
+            "undefined": "красноуральск"
+        },
+        {
+            "undefined": "красноуфимск"
+        },
+        {
+            "undefined": "красноярск"
+        },
+        {
+            "undefined": "красный Кут"
+        },
+        {
+            "undefined": "красный Сулин"
+        },
+        {
+            "undefined": "красный Холм"
+        },
+        {
+            "undefined": "кременки"
+        },
+        {
+            "undefined": "кронштадт"
+        },
+        {
+            "undefined": "кропоткин"
+        },
+        {
+            "undefined": "крымск"
+        },
+        {
+            "undefined": "кстово"
+        },
+        {
+            "undefined": "кубинка"
+        },
+        {
+            "undefined": "кувандык"
+        },
+        {
+            "undefined": "кувшиново"
+        },
+        {
+            "undefined": "кудымкар"
+        },
+        {
+            "undefined": "кузнецк"
+        },
+        {
+            "undefined": "кузнецк-12"
+        },
+        {
+            "undefined": "кузнецк-8"
+        },
+        {
+            "undefined": "куйбышев"
+        },
+        {
+            "undefined": "кулебаки"
+        },
+        {
+            "undefined": "кумертау"
+        },
+        {
+            "undefined": "кунгур"
+        },
+        {
+            "undefined": "купино"
+        },
+        {
+            "undefined": "курган"
+        },
+        {
+            "undefined": "курганинск"
+        },
+        {
+            "undefined": "курильск"
+        },
+        {
+            "undefined": "курлово"
+        },
+        {
+            "undefined": "куровское"
+        },
+        {
+            "undefined": "курск"
+        },
+        {
+            "undefined": "куртамыш"
+        },
+        {
+            "undefined": "курчатов"
+        },
+        {
+            "undefined": "куса"
+        },
+        {
+            "undefined": "кушва"
+        },
+        {
+            "undefined": "кызыл"
+        },
+        {
+            "undefined": "кыштым"
+        },
+        {
+            "undefined": "кяхта"
+        },
+        {
+            "undefined": "лабинск"
+        },
+        {
+            "undefined": "лабытнанги"
+        },
+        {
+            "undefined": "лагань"
+        },
+        {
+            "undefined": "ладушкин"
+        },
+        {
+            "undefined": "лаишево"
+        },
+        {
+            "undefined": "лакинск"
+        },
+        {
+            "undefined": "лангепас"
+        },
+        {
+            "undefined": "лахденпохья"
+        },
+        {
+            "undefined": "лебедянь"
+        },
+        {
+            "undefined": "лениногорск"
+        },
+        {
+            "undefined": "ленинск"
+        },
+        {
+            "undefined": "ленинск-Кузнецкий"
+        },
+        {
+            "undefined": "ленск"
+        },
+        {
+            "undefined": "лермонтов"
+        },
+        {
+            "undefined": "лесной"
+        },
+        {
+            "undefined": "лесозаводск"
+        },
+        {
+            "undefined": "лесосибирск"
+        },
+        {
+            "undefined": "ливны"
+        },
+        {
+            "undefined": "ликино-Дулево"
+        },
+        {
+            "undefined": "липецк"
+        },
+        {
+            "undefined": "липки"
+        },
+        {
+            "undefined": "лиски"
+        },
+        {
+            "undefined": "лихославль"
+        },
+        {
+            "undefined": "лобня"
+        },
+        {
+            "undefined": "лодейное Поле"
+        },
+        {
+            "undefined": "ломоносов"
+        },
+        {
+            "undefined": "лосино-Петровский"
+        },
+        {
+            "undefined": "луга"
+        },
+        {
+            "undefined": "луза"
+        },
+        {
+            "undefined": "лукоянов"
+        },
+        {
+            "undefined": "луховицы"
+        },
+        {
+            "undefined": "лысково"
+        },
+        {
+            "undefined": "лысьва"
+        },
+        {
+            "undefined": "лыткарино"
+        },
+        {
+            "undefined": "льгов"
+        },
+        {
+            "undefined": "любань"
+        },
+        {
+            "undefined": "люберцы"
+        },
+        {
+            "undefined": "любим"
+        },
+        {
+            "undefined": "людиново"
+        },
+        {
+            "undefined": "лянтор"
+        },
+        {
+            "undefined": "магадан"
+        },
+        {
+            "undefined": "магас"
+        },
+        {
+            "undefined": "магнитогорск"
+        },
+        {
+            "undefined": "майкоп"
+        },
+        {
+            "undefined": "майский"
+        },
+        {
+            "undefined": "макаров"
+        },
+        {
+            "undefined": "макарьев"
+        },
+        {
+            "undefined": "макушино"
+        },
+        {
+            "undefined": "малая Вишера"
+        },
+        {
+            "undefined": "малгобек"
+        },
+        {
+            "undefined": "малмыж"
+        },
+        {
+            "undefined": "малоархангельск"
+        },
+        {
+            "undefined": "малоярославец"
+        },
+        {
+            "undefined": "мамадыш"
+        },
+        {
+            "undefined": "мамоново"
+        },
+        {
+            "undefined": "мантурово"
+        },
+        {
+            "undefined": "мариинск"
+        },
+        {
+            "undefined": "мариинский Посад"
+        },
+        {
+            "undefined": "маркс"
+        },
+        {
+            "undefined": "махачкала"
+        },
+        {
+            "undefined": "мглин"
+        },
+        {
+            "undefined": "мегион"
+        },
+        {
+            "undefined": "медвежьегорск"
+        },
+        {
+            "undefined": "медногорск"
+        },
+        {
+            "undefined": "медынь"
+        },
+        {
+            "undefined": "межгорье"
+        },
+        {
+            "undefined": "междуреченск"
+        },
+        {
+            "undefined": "мезень"
+        },
+        {
+            "undefined": "меленки"
+        },
+        {
+            "undefined": "мелеуз"
+        },
+        {
+            "undefined": "менделеевск"
+        },
+        {
+            "undefined": "мензелинск"
+        },
+        {
+            "undefined": "мещовск"
+        },
+        {
+            "undefined": "миасс"
+        },
+        {
+            "undefined": "микунь"
+        },
+        {
+            "undefined": "миллерово"
+        },
+        {
+            "undefined": "минеральные Воды"
+        },
+        {
+            "undefined": "минусинск"
+        },
+        {
+            "undefined": "миньяр"
+        },
+        {
+            "undefined": "мирный"
+        },
+        {
+            "undefined": "мирный"
+        },
+        {
+            "undefined": "михайлов"
+        },
+        {
+            "undefined": "михайловка"
+        },
+        {
+            "undefined": "михайловск"
+        },
+        {
+            "undefined": "михайловск"
+        },
+        {
+            "undefined": "мичуринск"
+        },
+        {
+            "undefined": "могоча"
+        },
+        {
+            "undefined": "можайск"
+        },
+        {
+            "undefined": "можга"
+        },
+        {
+            "undefined": "моздок"
+        },
+        {
+            "undefined": "мончегорск"
+        },
+        {
+            "undefined": "морозовск"
+        },
+        {
+            "undefined": "моршанск"
+        },
+        {
+            "undefined": "мосальск"
+        },
+        {
+            "undefined": "москва"
+        },
+        {
+            "undefined": "московский"
+        },
+        {
+            "undefined": "московский"
+        },
+        {
+            "undefined": "муравленко"
+        },
+        {
+            "undefined": "мураши"
+        },
+        {
+            "undefined": "мурманск"
+        },
+        {
+            "undefined": "муром"
+        },
+        {
+            "undefined": "мценск"
+        },
+        {
+            "undefined": "мыски"
+        },
+        {
+            "undefined": "мытищи"
+        },
+        {
+            "undefined": "мышкин"
+        },
+        {
+            "undefined": "набережные Челны"
+        },
+        {
+            "undefined": "навашино"
+        },
+        {
+            "undefined": "наволоки"
+        },
+        {
+            "undefined": "надым"
+        },
+        {
+            "undefined": "назарово"
+        },
+        {
+            "undefined": "назрань"
+        },
+        {
+            "undefined": "называевск"
+        },
+        {
+            "undefined": "нальчик"
+        },
+        {
+            "undefined": "нариманов"
+        },
+        {
+            "undefined": "наро-Фоминск"
+        },
+        {
+            "undefined": "нарткала"
+        },
+        {
+            "undefined": "нарьян-Мар"
+        },
+        {
+            "undefined": "находка"
+        },
+        {
+            "undefined": "невель"
+        },
+        {
+            "undefined": "невельск"
+        },
+        {
+            "undefined": "невинномысск"
+        },
+        {
+            "undefined": "невьянск"
+        },
+        {
+            "undefined": "нелидово"
+        },
+        {
+            "undefined": "неман"
+        },
+        {
+            "undefined": "нерехта"
+        },
+        {
+            "undefined": "нерчинск"
+        },
+        {
+            "undefined": "нерюнгри"
+        },
+        {
+            "undefined": "нестеров"
+        },
+        {
+            "undefined": "нефтегорск"
+        },
+        {
+            "undefined": "нефтекамск"
+        },
+        {
+            "undefined": "нефтекумск"
+        },
+        {
+            "undefined": "нефтеюганск"
+        },
+        {
+            "undefined": "нея"
+        },
+        {
+            "undefined": "нижневартовск"
+        },
+        {
+            "undefined": "нижнекамск"
+        },
+        {
+            "undefined": "нижнеудинск"
+        },
+        {
+            "undefined": "нижние Серги"
+        },
+        {
+            "undefined": "нижние Серги-3"
+        },
+        {
+            "undefined": "нижний Ломов"
+        },
+        {
+            "undefined": "нижний Новгород"
+        },
+        {
+            "undefined": "нижний Тагил"
+        },
+        {
+            "undefined": "нижняя Салда"
+        },
+        {
+            "undefined": "нижняя Тура"
+        },
+        {
+            "undefined": "николаевск"
+        },
+        {
+            "undefined": "николаевск-на-Амуре"
+        },
+        {
+            "undefined": "никольск"
+        },
+        {
+            "undefined": "никольск"
+        },
+        {
+            "undefined": "никольское"
+        },
+        {
+            "undefined": "новая Ладога"
+        },
+        {
+            "undefined": "новая Ляля"
+        },
+        {
+            "undefined": "новоалександровск"
+        },
+        {
+            "undefined": "новоалтайск"
+        },
+        {
+            "undefined": "новоаннинский"
+        },
+        {
+            "undefined": "нововоронеж"
+        },
+        {
+            "undefined": "новодвинск"
+        },
+        {
+            "undefined": "новозыбков"
+        },
+        {
+            "undefined": "новокубанск"
+        },
+        {
+            "undefined": "новокузнецк"
+        },
+        {
+            "undefined": "новокуйбышевск"
+        },
+        {
+            "undefined": "новомичуринск"
+        },
+        {
+            "undefined": "новомосковск"
+        },
+        {
+            "undefined": "новопавловск"
+        },
+        {
+            "undefined": "новоржев"
+        },
+        {
+            "undefined": "новороссийск"
+        },
+        {
+            "undefined": "новосибирск"
+        },
+        {
+            "undefined": "новосиль"
+        },
+        {
+            "undefined": "новосокольники"
+        },
+        {
+            "undefined": "новотроицк"
+        },
+        {
+            "undefined": "новоузенск"
+        },
+        {
+            "undefined": "новоульяновск"
+        },
+        {
+            "undefined": "новоуральск"
+        },
+        {
+            "undefined": "новохоперск"
+        },
+        {
+            "undefined": "новочебоксарск"
+        },
+        {
+            "undefined": "новочеркасск"
+        },
+        {
+            "undefined": "новошахтинск"
+        },
+        {
+            "undefined": "новый Оскол"
+        },
+        {
+            "undefined": "новый Уренгой"
+        },
+        {
+            "undefined": "ногинск"
+        },
+        {
+            "undefined": "нолинск"
+        },
+        {
+            "undefined": "норильск"
+        },
+        {
+            "undefined": "ноябрьск"
+        },
+        {
+            "undefined": "нурлат"
+        },
+        {
+            "undefined": "нытва"
+        },
+        {
+            "undefined": "нюрба"
+        },
+        {
+            "undefined": "нягань"
+        },
+        {
+            "undefined": "нязепетровск"
+        },
+        {
+            "undefined": "няндома"
+        },
+        {
+            "undefined": "облучье"
+        },
+        {
+            "undefined": "обнинск"
+        },
+        {
+            "undefined": "обоянь"
+        },
+        {
+            "undefined": "обь"
+        },
+        {
+            "undefined": "одинцово"
+        },
+        {
+            "undefined": "ожерелье"
+        },
+        {
+            "undefined": "озерск"
+        },
+        {
+            "undefined": "озерск"
+        },
+        {
+            "undefined": "озеры"
+        },
+        {
+            "undefined": "октябрьск"
+        },
+        {
+            "undefined": "октябрьский"
+        },
+        {
+            "undefined": "окуловка"
+        },
+        {
+            "undefined": "олекминск"
+        },
+        {
+            "undefined": "оленегорск"
+        },
+        {
+            "undefined": "оленегорск-1"
+        },
+        {
+            "undefined": "оленегорск-2"
+        },
+        {
+            "undefined": "оленегорск-4"
+        },
+        {
+            "undefined": "олонец"
+        },
+        {
+            "undefined": "омск"
+        },
+        {
+            "undefined": "омутнинск"
+        },
+        {
+            "undefined": "онега"
+        },
+        {
+            "undefined": "опочка"
+        },
+        {
+            "undefined": "орёл"
+        },
+        {
+            "undefined": "оренбург"
+        },
+        {
+            "undefined": "орехово-Зуево"
+        },
+        {
+            "undefined": "орлов"
+        },
+        {
+            "undefined": "орск"
+        },
+        {
+            "undefined": "оса"
+        },
+        {
+            "undefined": "осинники"
+        },
+        {
+            "undefined": "осташков"
+        },
+        {
+            "undefined": "остров"
+        },
+        {
+            "undefined": "островной"
+        },
+        {
+            "undefined": "острогожск"
+        },
+        {
+            "undefined": "отрадное"
+        },
+        {
+            "undefined": "отрадный"
+        },
+        {
+            "undefined": "оха"
+        },
+        {
+            "undefined": "оханск"
+        },
+        {
+            "undefined": "очер"
+        },
+        {
+            "undefined": "павлово"
+        },
+        {
+            "undefined": "павловск"
+        },
+        {
+            "undefined": "павловск"
+        },
+        {
+            "undefined": "павловский Посад"
+        },
+        {
+            "undefined": "палласовка"
+        },
+        {
+            "undefined": "партизанск"
+        },
+        {
+            "undefined": "певек"
+        },
+        {
+            "undefined": "пенза"
+        },
+        {
+            "undefined": "первомайск"
+        },
+        {
+            "undefined": "первоуральск"
+        },
+        {
+            "undefined": "перевоз"
+        },
+        {
+            "undefined": "пересвет"
+        },
+        {
+            "undefined": "переславль-Залесский"
+        },
+        {
+            "undefined": "пермь"
+        },
+        {
+            "undefined": "пестово"
+        },
+        {
+            "undefined": "петергоф"
+        },
+        {
+            "undefined": "петров Вал"
+        },
+        {
+            "undefined": "петровск"
+        },
+        {
+            "undefined": "петровск-Забайкальский"
+        },
+        {
+            "undefined": "петрозаводск"
+        },
+        {
+            "undefined": "петропавловск-Камчатский"
+        },
+        {
+            "undefined": "петухово"
+        },
+        {
+            "undefined": "петушки"
+        },
+        {
+            "undefined": "печора"
+        },
+        {
+            "undefined": "печоры"
+        },
+        {
+            "undefined": "пикалево"
+        },
+        {
+            "undefined": "пионерский"
+        },
+        {
+            "undefined": "питкяранта"
+        },
+        {
+            "undefined": "плавск"
+        },
+        {
+            "undefined": "пласт"
+        },
+        {
+            "undefined": "плес"
+        },
+        {
+            "undefined": "поворино"
+        },
+        {
+            "undefined": "подгорное"
+        },
+        {
+            "undefined": "подольск"
+        },
+        {
+            "undefined": "подпорожье"
+        },
+        {
+            "undefined": "покачи"
+        },
+        {
+            "undefined": "покров"
+        },
+        {
+            "undefined": "покровск"
+        },
+        {
+            "undefined": "полевской"
+        },
+        {
+            "undefined": "полесск"
+        },
+        {
+            "undefined": "полысаево"
+        },
+        {
+            "undefined": "полярные Зори"
+        },
+        {
+            "undefined": "полярный"
+        },
+        {
+            "undefined": "поронайск"
+        },
+        {
+            "undefined": "порхов"
+        },
+        {
+            "undefined": "похвистнево"
+        },
+        {
+            "undefined": "почеп"
+        },
+        {
+            "undefined": "починок"
+        },
+        {
+            "undefined": "пошехонье"
+        },
+        {
+            "undefined": "правдинск"
+        },
+        {
+            "undefined": "приволжск"
+        },
+        {
+            "undefined": "приморск"
+        },
+        {
+            "undefined": "приморск"
+        },
+        {
+            "undefined": "приморско-Ахтарск"
+        },
+        {
+            "undefined": "приозерск"
+        },
+        {
+            "undefined": "прокопьевск"
+        },
+        {
+            "undefined": "пролетарск"
+        },
+        {
+            "undefined": "протвино"
+        },
+        {
+            "undefined": "прохладный"
+        },
+        {
+            "undefined": "псков"
+        },
+        {
+            "undefined": "пугачев"
+        },
+        {
+            "undefined": "пудож"
+        },
+        {
+            "undefined": "пустошка"
+        },
+        {
+            "undefined": "пучеж"
+        },
+        {
+            "undefined": "пушкин"
+        },
+        {
+            "undefined": "пушкино"
+        },
+        {
+            "undefined": "пущино"
+        },
+        {
+            "undefined": "пыталово"
+        },
+        {
+            "undefined": "пыть-Ях"
+        },
+        {
+            "undefined": "пятигорск"
+        },
+        {
+            "undefined": "радужный"
+        },
+        {
+            "undefined": "радужный"
+        },
+        {
+            "undefined": "райчихинск"
+        },
+        {
+            "undefined": "раменское"
+        },
+        {
+            "undefined": "рассказово"
+        },
+        {
+            "undefined": "ревда"
+        },
+        {
+            "undefined": "реж"
+        },
+        {
+            "undefined": "реутов"
+        },
+        {
+            "undefined": "ржев"
+        },
+        {
+            "undefined": "родники"
+        },
+        {
+            "undefined": "рославль"
+        },
+        {
+            "undefined": "россошь"
+        },
+        {
+            "undefined": "ростов"
+        },
+        {
+            "undefined": "ростов-на-Дону"
+        },
+        {
+            "undefined": "рошаль"
+        },
+        {
+            "undefined": "ртищево"
+        },
+        {
+            "undefined": "рубцовск"
+        },
+        {
+            "undefined": "рудня"
+        },
+        {
+            "undefined": "руза"
+        },
+        {
+            "undefined": "рузаевка"
+        },
+        {
+            "undefined": "рыбинск"
+        },
+        {
+            "undefined": "рыбное"
+        },
+        {
+            "undefined": "рыльск"
+        },
+        {
+            "undefined": "ряжск"
+        },
+        {
+            "undefined": "рязань"
+        },
+        {
+            "undefined": "саки"
+        },
+        {
+            "undefined": "саки"
+        },
+        {
+            "undefined": "салават"
+        },
+        {
+            "undefined": "салаир"
+        },
+        {
+            "undefined": "салехард"
+        },
+        {
+            "undefined": "сальск"
+        },
+        {
+            "undefined": "самара"
+        },
+        {
+            "undefined": "санкт-Петербург"
+        },
+        {
+            "undefined": "саранск"
+        },
+        {
+            "undefined": "сарапул"
+        },
+        {
+            "undefined": "саратов"
+        },
+        {
+            "undefined": "саров"
+        },
+        {
+            "undefined": "сасово"
+        },
+        {
+            "undefined": "сатка"
+        },
+        {
+            "undefined": "сафоново"
+        },
+        {
+            "undefined": "саяногорск"
+        },
+        {
+            "undefined": "саянск"
+        },
+        {
+            "undefined": "светлогорск"
+        },
+        {
+            "undefined": "светлоград"
+        },
+        {
+            "undefined": "светлый"
+        },
+        {
+            "undefined": "светогорск"
+        },
+        {
+            "undefined": "свирск"
+        },
+        {
+            "undefined": "свободный"
+        },
+        {
+            "undefined": "себеж"
+        },
+        {
+            "undefined": "севастополь"
+        },
+        {
+            "undefined": "северобайкальск"
+        },
+        {
+            "undefined": "северодвинск"
+        },
+        {
+            "undefined": "северо-Курильск"
+        },
+        {
+            "undefined": "североморск"
+        },
+        {
+            "undefined": "североуральск"
+        },
+        {
+            "undefined": "северск"
+        },
+        {
+            "undefined": "севск"
+        },
+        {
+            "undefined": "сегежа"
+        },
+        {
+            "undefined": "сельцо"
+        },
+        {
+            "undefined": "семенов"
+        },
+        {
+            "undefined": "семикаракорск"
+        },
+        {
+            "undefined": "семилуки"
+        },
+        {
+            "undefined": "сенгилей"
+        },
+        {
+            "undefined": "серафимович"
+        },
+        {
+            "undefined": "сергач"
+        },
+        {
+            "undefined": "сергиев Посад"
+        },
+        {
+            "undefined": "сергиев Посад-7"
+        },
+        {
+            "undefined": "сердобск"
+        },
+        {
+            "undefined": "серов"
+        },
+        {
+            "undefined": "серпухов"
+        },
+        {
+            "undefined": "сертолово"
+        },
+        {
+            "undefined": "сестрорецк"
+        },
+        {
+            "undefined": "сибай"
+        },
+        {
+            "undefined": "сим"
+        },
+        {
+            "undefined": "симферополь"
+        },
+        {
+            "undefined": "сковородино"
+        },
+        {
+            "undefined": "скопин"
+        },
+        {
+            "undefined": "славгород"
+        },
+        {
+            "undefined": "славск"
+        },
+        {
+            "undefined": "славянск-на-Кубани"
+        },
+        {
+            "undefined": "сланцы"
+        },
+        {
+            "undefined": "слободской"
+        },
+        {
+            "undefined": "слюдянка"
+        },
+        {
+            "undefined": "смоленск"
+        },
+        {
+            "undefined": "снегири"
+        },
+        {
+            "undefined": "снежинск"
+        },
+        {
+            "undefined": "снежногорск"
+        },
+        {
+            "undefined": "собинка"
+        },
+        {
+            "undefined": "советск"
+        },
+        {
+            "undefined": "советск"
+        },
+        {
+            "undefined": "советск"
+        },
+        {
+            "undefined": "советская Гавань"
+        },
+        {
+            "undefined": "советский"
+        },
+        {
+            "undefined": "сокол"
+        },
+        {
+            "undefined": "солигалич"
+        },
+        {
+            "undefined": "соликамск"
+        },
+        {
+            "undefined": "солнечногорск"
+        },
+        {
+            "undefined": "солнечногорск-2"
+        },
+        {
+            "undefined": "солнечногорск-25"
+        },
+        {
+            "undefined": "солнечногорск-30"
+        },
+        {
+            "undefined": "солнечногорск-7"
+        },
+        {
+            "undefined": "сольвычегодск"
+        },
+        {
+            "undefined": "соль-Илецк"
+        },
+        {
+            "undefined": "сольцы"
+        },
+        {
+            "undefined": "сольцы 2"
+        },
+        {
+            "undefined": "сорочинск"
+        },
+        {
+            "undefined": "сорск"
+        },
+        {
+            "undefined": "сортавала"
+        },
+        {
+            "undefined": "сосенский"
+        },
+        {
+            "undefined": "сосновка"
+        },
+        {
+            "undefined": "сосновоборск"
+        },
+        {
+            "undefined": "сосновый Бор"
+        },
+        {
+            "undefined": "сосногорск"
+        },
+        {
+            "undefined": "сочи"
+        },
+        {
+            "undefined": "спас-Деменск"
+        },
+        {
+            "undefined": "спас-Клепики"
+        },
+        {
+            "undefined": "спасск"
+        },
+        {
+            "undefined": "спасск-Дальний"
+        },
+        {
+            "undefined": "спасск-Рязанский"
+        },
+        {
+            "undefined": "среднеколымск"
+        },
+        {
+            "undefined": "среднеуральск"
+        },
+        {
+            "undefined": "сретенск"
+        },
+        {
+            "undefined": "ставрополь"
+        },
+        {
+            "undefined": "старая Купавна"
+        },
+        {
+            "undefined": "старая Русса"
+        },
+        {
+            "undefined": "старица"
+        },
+        {
+            "undefined": "стародуб"
+        },
+        {
+            "undefined": "старый крым"
+        },
+        {
+            "undefined": "старый Оскол"
+        },
+        {
+            "undefined": "стерлитамак"
+        },
+        {
+            "undefined": "стрежевой"
+        },
+        {
+            "undefined": "строитель"
+        },
+        {
+            "undefined": "струнино"
+        },
+        {
+            "undefined": "ступино"
+        },
+        {
+            "undefined": "суворов"
+        },
+        {
+            "undefined": "судак"
+        },
+        {
+            "undefined": "суджа"
+        },
+        {
+            "undefined": "судогда"
+        },
+        {
+            "undefined": "суздаль"
+        },
+        {
+            "undefined": "суоярви"
+        },
+        {
+            "undefined": "сураж"
+        },
+        {
+            "undefined": "сургут"
+        },
+        {
+            "undefined": "суровикино"
+        },
+        {
+            "undefined": "сурск"
+        },
+        {
+            "undefined": "сусуман"
+        },
+        {
+            "undefined": "сухиничи"
+        },
+        {
+            "undefined": "сухой Лог"
+        },
+        {
+            "undefined": "сызрань"
+        },
+        {
+            "undefined": "сыктывкар"
+        },
+        {
+            "undefined": "сысерть"
+        },
+        {
+            "undefined": "сычевка"
+        },
+        {
+            "undefined": "сясьстрой"
+        },
+        {
+            "undefined": "тавда"
+        },
+        {
+            "undefined": "таганрог"
+        },
+        {
+            "undefined": "тайга"
+        },
+        {
+            "undefined": "тайшет"
+        },
+        {
+            "undefined": "талдом"
+        },
+        {
+            "undefined": "талица"
+        },
+        {
+            "undefined": "тамбов"
+        },
+        {
+            "undefined": "тара"
+        },
+        {
+            "undefined": "тарко-Сале"
+        },
+        {
+            "undefined": "таруса"
+        },
+        {
+            "undefined": "татарск"
+        },
+        {
+            "undefined": "таштагол"
+        },
+        {
+            "undefined": "тверь"
+        },
+        {
+            "undefined": "теберда"
+        },
+        {
+            "undefined": "тейково"
+        },
+        {
+            "undefined": "темников"
+        },
+        {
+            "undefined": "темрюк"
+        },
+        {
+            "undefined": "терек"
+        },
+        {
+            "undefined": "тетюши"
+        },
+        {
+            "undefined": "тимашевск"
+        },
+        {
+            "undefined": "тихвин"
+        },
+        {
+            "undefined": "тихорецк"
+        },
+        {
+            "undefined": "тобольск"
+        },
+        {
+            "undefined": "тогучин"
+        },
+        {
+            "undefined": "тольятти"
+        },
+        {
+            "undefined": "томари"
+        },
+        {
+            "undefined": "томмот"
+        },
+        {
+            "undefined": "томск"
+        },
+        {
+            "undefined": "топки"
+        },
+        {
+            "undefined": "торжок"
+        },
+        {
+            "undefined": "торопец"
+        },
+        {
+            "undefined": "тосно"
+        },
+        {
+            "undefined": "тотьма"
+        },
+        {
+            "undefined": "трехгорный"
+        },
+        {
+            "undefined": "трехгорный-1"
+        },
+        {
+            "undefined": "троицк"
+        },
+        {
+            "undefined": "троицк"
+        },
+        {
+            "undefined": "трубчевск"
+        },
+        {
+            "undefined": "туапсе"
+        },
+        {
+            "undefined": "туймазы"
+        },
+        {
+            "undefined": "тула"
+        },
+        {
+            "undefined": "тулун"
+        },
+        {
+            "undefined": "туран"
+        },
+        {
+            "undefined": "туринск"
+        },
+        {
+            "undefined": "тутаев"
+        },
+        {
+            "undefined": "тында"
+        },
+        {
+            "undefined": "тырныауз"
+        },
+        {
+            "undefined": "тюкалинск"
+        },
+        {
+            "undefined": "тюмень"
+        },
+        {
+            "undefined": "уварово"
+        },
+        {
+            "undefined": "углегорск"
+        },
+        {
+            "undefined": "углич"
+        },
+        {
+            "undefined": "удачный"
+        },
+        {
+            "undefined": "удомля"
+        },
+        {
+            "undefined": "ужур"
+        },
+        {
+            "undefined": "узловая"
+        },
+        {
+            "undefined": "улан-Удэ"
+        },
+        {
+            "undefined": "ульяновск"
+        },
+        {
+            "undefined": "унеча"
+        },
+        {
+            "undefined": "урай"
+        },
+        {
+            "undefined": "урень"
+        },
+        {
+            "undefined": "уржум"
+        },
+        {
+            "undefined": "урус-Мартан"
+        },
+        {
+            "undefined": "урюпинск"
+        },
+        {
+            "undefined": "усинск"
+        },
+        {
+            "undefined": "усмань"
+        },
+        {
+            "undefined": "усолье"
+        },
+        {
+            "undefined": "усолье-Сибирское"
+        },
+        {
+            "undefined": "уссурийск"
+        },
+        {
+            "undefined": "усть-Джегута"
+        },
+        {
+            "undefined": "усть-Илимск"
+        },
+        {
+            "undefined": "усть-Катав"
+        },
+        {
+            "undefined": "усть-Кут"
+        },
+        {
+            "undefined": "усть-Лабинск"
+        },
+        {
+            "undefined": "устюжна"
+        },
+        {
+            "undefined": "уфа"
+        },
+        {
+            "undefined": "ухта"
+        },
+        {
+            "undefined": "учалы"
+        },
+        {
+            "undefined": "уяр"
+        },
+        {
+            "undefined": "фатеж"
+        },
+        {
+            "undefined": "феодосия"
+        },
+        {
+            "undefined": "фокино"
+        },
+        {
+            "undefined": "фокино"
+        },
+        {
+            "undefined": "фролово"
+        },
+        {
+            "undefined": "фрязино"
+        },
+        {
+            "undefined": "фурманов"
+        },
+        {
+            "undefined": "хабаровск"
+        },
+        {
+            "undefined": "хадыженск"
+        },
+        {
+            "undefined": "ханты-Мансийск"
+        },
+        {
+            "undefined": "харабали"
+        },
+        {
+            "undefined": "харовск"
+        },
+        {
+            "undefined": "хасавюрт"
+        },
+        {
+            "undefined": "хвалынск"
+        },
+        {
+            "undefined": "хилок"
+        },
+        {
+            "undefined": "химки"
+        },
+        {
+            "undefined": "холм"
+        },
+        {
+            "undefined": "холмск"
+        },
+        {
+            "undefined": "хотьково"
+        },
+        {
+            "undefined": "цивильск"
+        },
+        {
+            "undefined": "цимлянск"
+        },
+        {
+            "undefined": "чадан"
+        },
+        {
+            "undefined": "чайковский"
+        },
+        {
+            "undefined": "чапаевск"
+        },
+        {
+            "undefined": "чаплыгин"
+        },
+        {
+            "undefined": "чебаркуль"
+        },
+        {
+            "undefined": "чебоксары"
+        },
+        {
+            "undefined": "чегем"
+        },
+        {
+            "undefined": "чекалин"
+        },
+        {
+            "undefined": "челябинск"
+        },
+        {
+            "undefined": "чердынь"
+        },
+        {
+            "undefined": "черемхово"
+        },
+        {
+            "undefined": "черепаново"
+        },
+        {
+            "undefined": "череповец"
+        },
+        {
+            "undefined": "черкесск"
+        },
+        {
+            "undefined": "чермоз"
+        },
+        {
+            "undefined": "черноголовка"
+        },
+        {
+            "undefined": "черногорск"
+        },
+        {
+            "undefined": "чернушка"
+        },
+        {
+            "undefined": "черняховск"
+        },
+        {
+            "undefined": "чехов"
+        },
+        {
+            "undefined": "чехов-2"
+        },
+        {
+            "undefined": "чехов-3"
+        },
+        {
+            "undefined": "чехов-8"
+        },
+        {
+            "undefined": "чистополь"
+        },
+        {
+            "undefined": "чита"
+        },
+        {
+            "undefined": "чкаловск"
+        },
+        {
+            "undefined": "чудово"
+        },
+        {
+            "undefined": "чулым"
+        },
+        {
+            "undefined": "чулым-3"
+        },
+        {
+            "undefined": "чусовой"
+        },
+        {
+            "undefined": "чухлома"
+        },
+        {
+            "undefined": "шагонар"
+        },
+        {
+            "undefined": "шадринск"
+        },
+        {
+            "undefined": "шали"
+        },
+        {
+            "undefined": "шарыпово"
+        },
+        {
+            "undefined": "шарья"
+        },
+        {
+            "undefined": "шатура"
+        },
+        {
+            "undefined": "шахтерск"
+        },
+        {
+            "undefined": "шахты"
+        },
+        {
+            "undefined": "шахунья"
+        },
+        {
+            "undefined": "шацк"
+        },
+        {
+            "undefined": "шебекино"
+        },
+        {
+            "undefined": "шелехов"
+        },
+        {
+            "undefined": "шенкурск"
+        },
+        {
+            "undefined": "шилка"
+        },
+        {
+            "undefined": "шимановск"
+        },
+        {
+            "undefined": "шиханы"
+        },
+        {
+            "undefined": "шлиссельбург"
+        },
+        {
+            "undefined": "шумерля"
+        },
+        {
+            "undefined": "шумиха"
+        },
+        {
+            "undefined": "шуя"
+        },
+        {
+            "undefined": "Щекино"
+        },
+        {
+            "undefined": "Щелкино"
+        },
+        {
+            "undefined": "Щелково"
+        },
+        {
+            "undefined": "Щербинка"
+        },
+        {
+            "undefined": "Щигры"
+        },
+        {
+            "undefined": "Щучье"
+        },
+        {
+            "undefined": "электрогорск"
+        },
+        {
+            "undefined": "электросталь"
+        },
+        {
+            "undefined": "электроугли"
+        },
+        {
+            "undefined": "элиста"
+        },
+        {
+            "undefined": "энгельс"
+        },
+        {
+            "undefined": "энгельс-19"
+        },
+        {
+            "undefined": "энгельс-2"
+        },
+        {
+            "undefined": "эртиль"
+        },
+        {
+            "undefined": "юбилейный"
+        },
+        {
+            "undefined": "югорск"
+        },
+        {
+            "undefined": "южа"
+        },
+        {
+            "undefined": "южно-Сахалинск"
+        },
+        {
+            "undefined": "южно-Сухокумск"
+        },
+        {
+            "undefined": "южноуральск"
+        },
+        {
+            "undefined": "юрга"
+        },
+        {
+            "undefined": "юрьевец"
+        },
+        {
+            "undefined": "юрьев-Польский"
+        },
+        {
+            "undefined": "юрюзань"
+        },
+        {
+            "undefined": "юхнов"
+        },
+        {
+            "undefined": "юхнов-1"
+        },
+        {
+            "undefined": "юхнов-2"
+        },
+        {
+            "undefined": "ядрин"
+        },
+        {
+            "undefined": "якутск"
+        },
+        {
+            "undefined": "ялта"
+        },
+        {
+            "undefined": "ялуторовск"
+        },
+        {
+            "undefined": "янаул"
+        },
+        {
+            "undefined": "яранск"
+        },
+        {
+            "undefined": "яровое"
+        },
+        {
+            "undefined": "ярославль"
+        },
+        {
+            "undefined": "ярцево"
+        },
+        {
+            "undefined": "ясногорск"
+        },
+        {
+            "undefined": "ясный"
+        },
+        {
+            "undefined": "яхрома"
+        }
+    ]
+}

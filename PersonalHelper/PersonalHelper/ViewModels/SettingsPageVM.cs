@@ -1,6 +1,7 @@
 ﻿using PersonalHelper.Models;
 using PersonalHelper.SharedVM;
 using PersonalHelper.Views;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -32,14 +33,22 @@ namespace PersonalHelper.ViewModels {
         public string UserName { get => User.GetUserName(); set { if (value.Length > 2) User.SetUserName(value); } }
         public string UserCity {
             get => userCity; set {
-                if (User.VerifyCity(value)) {
-                    userCityStatusChangingTextColor = Color.Green;
-                    NotifyPropertyChanged("UserCityStatusChangingTextColor");
-                    User.SetUserCity(value);
-                } else {
-                    userCityStatusChangingTextColor = Color.Red;
-                    NotifyPropertyChanged("UserCityStatusChangingTextColor");
-                }
+                bool b = false;
+                Task.Run(async () =>
+                {
+                    b = await User.VerifyCity(value);
+                    if (b)
+                    {
+                        userCityStatusChangingTextColor = Color.Green;
+                        NotifyPropertyChanged("UserCityStatusChangingTextColor");
+                        User.SetUserCity(value);
+                    }
+                    else
+                    {
+                        userCityStatusChangingTextColor = Color.Red;
+                        NotifyPropertyChanged("UserCityStatusChangingTextColor");
+                    }
+                });              
             }
         }
         public Color UserCityStatusChangingTextColor { get => userCityStatusChangingTextColor; }

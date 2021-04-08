@@ -161,6 +161,9 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\AddIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\cities.json" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
