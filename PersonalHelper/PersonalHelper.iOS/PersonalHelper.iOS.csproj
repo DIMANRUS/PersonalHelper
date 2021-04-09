@@ -28,10 +28,10 @@
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
     <MtouchFastDev>true</MtouchFastDev>
     <IOSDebuggerPort>26822</IOSDebuggerPort>
-    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
     <DebugSymbols>false</DebugSymbols>
-<MtouchSdkVersion>14.4</MtouchSdkVersion>
+    <MtouchSdkVersion>14.4</MtouchSdkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -178,30 +178,78 @@
     <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun-2.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon.png" />
-    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon-2.png" />
-    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon.png" />
-    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon-2.png" />
-    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon.png" />
-    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon-2.png" />
-    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon.png" />
-    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon-2.png" />
-    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon.png" />
-    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon-2.png" />
-    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\TaskBlockIcon.png" />
-    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\TaskBlockIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\TaskBlockIcon-2.png" />
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\TaskBlockIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\TaskBlockIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\TaskBlockIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\next.png.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -232,12 +280,24 @@
     <ImageAsset Include="Assets.xcassets\next.png.imageset\next-8.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-9.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-10.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-11.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-12.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-13.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-14.png" />
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-9.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-10.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-11.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-12.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-13.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-14.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -252,7 +312,7 @@
       <Version>1.6.292</Version>
     </PackageReference>
     <PackageReference Include="System.Text.Json">
-      <Version>5.0.1</Version>
+      <Version>5.0.2</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
@@ -265,17 +325,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets.xcassets\info.imageset\" />
-    <Folder Include="Assets.xcassets\SettingsIcon.imageset\" />
-    <Folder Include="Assets.xcassets\WheatherBlockIcon.imageset\" />
-    <Folder Include="Assets.xcassets\WheatherIconSun.imageset\" />
     <Folder Include="Assets.xcassets\AddIcon.imageset\" />
     <Folder Include="Assets.xcassets\CompleteIcon.imageset\" />
+    <Folder Include="Assets.xcassets\info.imageset\" />
     <Folder Include="Assets.xcassets\NewsBlockIcon.imageset\" />
+    <Folder Include="Assets.xcassets\next.png.imageset\" />
     <Folder Include="Assets.xcassets\NoNewsIcon.imageset\" />
     <Folder Include="Assets.xcassets\RemoveIcon.imageset\" />
+    <Folder Include="Assets.xcassets\SettingsIcon.imageset\" />
     <Folder Include="Assets.xcassets\TaskblockIcon.imageset\" />
-    <Folder Include="Assets.xcassets\next.png.imageset\" />
+    <Folder Include="Assets.xcassets\WheatherBlockIcon.imageset\" />
+    <Folder Include="Assets.xcassets\WheatherIconSun.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\cities.json" />

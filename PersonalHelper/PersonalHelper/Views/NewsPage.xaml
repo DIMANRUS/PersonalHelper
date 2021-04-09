@@ -53,7 +53,7 @@
                                                    BackgroundColor="DarkOrange"
                                                    Margin="10,0,10,2" />
                                         <Label Text="{Binding description}"
-                                               FontSize="Default"
+                                               FontSize="Subtitle"
                                                MaxLines="4"
                                                WidthRequest="170"
                                                Margin="15,0,0,0" />
@@ -81,55 +81,55 @@
                     </CollectionView.EmptyView>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                                <CollectionView ItemsSource="{Binding ArticlesCollection}"
+                            <CollectionView ItemsSource="{Binding ArticlesCollection}"
                                                 x:Name="newsCollection"
                                                 ItemsLayout="HorizontalList"
                                                 Margin="10,0,0,0"
                                                 HeightRequest="330">
-                                                        <CollectionView.Header>
-                                                            <StackLayout Orientation="Horizontal">
-                        <Label Text="{Binding Keyword}"
+                                <CollectionView.Header>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding Keyword}"
                        FontSize="Title"
                        Margin="15,0,0,0"
                                VerticalTextAlignment="Center"/>
-                                                                                                    <ImageButton
+                                        <ImageButton
                                         HeightRequest="27"
                                         Source="RemoveIcon.png"
                                         Command="{Binding Path=BindingContext.DeleteCategory, Source={x:Reference Name=newsCategoryView}}"
                                                                               CommandParameter="{Binding Keyword}"/>
-                                                                </StackLayout>
-                    </CollectionView.Header>
-                                    <CollectionView.ItemTemplate>
-                                        <DataTemplate>
-                                            <Grid>
-                                                <Frame CornerRadius="0"
+                                    </StackLayout>
+                                </CollectionView.Header>
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Frame CornerRadius="0"
                                                        Padding="1">
-                                                    <Frame.GestureRecognizers>
-                                                        <TapGestureRecognizer Command="{Binding Path=BindingContext.NewsVM.OpenNews, Source={x:Reference Name=newsCategoryView}}"
+                                                <Frame.GestureRecognizers>
+                                                    <TapGestureRecognizer Command="{Binding Path=BindingContext.NewsVM.OpenNews, Source={x:Reference Name=newsCategoryView}}"
                                                                               CommandParameter="{Binding url}" />
-                                                    </Frame.GestureRecognizers>
-                                                    <StackLayout>
-                                                        <Image Source="{Binding urlToImage}"
+                                                </Frame.GestureRecognizers>
+                                                <StackLayout>
+                                                    <Image Source="{Binding urlToImage}"
                                                                HeightRequest="170" />
-                                                        <Label Text="{Binding title}"
+                                                    <Label Text="{Binding title}"
                                                                FontSize="Title"
                                                                MaxLines="2"
                                                                WidthRequest="170"
                                                                Margin="15,0,0,0" />
-                                                        <Rectangle HeightRequest="2"
+                                                    <Rectangle HeightRequest="2"
                                                                    BackgroundColor="DarkOrange"
                                                                    Margin="10,0,10,2" />
-                                                        <Label Text="{Binding description}"
-                                                               FontSize="Default"
+                                                    <Label Text="{Binding description}"
+                                                               FontSize="Subtitle"
                                                                MaxLines="4"
                                                                WidthRequest="170"
                                                                Margin="15,0,0,0" />
-                                                    </StackLayout>
-                                                </Frame>
-                                            </Grid>
-                                        </DataTemplate>
-                                    </CollectionView.ItemTemplate>
-                                </CollectionView>
+                                                </StackLayout>
+                                            </Frame>
+                                        </Grid>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>

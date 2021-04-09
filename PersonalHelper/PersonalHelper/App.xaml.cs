@@ -1,6 +1,7 @@
 ﻿using PersonalHelper.Views;
 using Xamarin.Forms;
 using PersonalHelper.Models;
+using System.Threading.Tasks;
 
 namespace PersonalHelper {
     public partial class App : Application {

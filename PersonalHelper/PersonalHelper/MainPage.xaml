@@ -40,15 +40,13 @@
                                  HorizontalOptions="Center"
                                  Margin="0,0,0,10">
                         <Label Text="{Binding UserCity, Mode=OneWay}"
-                               FontSize="Large"
-                               Margin="0,5,7,0"
+                               FontSize="30"
                                VerticalTextAlignment="Center"/>
                         <Image Source="{Binding IconSource}"
-                               WidthRequest="30"
+                               WidthRequest="50"
                                Aspect="AspectFill"/>
                         <Label Text="{Binding Temperature, Mode=OneWay, StringFormat='{0} °C'}"
-                               FontSize="Large"
-                               Margin="0,5,0,0"
+                               FontSize="30"
                                VerticalTextAlignment="Center"/>
                     </StackLayout>
                 </StackLayout>
@@ -101,7 +99,7 @@
                                                        BackgroundColor="DarkOrange"
                                                        Margin="10,0,10,2" />
                                             <Label Text="{Binding description}"
-                                                   FontSize="Default"
+                                                   FontSize="Subtitle"
                                                    MaxLines="4"
                                                    WidthRequest="170"
                                                    Margin="15,0,0,0" />
@@ -151,7 +149,7 @@
                                     <Image Source="CompleteIcon.png"
                                            HeightRequest="70" />
                                     <Label Text="Молодец! На сегодня всё."
-                                           FontSize="Medium" />
+                                           FontSize="Large" />
                                 </StackLayout>
                             </ContentView>
                         </CollectionView.EmptyView>

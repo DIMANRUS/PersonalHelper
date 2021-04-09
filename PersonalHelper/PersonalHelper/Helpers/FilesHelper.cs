@@ -1,5 +1,5 @@
-﻿using System.IO;
-using System.Reflection;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
 using PersonalHelper.Models;
@@ -7,15 +7,17 @@ using Xamarin.Essentials;
 
 namespace PersonalHelper.Helpers {
     static class FilesHelper {
-        private static Stream fileStream;
-        public async static Task<RootJsonCities> GetRootJsonCities() {
-            using (var stream = await FileSystem.OpenAppPackageFileAsync("cities.json"))
-            {
-                using (var reader = new StreamReader(stream))
-                {
-                    return JsonSerializer.Deserialize<RootJsonCities>(await reader.ReadToEndAsync());
+        private static IEnumerable<Cities> cities;
+        public async static Task<IEnumerable<Cities>> GetRootJsonCities() {
+            if (cities == null) {
+                using (var stream = await FileSystem.OpenAppPackageFileAsync("cities.json")) {
+                    using (var reader = new StreamReader(stream)) {
+                        string a = await reader.ReadToEndAsync();
+                        return JsonSerializer.Deserialize<RootJsonCities>(a).Cities;
+                    }
                 }
-            }
+            } else
+                return cities;
         }
     }
 }

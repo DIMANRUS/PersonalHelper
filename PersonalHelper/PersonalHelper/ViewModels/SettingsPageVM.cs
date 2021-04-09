@@ -22,6 +22,17 @@ namespace PersonalHelper.ViewModels {
                 await db.DeleteAllItems();
                 await CurrentPage.Navigation.PushAsync(new Auth(), true);
             });
+            ChangedCity = new Command<string>(async (string NameCity) => {
+                NameCity = NameCity.Replace(" ", "").ToLower();
+                if (await User.VerifyCity(NameCity)) {
+                    userCityStatusChangingTextColor = Color.Green;
+                    NotifyPropertyChanged(nameof(UserCityStatusChangingTextColor));
+                    User.SetUserCity(NameCity);
+                } else {
+                    userCityStatusChangingTextColor = Color.Red;
+                    NotifyPropertyChanged(nameof(UserCityStatusChangingTextColor));
+                }
+            });
         }
         #endregion
         #region Private field
@@ -31,27 +42,9 @@ namespace PersonalHelper.ViewModels {
         #endregion
         #region Properties
         public string UserName { get => User.GetUserName(); set { if (value.Length > 2) User.SetUserName(value); } }
-        public string UserCity {
-            get => userCity; set {
-                bool b = false;
-                Task.Run(async () =>
-                {
-                    b = await User.VerifyCity(value);
-                    if (b)
-                    {
-                        userCityStatusChangingTextColor = Color.Green;
-                        NotifyPropertyChanged("UserCityStatusChangingTextColor");
-                        User.SetUserCity(value);
-                    }
-                    else
-                    {
-                        userCityStatusChangingTextColor = Color.Red;
-                        NotifyPropertyChanged("UserCityStatusChangingTextColor");
-                    }
-                });              
-            }
-        }
         public Color UserCityStatusChangingTextColor { get => userCityStatusChangingTextColor; }
+        public Command ChangedCity { get; set; }
+        public string UserCity { get; } = User.GetUserCity();
         public string IsCheckedRadioButtonDarkTheme {
             get => _IsCheckedRadioButtonDarkTheme;
         }

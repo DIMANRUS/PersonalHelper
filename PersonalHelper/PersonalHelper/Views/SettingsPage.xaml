@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PersonalHelper.Views.Settings"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels"
              BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
              Title="Настройки">
@@ -21,10 +22,15 @@
                        FontSize="Large" />
                 </Frame>
                 <Frame Padding="0">
-                    <Entry Text="{Binding UserCity, Mode=TwoWay}"
+                    <Entry x:Name="City"
+                           Text="{Binding UserCity, Mode=OneWay}"
                        Margin="15,7,15,0"
                        FontSize="Large"
-                       TextColor="{Binding UserCityStatusChangingTextColor,  Mode=OneWay}" />
+                       TextColor="{Binding UserCityStatusChangingTextColor,  Mode=OneWay}">
+                        <Entry.Behaviors>
+                            <xct:EventToCommandBehavior EventName="TextChanged" CommandParameter="{Binding Source={x:Reference City}, Path=Text}" Command="{Binding ChangedCity}" />
+                        </Entry.Behaviors>
+                    </Entry>
                 </Frame>
                 <Frame>
                     <StackLayout>
