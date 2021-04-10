@@ -12,45 +12,40 @@ using PersonalHelper.Helpers;
 namespace PersonalHelper.ViewModels {
     partial class MainPageVM : BaseVM {
         public MainPageVM() {
+            Task.Run(async () =>
+            await Initializate());
             ZnakZodiaka = User.GetUserZodiakString();
             NotifyPropertyChanged(nameof(ZnakZodiaka));
-            OpenSettings = new Command(async () => {
+            OpenSettings = new Command(async () =>
+            {
                 await CurrentPage.Navigation.PushAsync(new Settings(), true);
             });
             OpenAllToDo = new Command(async () => await CurrentPage.Navigation.PushAsync(new ToDoPage()));
-            OpenAllNews = new Command(async () => {
+            OpenAllNews = new Command(async () =>
+            {
                 await CurrentPage.Navigation.PushAsync(new NewsPage());
             });
-            OpenAllWeather = new Command(async () => {
+            OpenAllWeather = new Command(async () =>
+            {
                 await CurrentPage.Navigation.PushAsync(new WeatherPage());
             });
-            Task.Run(async () => {
-                db = await TodoItemDatabase.Instance;
-                todoItemsToday = new ObservableCollection<TodoItem>(await db.GetItemsTodayAsync());
-                NewsCollection = await newsModel.GetTopNews();
-                string[] weatherFromApi = await weatherModel.GetWheatherForOneDay();
-                Temperature = weatherFromApi[0];
-                IconSource = weatherFromApi[1];
-                Horoscope = await HttpHelper.HttpRequest($"https://api.personalhelper.dimanrus.ru/api/horoscope/{User.GetUserZodiakId()}");
-                NotifyPropertyChanged(nameof(TodoItemsToday));
-                NotifyPropertyChanged(nameof(NewsCollection));
-                NotifyPropertyChanged(nameof(Temperature));
-                NotifyPropertyChanged(nameof(IconSource));
-                NotifyPropertyChanged(nameof(Horoscope));
-            });
-            ToDoVM.CompleteTask = new Command<int>(async (int todoId) => {
+            ToDoVM.CompleteTask = new Command<int>(async (int todoId) =>
+            {
                 await db.CompleteTaskAsync(todoId);
                 todoItemsToday = new ObservableCollection<TodoItem>(await db.GetItemsTodayAsync());
                 NotifyPropertyChanged(nameof(TodoItemsToday));
             });
-            ToDoVM.RemoveTask = new Command<int>(async (int todoId) => {
+            ToDoVM.RemoveTask = new Command<int>(async (int todoId) =>
+            {
                 await db.RemoveTaskAsync(todoId);
                 todoItemsToday = new ObservableCollection<TodoItem>(await db.GetItemsTodayAsync());
                 NotifyPropertyChanged(nameof(TodoItemsToday));
             });
-            AddTask = new Command<string>(async (string taskText) => {
+            AddTask = new Command<string>(async (string taskText) =>
+            {
                 taskDate = taskDate.Date + TaskTimePicker;
-                TodoItem newToDo = new TodoItem() {
+                TodoItem newToDo = new TodoItem()
+                {
                     ItemName = taskText,
                     DateRemember = taskDate,
                     TypeTodo = TypesTodo.Do
@@ -61,6 +56,21 @@ namespace PersonalHelper.ViewModels {
                 NotifyPropertyChanged(nameof(TodoItemsToday));
             });
             TaskDateCommand = new Command<DatePicker>((DatePicker datePicker) => taskDate = datePicker.Date);
+        }
+        private async Task Initializate()
+        {
+            db = await TodoItemDatabase.Instance;
+            todoItemsToday = new ObservableCollection<TodoItem>(await db.GetItemsTodayAsync());
+            NewsCollection = await newsModel.GetTopNews();
+            string[] weatherFromApi = await weatherModel.GetWheatherForOneDay();
+            Temperature = weatherFromApi[0];
+            IconSource = weatherFromApi[1];
+            Horoscope = await HttpHelper.HttpRequest($"https://api.personalhelper.dimanrus.ru/api/horoscope/{User.GetUserZodiakId()}");
+            NotifyPropertyChanged(nameof(TodoItemsToday));
+            NotifyPropertyChanged(nameof(NewsCollection));
+            NotifyPropertyChanged(nameof(Temperature));
+            NotifyPropertyChanged(nameof(IconSource));
+            NotifyPropertyChanged(nameof(Horoscope));
         }
         private TodoItemDatabase db;
         private readonly News newsModel = new News();

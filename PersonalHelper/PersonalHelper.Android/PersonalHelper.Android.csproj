@@ -88,6 +88,9 @@
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlarmHandler.cs" />
@@ -132,12 +135,6 @@
     <AndroidResource Include="Resources\drawable\info.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PersonalHelper\PersonalHelper.csproj">
-      <Project>{12244FD9-3D79-4A7B-A45C-B4593453C2A8}</Project>
-      <Name>PersonalHelper</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\next.png" />
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +160,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\cities.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PersonalHelper\PersonalHelper.csproj">
+      <Project>{12244FD9-3D79-4A7B-A45C-B4593453C2A8}</Project>
+      <Name>PersonalHelper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
