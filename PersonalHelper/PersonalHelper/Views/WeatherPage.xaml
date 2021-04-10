@@ -18,7 +18,7 @@
                         <Frame Margin="5">
                             <StackLayout Orientation="Horizontal">
                                 <Image Source="{Binding condition.icon}"
-                                       HeightRequest="35"
+                                       HeightRequest="40"
                                        WidthRequest="45"
                                        Aspect="AspectFill" />
                                 <Label Text="{Binding temp_c, StringFormat='{0} °C'}"

@@ -7,10 +7,13 @@ using System.Collections.ObjectModel;
 using PersonalHelper.SharedVM;
 using System;
 using PersonalHelper.Interfaces;
+using PersonalHelper.Helpers;
 
 namespace PersonalHelper.ViewModels {
     partial class MainPageVM : BaseVM {
         public MainPageVM() {
+            ZnakZodiaka = User.GetUserZodiakString();
+            NotifyPropertyChanged(nameof(ZnakZodiaka));
             OpenSettings = new Command(async () => {
                 await CurrentPage.Navigation.PushAsync(new Settings(), true);
             });
@@ -28,10 +31,12 @@ namespace PersonalHelper.ViewModels {
                 string[] weatherFromApi = await weatherModel.GetWheatherForOneDay();
                 Temperature = weatherFromApi[0];
                 IconSource = weatherFromApi[1];
+                Horoscope = await HttpHelper.HttpRequest($"https://api.personalhelper.dimanrus.ru/api/horoscope/{User.GetUserZodiakId()}");
                 NotifyPropertyChanged(nameof(TodoItemsToday));
                 NotifyPropertyChanged(nameof(NewsCollection));
                 NotifyPropertyChanged(nameof(Temperature));
                 NotifyPropertyChanged(nameof(IconSource));
+                NotifyPropertyChanged(nameof(Horoscope));
             });
             ToDoVM.CompleteTask = new Command<int>(async (int todoId) => {
                 await db.CompleteTaskAsync(todoId);
@@ -83,6 +88,10 @@ namespace PersonalHelper.ViewModels {
         #region News
         public ObservableCollection<Article> NewsCollection { get; private set; }
         public ICommand OpenAllNews { get; private set; }
+        #endregion
+        #region Horoscope
+        public string Horoscope { get; private set; }
+        public string ZnakZodiaka { get; private set; }
         #endregion
         public ICommand OpenSettings { private set; get; }
         public string HelloUserName { get => "Доброе утро, " + User.GetUserName(); }

@@ -62,6 +62,10 @@
                 <Setter Property="TextColor"
                         Value="{AppThemeBinding Light=Black, Dark=White}" />
             </Style>
+            <Style TargetType="{x:Type Picker}">
+                <Setter Property="TextColor"
+                        Value="{AppThemeBinding Light=Black, Dark=White}" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

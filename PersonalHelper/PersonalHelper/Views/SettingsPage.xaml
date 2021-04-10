@@ -35,7 +35,7 @@
                 <Frame>
                     <StackLayout>
                         <Label Text="Тема приложения"
-                       FontSize="Large"/>
+                       FontSize="Title"/>
                         <RadioButton Content="Тёмный"
                                      GroupName="Theme"
                                      CheckedChanged="RadioButton_CheckedChanged"
@@ -44,6 +44,31 @@
                                      GroupName="Theme"
                                      CheckedChanged="RadioButton_CheckedChanged"
                                      IsChecked="{Binding IsCheckedRadioButtonLightTheme}"/>
+                    </StackLayout>
+                </Frame>
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Ваш знак зодиака"
+                       FontSize="Title"/>
+                        <Picker x:Name="ZodiakPicker" FontSize="Large" SelectedIndex="{Binding CurrentZodiak}">
+                            <Picker.Behaviors>
+                                <xct:EventToCommandBehavior CommandParameter="{Binding Source={x:Reference ZodiakPicker}, Path=SelectedIndex}" EventName="SelectedIndexChanged" Command="{Binding ChangedZodiak}"/>
+                            </Picker.Behaviors>
+                            <Picker.Items>
+                                <x:String>Скорпион</x:String>
+                                <x:String>Овен</x:String>
+                                <x:String>Стрелец</x:String>
+                                <x:String>Лев</x:String>
+                                <x:String>Дева</x:String>
+                                <x:String>Весы</x:String>
+                                <x:String>Козерог</x:String>
+                                <x:String>Водолей</x:String>
+                                <x:String>Рыбы</x:String>
+                                <x:String>Рак</x:String>
+                                <x:String>Близнецы</x:String>
+                                <x:String>Телец</x:String>
+                            </Picker.Items>
+                        </Picker>
                     </StackLayout>
                 </Frame>
 

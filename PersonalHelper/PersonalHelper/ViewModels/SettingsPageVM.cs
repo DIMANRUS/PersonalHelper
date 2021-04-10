@@ -9,6 +9,8 @@ namespace PersonalHelper.ViewModels {
     class SettingsPageVM : BaseVM {
         #region Commands realization
         public SettingsPageVM() {
+            CurrentZodiak = User.GetUserZodiakId();
+            NotifyPropertyChanged(nameof(CurrentZodiak));
             if (User.GetUserTheme() == "Dark") {
                 _IsCheckedRadioButtonDarkTheme = "True";
                 NotifyPropertyChanged(nameof(IsCheckedRadioButtonDarkTheme));
@@ -33,6 +35,7 @@ namespace PersonalHelper.ViewModels {
                     NotifyPropertyChanged(nameof(UserCityStatusChangingTextColor));
                 }
             });
+            ChangedZodiak = new Command<int>((int zodiakId) => User.SetUserZodiak(zodiakId.ToString()));
         }
         #endregion
         #region Private field
@@ -41,6 +44,8 @@ namespace PersonalHelper.ViewModels {
         private string _IsCheckedRadioButtonDarkTheme = "False", _IsCheckedRadioButtonLightTheme = "False";
         #endregion
         #region Properties
+        public ICommand ChangedZodiak { get; private set; }
+        public string CurrentZodiak { get; private set; }
         public string UserName { get => User.GetUserName(); set { if (value.Length > 2) User.SetUserName(value); } }
         public Color UserCityStatusChangingTextColor { get => userCityStatusChangingTextColor; }
         public Command ChangedCity { get; set; }

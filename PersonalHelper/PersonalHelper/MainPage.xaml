@@ -53,6 +53,24 @@
             </Frame>
             <Frame Padding="3">
                 <StackLayout>
+                    <StackLayout Orientation="Horizontal"
+                                 Margin="9,5,0,0">
+                        <Image  Source="WheatherIconSun.png"
+                                HeightRequest="20" />
+                        <Label Text="Гороскоп"
+                               FontSize="Body" />
+                        <Label Text="{Binding ZnakZodiaka}"
+                               FontSize="Body"
+                               HorizontalOptions="EndAndExpand"
+                               Margin="0,0,20,0"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="{Binding Horoscope, Mode=OneWay}" FontSize="Large" Margin="2" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame Padding="3">
+                <StackLayout>
                     <Grid Margin="9,5,0,0">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="20" />
