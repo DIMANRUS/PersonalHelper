@@ -1,0 +1,36 @@
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{B5F86AA7-EB57-411D-92B0-97CA4B25E337}|Default">
+  <MonoDevelop.Ide.ItemProperties.PersonalHelper.Android Xamarin.HotReload.UnhandledDeviceException.PersonalHelper.Android.HideInfoBar="True" PreferredExecutionTarget="Android.android_tv_1080p_q_10_0_-_api_29" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PersonalHelper" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.PersonalHelper.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.77D5B001-1767-4F7E-8118-AB8C7A3EE2B0" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" relfile="PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" line="36" column="1" />
+      <Breakpoint file="/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" relfile="PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" line="17" column="1" />
+      <Breakpoint file="/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" relfile="PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" line="13" column="1" />
+      <Breakpoint file="/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" relfile="PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" line="14" column="1" />
+      <Breakpoint file="/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" relfile="PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" line="15" column="1" />
+      <Breakpoint file="/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" relfile="PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" line="16" column="1" />
+      <Breakpoint file="/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" relfile="PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" line="18" column="1" />
+      <Breakpoint file="/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" relfile="PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" line="20" column="1" />
+      <Breakpoint file="/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" relfile="PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" line="19" column="1" />
+      <Breakpoint file="/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" relfile="PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" line="21" column="1" />
+      <Breakpoint file="/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" relfile="PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" line="22" column="1" />
+      <Breakpoint file="/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" relfile="PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" line="26" column="1" />
+      <Breakpoint file="/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" relfile="PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" line="25" column="1" />
+      <Breakpoint file="/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" relfile="PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" line="27" column="1" />
+      <Breakpoint file="/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" relfile="PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" line="28" column="1" />
+      <Breakpoint file="/Users/dimanrus/Projects/PersonalHelper/PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" relfile="PersonalHelper/PersonalHelper/ViewModels/AuthPageVM.cs" line="30" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

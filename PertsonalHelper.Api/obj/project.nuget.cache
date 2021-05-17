@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "pwioUQoIBacf4gdQPMhxfNYwZksMI4uzWbLBenDMBHWoT7hjXxpLQ/thQZTugN3bqSj8P4iiMqubIYhdJ7Vzsw==",
+  "success": true,
+  "projectFilePath": "/Users/dimanrus/Projects/PersonalHelper/PertsonalHelper.Api/PertsonalHelper.Api.csproj",
+  "expectedPackageFiles": [
+    "/Users/dimanrus/.nuget/packages/htmlagilitypack/1.11.32/htmlagilitypack.1.11.32.nupkg.sha512"
+  ],
+  "logs": []
+}
