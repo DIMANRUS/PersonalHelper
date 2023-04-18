@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PersonalHelper.Views.Settings"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels"
+             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
+             Title="Настройки">
+    <ContentPage.BindingContext>
+        <ViewModels:SettingsPageVM />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout VerticalOptions="Start">
+                <Label Text="Изменения вступят в силу при след. запуске"
+                       Margin="5"
+                       HorizontalTextAlignment="Center" 
+                       FontSize="Medium"/>
+                <Frame Padding="0">
+                    <Entry Text="{Binding UserName, Mode=TwoWay}"
+                       Margin="15,7,15,0"
+                       FontSize="Large" />
+                </Frame>
+                <Frame Padding="0">
+                    <Entry x:Name="City"
+                           Text="{Binding UserCity, Mode=OneWay}"
+                       Margin="15,7,15,0"
+                       FontSize="Large"
+                       TextColor="{Binding UserCityStatusChangingTextColor,  Mode=OneWay}">
+                        <Entry.Behaviors>
+                            <xct:EventToCommandBehavior EventName="TextChanged" CommandParameter="{Binding Source={x:Reference City}, Path=Text}" Command="{Binding ChangedCity}" />
+                        </Entry.Behaviors>
+                    </Entry>
+                </Frame>
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Тема приложения"
+                       FontSize="Title"/>
+                        <RadioButton Content="Тёмный"
+                                     GroupName="Theme"
+                                     CheckedChanged="RadioButton_CheckedChanged"
+                                     IsChecked="{Binding IsCheckedRadioButtonDarkTheme}"/>
+                        <RadioButton Content="Светлый"
+                                     GroupName="Theme"
+                                     CheckedChanged="RadioButton_CheckedChanged"
+                                     IsChecked="{Binding IsCheckedRadioButtonLightTheme}"/>
+                    </StackLayout>
+                </Frame>
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Ваш знак зодиака"
+                       FontSize="Title"/>
+                        <Picker x:Name="ZodiakPicker" FontSize="Large" SelectedIndex="{Binding CurrentZodiak}">
+                            <Picker.Behaviors>
+                                <xct:EventToCommandBehavior CommandParameter="{Binding Source={x:Reference ZodiakPicker}, Path=SelectedIndex}" EventName="SelectedIndexChanged" Command="{Binding ChangedZodiak}"/>
+                            </Picker.Behaviors>
+                            <Picker.Items>
+                                <x:String>Скорпион</x:String>
+                                <x:String>Овен</x:String>
+                                <x:String>Стрелец</x:String>
+                                <x:String>Лев</x:String>
+                                <x:String>Дева</x:String>
+                                <x:String>Весы</x:String>
+                                <x:String>Козерог</x:String>
+                                <x:String>Водолей</x:String>
+                                <x:String>Рыбы</x:String>
+                                <x:String>Рак</x:String>
+                                <x:String>Близнецы</x:String>
+                                <x:String>Телец</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+            <Button VerticalOptions="End"
+                    Text="Выйти"
+                    TextColor="White"
+                    BackgroundColor="Red"
+                    Margin="10,0,7,10"
+                    Command="{Binding Exit}"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

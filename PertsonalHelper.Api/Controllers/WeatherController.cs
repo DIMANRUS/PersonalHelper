@@ -1,42 +1,26 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 using PersonalHelper.Api.Models;
-using System.IO;
 using System.Linq;
-using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
+using System.Text.Json;
 
-namespace PertsonalHelper.Api.Controllers
-{
+namespace PertsonalHelper.Api.Controllers {
     [ApiController]
     [Route("api/[controller]/")]
-    public class WeatherController : ControllerBase
-    {
+    public class WeatherController : ControllerBase {
         [HttpGet("{city}")]
-        public async Task<IActionResult> Get(string city)
-        {
-            // сервер получение погоды 
-            string url = $"http://api.openweathermap.org/data/2.5/weather?q={city}&appid=7cfd697d8dcb30e786d31dd24802a29d&units=metric";
+        public async Task<IActionResult> GetWeather(string city) {
+            HttpClient http = new HttpClient();
+            string json = await http.GetStringAsync($"http://api.openweathermap.org/data/2.5/weather?q={city}&appid=96c2dd40e5856b4f9eb6af0be8ef3c7d&units=metric");
+            RootJsonWheather result = JsonSerializer.Deserialize<RootJsonWheather>(json);
+            return Ok(result.main.temp + @"/" + $"https://openweathermap.org/img/wn/{result.weather.First().icon}@2x.png".Replace("/", "'"));
+        }
 
-            HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(url);
-
-            HttpWebResponse httpWebResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-
-            string response = "";
-
-            using (StreamReader sr = new StreamReader(httpWebResponse.GetResponseStream())) {
-                response = await sr.ReadToEndAsync();
-            }
-
-            RootJsonWheather result = JsonConvert.DeserializeObject<RootJsonWheather>(response);
-
-            return Ok(result.weather.First().description + @"/" + result.main.temp);
-
-
-            //HttpClient http = new HttpClient();
-            //string json = await http.GetStringAsync($"http://api.openweathermap.org/data/2.5/weather?q={city}&appid=7cfd697d8dcb30e786d31dd24802a29d&units=metric");
-            //RootJsonWheather result = JsonConvert.DeserializeObject<RootJsonWheather>(json);
-            //return Ok(result.weather.First().description + @"/" + result.main.temp);
+        [HttpGet("Detail/{city}")]
+        public async Task<IActionResult> GetWeatherForDetailDay(string city) {
+            HttpClient http = new HttpClient();
+            return Ok(await http.GetStringAsync($"https://api.weatherapi.com/v1/forecast.json?key=3593f8735e6a4955bc6123619210703&q={city}&days=10&aqi=no&alerts=no"));
         }
     }
 }

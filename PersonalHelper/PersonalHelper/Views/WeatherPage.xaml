@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PersonalHelper.Views.WeatherPage"
+             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
+             xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels"
+             Title="Погода по часам">
+    <ContentPage.BindingContext>
+        <ViewModels:WeatherPageVM />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <CollectionView Margin="10,5,10,5"
+                        ItemsSource="{Binding DetailDayWeather}"
+                        ItemsLayout="VerticalList">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Frame Margin="5">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding condition.icon}"
+                                       HeightRequest="40"
+                                       WidthRequest="45"
+                                       Aspect="AspectFill" />
+                                <Label Text="{Binding temp_c, StringFormat='{0} °C'}"
+                                       FontSize="25"
+                                       HeightRequest="35"
+                                       VerticalTextAlignment="Center" />
+                                <Label Text="{Binding time}"
+                                       HorizontalOptions="EndAndExpand"
+                                       FontSize="25"
+                                       HeightRequest="35"
+                                       VerticalTextAlignment="Center" />
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </ContentPage.Content>
+</ContentPage>

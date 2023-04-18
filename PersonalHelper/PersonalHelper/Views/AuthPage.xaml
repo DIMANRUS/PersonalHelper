@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PersonalHelper.Views.Auth"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
+             xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels"
+             Title="Добро пожаловать">
+    <ContentPage.BindingContext>
+        <ViewModels:AuthPageVM/>
+    </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Далее"
+                     IconImageSource="next.png"
+                     Priority="0"
+                     Order="Primary"
+                     Command="{Binding NextPage}"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout>
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Какой цвет предпочитаете?"
+                               FontSize="20" />
+                        <RadioButton Content="Тёмный"
+                                     GroupName="Theme"
+                                     CheckedChanged="RadioButton_CheckedChanged"
+                                     IsChecked="True"/>
+                        <RadioButton Content="Светлый"
+                                     GroupName="Theme"
+                                     CheckedChanged="RadioButton_CheckedChanged" />
+                    </StackLayout>
+                </Frame>
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Давайте знакомиться"
+                               FontSize="20" />
+                        <Entry Placeholder="Введите ваше имя"
+                               MaxLength="15"
+                               Text="{Binding UserName, Mode=OneWayToSource}" />
+                    </StackLayout>
+                </Frame>
+                <Frame>
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Где находитесь?"
+                                   FontSize="20" />
+                            <ImageButton Source="info.png"
+                                         HeightRequest="25"
+                                         WidthRequest="25"
+                                         Margin="10,0,0,0"
+                                         Command="{Binding ShowLocationInformation}" />
+                        </StackLayout>
+                        <Entry x:Name="City"
+                               Placeholder="Введите город"
+                               MaxLength="20"
+                               TextColor="{Binding UserCityStatusChangingTextColor,  Mode=OneWay}">
+                            <Entry.Behaviors>
+                                <xct:EventToCommandBehavior EventName="TextChanged" CommandParameter="{Binding Source={x:Reference City}, Path=Text}" Command="{Binding ChangedCity}"/>
+                            </Entry.Behaviors>
+                        </Entry>
+                    </StackLayout>
+                </Frame>
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Ваш знак зодиака"
+                       FontSize="Title"/>
+                        <Picker x:Name="ZodiakPicker" FontSize="Large">
+                            <Picker.Behaviors>
+                                <xct:EventToCommandBehavior CommandParameter="{Binding Source={x:Reference ZodiakPicker}, Path=SelectedIndex}" EventName="SelectedIndexChanged" Command="{Binding ChangedZodiak}"/>
+                            </Picker.Behaviors>
+                            <Picker.Items>
+                                <x:String>Скорпион</x:String>
+                                <x:String>Овен</x:String>
+                                <x:String>Стрелец</x:String>
+                                <x:String>Лев</x:String>
+                                <x:String>Дева</x:String>
+                                <x:String>Весы</x:String>
+                                <x:String>Козерог</x:String>
+                                <x:String>Водолей</x:String>
+                                <x:String>Рыбы</x:String>
+                                <x:String>Рак</x:String>
+                                <x:String>Близнецы</x:String>
+                                <x:String>Телец</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{9073C8FB-EE88-4752-B681-FBB650290AB8}</ProjectGuid>
+    <ProjectGuid>{BC72E8F2-A95B-4B27-9DDE-5EA4D39A531B}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
@@ -15,22 +15,21 @@
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <ProvisioningType>automatic</ProvisioningType>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
-    <DefineConstants>
-    </DefineConstants>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Externalconsole>false</Externalconsole>
-    <CodesignKey>iPhone Developer</CodesignKey>
-    <MtouchDebug>true</MtouchDebug>
-    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
-    <MtouchFastDev>true</MtouchFastDev>
-    <IOSDebuggerPort>26822</IOSDebuggerPort>
-    <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
-    <DebugSymbols>false</DebugSymbols>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <MtouchHttpClientHandler>CFNetworkHandler</MtouchHttpClientHandler>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -40,7 +39,7 @@
     <WarningLevel>4</WarningLevel>
     <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -53,6 +52,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>None</MtouchLink>
     <MtouchInterpreter>-all</MtouchInterpreter>
   </PropertyGroup>
@@ -64,6 +64,8 @@
     <WarningLevel>4</WarningLevel>
     <MtouchArch>ARM64</MtouchArch>
     <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
     <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
   <ItemGroup>
@@ -117,96 +119,66 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Image.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Image.imageset\icon.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Image.imageset\icon-1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Image.imageset\icon-2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\info.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\info.imageset\info.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\info.imageset\info-1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\info.imageset\info-2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\next.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\next.imageset\next.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\next.imageset\next-1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\next.imageset\next-2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\SettingsIcon.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\SettingsIcon-1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\SettingsIcon-2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\WheatherBlockIcon.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\WheatherBlockIcon-1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\WheatherBlockIcon-2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\Contents.json">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun-1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun-2.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\next.imageset\next-3.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\next.imageset\next-4.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\next.imageset\next-5.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\next.imageset\next-6.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\next.imageset\next-7.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\next.imageset\next-8.png">
-      <Visible>false</Visible>
-    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon-2.png" />
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon-1.png" />
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon.png" />
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon-1.png" />
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon-2.png" />
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon.png" />
+    <ImageAsset Include="Assets.xcassets\Image.imageset\icon.png" />
+    <ImageAsset Include="Assets.xcassets\Image.imageset\icon-2.png" />
+    <ImageAsset Include="Assets.xcassets\Image.imageset\icon-1.png" />
+    <ImageAsset Include="Assets.xcassets\Image.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\info.imageset\info.png" />
+    <ImageAsset Include="Assets.xcassets\info.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\info.imageset\info-1.png" />
+    <ImageAsset Include="Assets.xcassets\info.imageset\info-2.png" />
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon.png" />
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon-1.png" />
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon-2.png" />
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-14.png" />
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-9.png" />
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-11.png" />
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-10.png" />
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-8.png" />
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-12.png" />
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-13.png" />
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-6.png" />
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-7.png" />
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-5.png" />
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-4.png" />
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-1.png" />
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-3.png" />
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-2.png" />
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next.png" />
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon-1.png" />
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon-2.png" />
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon.png" />
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon.png" />
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon-1.png" />
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon-2.png" />
+    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\SettingsIcon-1.png" />
+    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\SettingsIcon-2.png" />
+    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\SettingsIcon.png" />
+    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\TaskBlockIcon.png" />
+    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\TaskBlockIcon-2.png" />
+    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\TaskBlockIcon-1.png" />
+    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\WheatherBlockIcon.png" />
+    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\WheatherBlockIcon-1.png" />
+    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\WheatherBlockIcon-2.png" />
+    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun-2.png" />
+    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun-1.png" />
+    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -215,16 +187,24 @@
     <Reference Include="Xamarin.iOS" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="sqlite-net">
-      <Version>1.6.292</Version>
-    </PackageReference>
-    <PackageReference Include="System.Text.Json">
-      <Version>5.0.1</Version>
-    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.7.335</Version>
+    </PackageReference>
+    <PackageReference Include="System.Text.Json">
+      <Version>5.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.CommunityToolkit">
+      <Version>1.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -233,16 +213,4 @@
       <Name>PersonalHelper</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets.xcassets\info.imageset\" />
-    <Folder Include="Assets.xcassets\next.imageset\" />
-    <Folder Include="Assets.xcassets\SettingsIcon.imageset\" />
-    <Folder Include="Assets.xcassets\WheatherBlockIcon.imageset\" />
-    <Folder Include="Assets.xcassets\WheatherIconSun.imageset\" />
-  </ItemGroup>
-  <ProjectExtensions>
-    <VisualStudio>
-      <UserProperties TriggeredFromHotReload="False" />
-    </VisualStudio>
-  </ProjectExtensions>
 </Project>

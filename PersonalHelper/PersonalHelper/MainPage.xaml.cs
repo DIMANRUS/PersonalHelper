@@ -4,7 +4,8 @@ namespace PersonalHelper
 {
     public partial class MainPage : ContentPage
     {
-        public MainPage() {
+        public MainPage() 
+        {
             InitializeComponent();
         }
     }

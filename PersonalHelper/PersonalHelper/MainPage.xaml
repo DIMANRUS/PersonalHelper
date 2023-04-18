@@ -4,41 +4,250 @@
              x:Class="PersonalHelper.MainPage"
              BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
              xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels"
-             NavigationPage.HasNavigationBar="False">
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             Title="{Binding HelloUserName}"
+             NavigationPage.HasBackButton="False">
     <ContentPage.BindingContext>
         <ViewModels:MainPageVM />
     </ContentPage.BindingContext>
-    <StackLayout>
-        <StackLayout Orientation="Horizontal"
-                     HorizontalOptions="Center">
-            <Label Text="{Binding HelloUserName}"
-                   HorizontalOptions="Center"
-                   Margin="10"
-                   FontSize="30" />
-            <ImageButton Source="SettingsIcon.png"
-                         HeightRequest="35"
-                         Command="{Binding OpenSettings}" />
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Настройки"
+                     IconImageSource="SettingsIcon.png"
+                     Order="Primary"
+                     Priority="0"
+                     Command="{Binding OpenSettings}" />
+    </ContentPage.ToolbarItems>
+    <ScrollView>
+        <StackLayout Padding="0,10,0,0">
+            <Frame Padding="3">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal"
+                                 Margin="9,5,0,0">
+                        <Image  Source="WheatherIconSun.png"
+                                HeightRequest="20" />
+                        <Label Text="Погода"
+                               FontSize="Body" />
+                        <Label Text="Детально >"
+                               FontSize="Body"
+                               HorizontalOptions="EndAndExpand"
+                               Margin="0,0,20,0">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenAllWeather}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal"
+                                 HorizontalOptions="Center"
+                                 Margin="0,0,0,10">
+                        <Label Text="{Binding UserCity, Mode=OneWay}"
+                               FontSize="30"
+                               VerticalTextAlignment="Center"/>
+                        <Image Source="{Binding IconSource}"
+                               WidthRequest="50"
+                               Aspect="AspectFill"/>
+                        <Label Text="{Binding Temperature, Mode=OneWay, StringFormat='{0} °C'}"
+                               FontSize="30"
+                               VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame Padding="3">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal"
+                                 Margin="9,5,0,0">
+                        <Image  Source="WheatherIconSun.png"
+                                HeightRequest="20" />
+                        <Label Text="Гороскоп"
+                               FontSize="Body" />
+                        <Label Text="{Binding ZnakZodiaka}"
+                               FontSize="Body"
+                               HorizontalOptions="EndAndExpand"
+                               Margin="0,0,20,0"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="{Binding Horoscope, Mode=OneWay}" FontSize="Large" Margin="2" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame Padding="3">
+                <StackLayout>
+                    <Grid Margin="9,5,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20" />
+                            <ColumnDefinition Width="70" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="NewsBlockIcon.png"
+                               HeightRequest="20" />
+                        <Label Text="Новости"
+                               FontSize="Body"
+                               Grid.Column="1" />
+                        <Label Text="Ещё новости >"
+                               FontSize="Body"
+                               Grid.Column="2"
+                               HorizontalOptions="End"
+                               Margin="0,0,20,0">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenAllNews}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+                    <CollectionView ItemsSource="{Binding NewsCollection}"
+                                    ItemsLayout="HorizontalList"
+                                    HeightRequest="350"
+                                    x:Name="newsView">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Frame CornerRadius="10"
+                                           Padding="0">
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding Path=BindingContext.NewsVM.OpenNews, Source={x:Reference Name=newsView}}"
+                                                                  CommandParameter="{Binding url}" />
+                                        </Frame.GestureRecognizers>
+                                        <StackLayout>
+                                            <Image Source="{Binding urlToImage}"
+                                                   HeightRequest="170" />
+                                            <Label Text="{Binding title}"
+                                                   FontSize="Title"
+                                                   MaxLines="2"
+                                                   WidthRequest="170"
+                                                   Margin="15,0,0,0" />
+                                            <Rectangle HeightRequest="2"
+                                                       BackgroundColor="DarkOrange"
+                                                       Margin="10,0,10,2" />
+                                            <Label Text="{Binding description}"
+                                                   FontSize="Subtitle"
+                                                   MaxLines="4"
+                                                   WidthRequest="170"
+                                                   Margin="15,0,0,0" />
+                                        </StackLayout>
+                                    </Frame>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </StackLayout>
+            </Frame>
+            <Frame Padding="3">
+                <StackLayout>
+                    <Grid Margin="9,5,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20" />
+                            <ColumnDefinition Width="70" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Image Source="TaskBlockIcon.png"
+                               HeightRequest="20" />
+                        <Label Text="Задачи"
+                               FontSize="Body"
+                               Grid.Column="1" />
+                        <Label Text="Все задачи >"
+                               FontSize="Body"
+                               Grid.Column="2"
+                               HorizontalOptions="End"
+                               Margin="0,0,20,0">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenAllToDo}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+                    <CollectionView ItemsSource="{Binding TodoItemsToday}"
+                                    HeightRequest="220"
+                                    ItemsLayout="VerticalList"
+                                    x:Name="todoView">
+                        <CollectionView.EmptyView>
+                            <ContentView>
+                                <StackLayout HorizontalOptions="CenterAndExpand"
+                                             VerticalOptions="CenterAndExpand">
+                                    <Image Source="CompleteIcon.png"
+                                           HeightRequest="70" />
+                                    <Label Text="Молодец! На сегодня всё."
+                                           FontSize="Large" />
+                                </StackLayout>
+                            </ContentView>
+                        </CollectionView.EmptyView>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <SwipeView Margin="5">
+                                    <SwipeView.LeftItems>
+                                        <SwipeItems>
+                                            <SwipeItem Text="Завершить"
+                                                       IconImageSource="CompleteIcon.png"
+                                                       BackgroundColor="DarkGreen"
+                                                       Command="{Binding Path=BindingContext.ToDoVM.CompleteTask, Source={x:Reference Name=todoView}}"
+                                                       CommandParameter="{Binding Id}" />
+                                            <SwipeItem Text="Удалить"
+                                                       IconImageSource="RemoveIcon.png"
+                                                       BackgroundColor="DarkRed"
+                                                       Command="{Binding Path=BindingContext.ToDoVM.RemoveTask, Source={x:Reference Name=todoView}}"
+                                                       CommandParameter="{Binding Id}" />
+                                        </SwipeItems>
+                                    </SwipeView.LeftItems>
+                                    <StackLayout Orientation="Horizontal"
+                                                 BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
+                                        <Label Text="{Binding ItemName}"
+                                               Margin="4"
+                                               FontSize="20" />
+                                        <Label Text="{Binding DateRemember, StringFormat='{0:HH:mm}'}"
+                                               Margin="4"
+                                               FontSize="20"
+                                               HorizontalOptions="EndAndExpand" />
+                                    </StackLayout>
+                                </SwipeView>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                    <Frame Grid.Row="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="35" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.ColumnSpan="3"
+                                   Text="Добавление задачи"
+                                   FontSize="Title"
+                                   HorizontalTextAlignment="Center" />
+                            <Entry Grid.ColumnSpan="3"
+                                   Grid.Row="1"
+                                   Placeholder="Введите задачу"
+                                   FontSize="Medium"
+                                   x:Name="TaskText" />
+                            <DatePicker Grid.Row="2"
+                                        FontSize="Medium"
+                                        x:Name="TaskDate">
+                                <DatePicker.Behaviors>
+                                    <xct:EventToCommandBehavior EventName="DateSelected"
+                                                                Command="{Binding TaskDateCommand}"
+                                                                CommandParameter="{Binding Source={x:Reference TaskDate}}" />
+                                </DatePicker.Behaviors>
+                            </DatePicker>
+                            <TimePicker Grid.Row="2"
+                                        Grid.Column="1"
+                                        FontSize="Medium"
+                                        Time="{Binding TaskTimePicker}">
+                            </TimePicker>
+                            <ImageButton Source="AddIcon.png"
+                                         HeightRequest="33"
+                                         Grid.Row="2"
+                                         Grid.Column="2"
+                                         HorizontalOptions="End"
+                                         Command="{Binding AddTask}"
+                                         CommandParameter="{Binding Path=Text, Source={x:Reference TaskText}}" />
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+            </Frame>
         </StackLayout>
-        <Frame Padding="7">
-            <StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <Image Source="WheatherBlockIcon.png"
-                           HeightRequest="20" />
-                    <Label Text="Погода"
-                           FontSize="15" />
-                </StackLayout>
-                <StackLayout Orientation="Horizontal"
-                             HorizontalOptions="Center">
-                    <Label Text="{Binding City}"
-                           FontSize="20"
-                           Margin="0,5,7,0" />
-                    <Image Source="WheatherIconSun.png"
-                           HeightRequest="40" />
-                    <Label Text="{Binding Wheather.main.temp, Mode=TwoWay}"
-                           FontSize="20"
-                           Margin="0,5,0,0" />
-                </StackLayout>
-            </StackLayout>
-        </Frame>
-    </StackLayout>
+    </ScrollView>
 </ContentPage>

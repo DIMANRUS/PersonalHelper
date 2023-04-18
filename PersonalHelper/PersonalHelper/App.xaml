@@ -4,7 +4,7 @@
              x:Class="PersonalHelper.App">
     <Application.Resources>
         <ResourceDictionary>
-            <Style TargetType="Frame">
+            <Style TargetType="{x:Type Frame}">
                 <Setter Property="CornerRadius"
                         Value="15" />
                 <Setter Property="HasShadow"
@@ -16,13 +16,13 @@
                 <Setter Property="BorderColor"
                         Value="{AppThemeBinding Dark=White}" />
             </Style>
-            <Style TargetType="Label">
+            <Style TargetType="{x:Type Label}">
                 <Setter Property="TextColor"
                         Value="{AppThemeBinding Light=Black, Dark=White}" />
                 <Setter Property="FontAttributes"
                         Value="Bold" />
             </Style>
-            <Style TargetType="Entry">
+            <Style TargetType="{x:Type Entry}">
                 <Setter Property="TextColor"
                         Value="{AppThemeBinding Light=Black, Dark=White}" />
                 <Setter Property="PlaceholderColor"
@@ -31,27 +31,40 @@
                         Value="Bold" />
                 <Setter Property="BackgroundColor"
                         Value="Transparent" />
-
             </Style>
-            <Style TargetType="ImageButton">
+            <Style TargetType="{x:Type ImageButton}">
                 <Setter Property="BackgroundColor"
                         Value="Transparent" />
             </Style>
-            <Style TargetType="Button">
+            <Style TargetType="{x:Type Button}">
                 <Setter Property="BackgroundColor"
                         Value="Transparent" />
                 <Setter Property="FontAttributes"
                         Value="Bold" />
                 <Setter Property="TextColor"
                         Value="{AppThemeBinding Light=Black, Dark=White}" />
+                <Setter Property="CornerRadius"
+                        Value="16" />
             </Style>
-            <Style TargetType="RadioButton">
+            <Style TargetType="{x:Type RadioButton}">
                 <Setter Property="TextColor"
                         Value="{AppThemeBinding Light=Black, Dark=White}" />
                 <Setter Property="FontAttributes"
                         Value="Bold" />
                 <Setter Property="BackgroundColor"
                         Value="Transparent" />
+            </Style>
+            <Style TargetType="{x:Type TimePicker}">
+                <Setter Property="TextColor"
+                        Value="{AppThemeBinding Light=Black, Dark=White}" />
+            </Style>
+            <Style TargetType="{x:Type DatePicker}">
+                <Setter Property="TextColor"
+                        Value="{AppThemeBinding Light=Black, Dark=White}" />
+            </Style>
+            <Style TargetType="{x:Type Picker}">
+                <Setter Property="TextColor"
+                        Value="{AppThemeBinding Light=Black, Dark=White}" />
             </Style>
         </ResourceDictionary>
     </Application.Resources>

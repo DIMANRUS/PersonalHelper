@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PersonalHelper.Views.ToDoPage"
+             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}"
+             xmlns:ViewModels="clr-namespace:PersonalHelper.ViewModels"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             Title="Задачи"
+             BarBackgroundColor="{x:AppThemeBinding Dark=Black, Light=LightGray}"
+             BarTextColor="{AppThemeBinding Light=Black, Dark=White}">
+    <TabbedPage.BindingContext>
+        <ViewModels:ToDoPageVM />
+    </TabbedPage.BindingContext>
+    <TabbedPage.Children>
+        <ContentPage Title="Задачи на сегодня"
+                     x:Name="View1">
+            <ContentPage.Content>
+                <CollectionView ItemsSource="{Binding ToDoCompleteToday}"
+                                ItemsLayout="VerticalList"
+                                x:Name="todoView"
+                                Margin="10,5,10,0">
+                    <CollectionView.Header>
+                        <Label Text="Завершённые"
+                               FontSize="Title" />
+                    </CollectionView.Header>
+                    <CollectionView.EmptyView>
+                        <ContentView>
+                            <StackLayout HorizontalOptions="CenterAndExpand"
+                                         VerticalOptions="CenterAndExpand">
+                                <Image Source="CompleteIcon.png"
+                                       HeightRequest="70" />
+                                <Label Text="Может пора выполнить задачу?"
+                                       FontSize="Medium"
+                                       HorizontalTextAlignment="Center"/>
+                            </StackLayout>
+                        </ContentView>
+                    </CollectionView.EmptyView>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <SwipeView Margin="5">
+                                <SwipeView.LeftItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="Удалить"
+                                                   IconImageSource="RemoveIcon.png"
+                                                   BackgroundColor="DarkRed"
+                                                   Command="{Binding Path=BindingContext.ToDoVM.RemoveTask, Source={x:Reference Name=todoView}}"
+                                                   CommandParameter="{Binding Id}" />
+                                    </SwipeItems>
+                                </SwipeView.LeftItems>
+                                <StackLayout Orientation="Horizontal"
+                                             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
+                                    <Label Text="{Binding ItemName}"
+                                           Margin="4"
+                                           FontSize="20" />
+                                    <Label Text="{Binding DateRemember, StringFormat='{0:HH:mm}'}"
+                                           Margin="4"
+                                           FontSize="20"
+                                           HorizontalOptions="EndAndExpand" />
+                                </StackLayout>
+                            </SwipeView>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ContentPage.Content>
+        </ContentPage>
+        <ContentPage Title="Задачи на завтра">
+            <ContentPage.Content>
+                <CollectionView ItemsSource="{Binding ToDoTomorrow}"
+                                ItemsLayout="VerticalList"
+                                Margin="10,5,10,0"
+                                x:Name="todoView2">
+                    <CollectionView.Header>
+                        <Label FontSize="Title">
+                            <Label.Text>
+                                <MultiBinding StringFormat="Задачи на завтра ({0} {1})">
+                                    <Binding Path="NextDay.Day" />
+                                    <Binding Path="NextDay.DayOfWeek" />
+                                </MultiBinding>
+                            </Label.Text>
+                        </Label>
+                    </CollectionView.Header>
+                    <CollectionView.EmptyView>
+                        <ContentView>
+                            <StackLayout HorizontalOptions="CenterAndExpand"
+                                         VerticalOptions="CenterAndExpand">
+                                <Image Source="CompleteIcon.png"
+                                       HeightRequest="70" />
+                                <Label Text="На завтра пусто! Планируй, делай!"
+                                       FontSize="Medium"
+                                       HorizontalTextAlignment="Center"/>
+                            </StackLayout>
+                        </ContentView>
+                    </CollectionView.EmptyView>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <SwipeView Margin="5">
+                                <SwipeView.LeftItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="Удалить"
+                                                   IconImageSource="RemoveIcon.png"
+                                                   BackgroundColor="DarkRed"
+                                                   Command="{Binding Path=BindingContext.ToDoVM.RemoveTask, Source={x:Reference Name=todoView2}}"
+                                                   CommandParameter="{Binding Id}" />
+                                    </SwipeItems>
+                                </SwipeView.LeftItems>
+                                <StackLayout Orientation="Horizontal"
+                                             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
+                                    <Label Text="{Binding ItemName}"
+                                           Margin="4"
+                                           FontSize="20" />
+                                    <Label Text="{Binding DateRemember, StringFormat='{0:HH:mm}'}"
+                                           Margin="4"
+                                           FontSize="20"
+                                           HorizontalOptions="EndAndExpand" />
+                                </StackLayout>
+                            </SwipeView>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ContentPage.Content>
+        </ContentPage>
+        <ContentPage Title="Все">
+            <ContentPage.Content>
+                <CollectionView ItemsSource="{Binding ToDoAll}"
+                                ItemsLayout="VerticalList"
+                                x:Name="todoView3"
+                                Margin="10,5,10,0">
+                    <CollectionView.Header>
+                        <Label Text="Остальные задачи"
+                               FontSize="Title" />
+                    </CollectionView.Header>
+                    <CollectionView.EmptyView>
+                        <ContentView>
+                            <StackLayout HorizontalOptions="CenterAndExpand"
+                                         VerticalOptions="CenterAndExpand">
+                                <Image Source="CompleteIcon.png"
+                                       HeightRequest="70" />
+                                <Label Text="Пока пусто! Планируй, делай!"
+                                       FontSize="Medium"
+                                       HorizontalTextAlignment="Center"/>
+                            </StackLayout>
+                        </ContentView>
+                    </CollectionView.EmptyView>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <SwipeView Margin="5">
+                                <SwipeView.LeftItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="Удалить"
+                                                   IconImageSource="RemoveIcon.png"
+                                                   BackgroundColor="DarkRed"
+                                                   Command="{Binding Path=BindingContext.ToDoVM.RemoveTask, Source={x:Reference Name=todoView3}}"
+                                                   CommandParameter="{Binding Id}" />
+                                    </SwipeItems>
+                                </SwipeView.LeftItems>
+                                <StackLayout Orientation="Horizontal"
+                                             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
+                                    <Label Text="{Binding ItemName}"
+                                           Margin="4"
+                                           FontSize="20" />
+                                    <Label Text="{Binding DateRemember}"
+                                           Margin="4"
+                                           FontSize="20"
+                                           HorizontalOptions="EndAndExpand" />
+                                </StackLayout>
+                            </SwipeView>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ContentPage.Content>
+        </ContentPage>
+    </TabbedPage.Children>
+</TabbedPage>
