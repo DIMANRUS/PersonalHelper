@@ -1,20 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace PersonalHelper.Views;
 
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace PersonalHelper.Views
+[XamlCompilation(XamlCompilationOptions.Compile)]
+public partial class WeatherPage : ContentPage
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class WeatherPage : ContentPage
+    public WeatherPage()
     {
-        public WeatherPage()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
 }

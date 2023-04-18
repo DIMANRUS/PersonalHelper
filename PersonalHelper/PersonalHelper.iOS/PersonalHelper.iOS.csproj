@@ -119,66 +119,186 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon-2.png" />
-    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon.png" />
-    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon-2.png" />
-    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon.png" />
-    <ImageAsset Include="Assets.xcassets\Image.imageset\icon.png" />
-    <ImageAsset Include="Assets.xcassets\Image.imageset\icon-2.png" />
-    <ImageAsset Include="Assets.xcassets\Image.imageset\icon-1.png" />
-    <ImageAsset Include="Assets.xcassets\Image.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\info.imageset\info.png" />
-    <ImageAsset Include="Assets.xcassets\info.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\info.imageset\info-1.png" />
-    <ImageAsset Include="Assets.xcassets\info.imageset\info-2.png" />
-    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon.png" />
-    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon-2.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-14.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-9.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-11.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-10.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-8.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-12.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-13.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-6.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-7.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-5.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-4.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-1.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-3.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-2.png" />
-    <ImageAsset Include="Assets.xcassets\next.png.imageset\next.png" />
-    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon-2.png" />
-    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon.png" />
-    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon.png" />
-    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon-2.png" />
-    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\SettingsIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\SettingsIcon-2.png" />
-    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\SettingsIcon.png" />
-    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\TaskBlockIcon.png" />
-    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\TaskBlockIcon-2.png" />
-    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\TaskBlockIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\WheatherBlockIcon.png" />
-    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\WheatherBlockIcon-1.png" />
-    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\WheatherBlockIcon-2.png" />
-    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun-2.png" />
-    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun-1.png" />
-    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun.png" />
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\AddIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AddIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\CompleteIcon.imageset\CompleteIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Image.imageset\icon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Image.imageset\icon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Image.imageset\icon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Image.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\info.imageset\info.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\info.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\info.imageset\info-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\info.imageset\info-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NewsBlockIcon.imageset\NewsBlockIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-14.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-9.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-11.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-10.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-8.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-12.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-13.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-6.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-7.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-5.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-4.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-3.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\next.png.imageset\next.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\NoNewsIcon.imageset\NoNewsIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\RemoveIcon.imageset\RemoveIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\SettingsIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\SettingsIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\SettingsIcon.imageset\SettingsIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\TaskBlockIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\TaskBlockIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\TaskBlockIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\TaskblockIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\WheatherBlockIcon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\WheatherBlockIcon-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\WheatherBlockIcon-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WheatherBlockIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\WheatherIconSun.imageset\WheatherIcon_Sun.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -191,16 +311,16 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2578" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.5" />
     <PackageReference Include="sqlite-net-pcl">
-      <Version>1.7.335</Version>
+      <Version>1.8.116</Version>
     </PackageReference>
     <PackageReference Include="System.Text.Json">
-      <Version>5.0.2</Version>
+      <Version>7.0.2</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.CommunityToolkit">
-      <Version>1.1.0</Version>
+      <Version>2.0.5</Version>
     </PackageReference>
     <PackageReference Include="System.Net.Http">
       <Version>4.3.4</Version>

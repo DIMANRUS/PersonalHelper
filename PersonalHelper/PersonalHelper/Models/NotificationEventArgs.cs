@@ -1,8 +1,7 @@
-﻿using System;
+﻿namespace PersonalHelper.Models;
 
-namespace PersonalHelper.Models {
-    class NotificationEventArgs : EventArgs {
-        public string Title { get; set; }
-        public string Message { get; set; }
-    }
+class NotificationEventArgs : EventArgs
+{
+    public string Title { get; set; }
+    public string Message { get; set; }
 }

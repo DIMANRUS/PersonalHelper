@@ -1,8 +1,7 @@
-﻿using System.Collections.ObjectModel;
+﻿namespace PersonalHelper.Models;
 
-namespace PersonalHelper.Models {
-    class NewsCategory {
-        public string Keyword { get; set; }
-        public ObservableCollection<Article> ArticlesCollection {get; set;}
-    }
+class NewsCategory
+{
+    public string Keyword { get; set; }
+    public ObservableCollection<Article> ArticlesCollection { get; set; }
 }
